@@ -1,0 +1,4502 @@
+[
+ {
+  "uid": "CHE-338.199.532",
+  "company": "BEISPIEL FIRMA 001 AG",
+  "city": "Bern",
+  "sphere": "Медицина",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:19"
+ },
+ {
+  "uid": "CHE-139.350.150",
+  "company": "Beispiel Firma 002 GmbH",
+  "city": "Muttenz",
+  "sphere": "Медицина",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:19"
+ },
+ {
+  "uid": "CHE-596.871.642",
+  "company": "Beispiel Firma 003 AG",
+  "city": "Düdingen",
+  "sphere": "Медицина",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:19"
+ },
+ {
+  "uid": "CHE-333.563.955",
+  "company": "Beispiel Firma 004 AG",
+  "city": "Diessenhofen",
+  "sphere": "Медицина",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:19"
+ },
+ {
+  "uid": "CHE-591.355.557",
+  "company": "Beispiel Firma 005 AG",
+  "city": "Meilen",
+  "sphere": "Медицина",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:19"
+ },
+ {
+  "uid": "CHE-250.628.064",
+  "company": "Beispiel Firma 006",
+  "city": "Cham",
+  "sphere": "Медицина",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:19"
+ },
+ {
+  "uid": "CHE-293.059.714",
+  "company": "Beispiel Firma 007 GmbH",
+  "city": "Zürich",
+  "sphere": "Медицина",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:19"
+ },
+ {
+  "uid": "CHE-566.245.279",
+  "company": "Beispiel Firma 008",
+  "city": "Teufen (AR)",
+  "sphere": "Медицина",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:19"
+ },
+ {
+  "uid": "CHE-234.740.857",
+  "company": "Beispiel Firma 009 AG",
+  "city": "Spiez",
+  "sphere": "Медицина",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:19"
+ },
+ {
+  "uid": "CHE-329.958.405",
+  "company": "Beispiel Firma 010 GmbH",
+  "city": "Dierikon",
+  "sphere": "Медицина",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:19"
+ },
+ {
+  "uid": "CHE-657.506.205",
+  "company": "Beispiel Firma 011 GmbH",
+  "city": "Basel",
+  "sphere": "Медицина",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:19"
+ },
+ {
+  "uid": "CHE-730.216.666",
+  "company": "Beispiel Firma 012 GmbH",
+  "city": "Bern",
+  "sphere": "Медицина",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:19"
+ },
+ {
+  "uid": "CHE-574.938.226",
+  "company": "Beispiel Firma 013 GmbH",
+  "city": "Zürich",
+  "sphere": "Медицина",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:19"
+ },
+ {
+  "uid": "CHE-361.622.729",
+  "company": "Beispiel Firma 014 GmbH",
+  "city": "Luzern",
+  "sphere": "Медицина",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:19"
+ },
+ {
+  "uid": "CHE-179.456.636",
+  "company": "Beispiel Firma 015 GmbH",
+  "city": "Winterthur",
+  "sphere": "Медицина",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:19"
+ },
+ {
+  "uid": "CHE-659.806.807",
+  "company": "Beispiel Firma 016 AG",
+  "city": "Speicher",
+  "sphere": "Медицина",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:19"
+ },
+ {
+  "uid": "CHE-466.596.672",
+  "company": "Beispiel Firma 017 GmbH",
+  "city": "Wollerau",
+  "sphere": "Медицина",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:19"
+ },
+ {
+  "uid": "CHE-207.296.908",
+  "company": "Beispiel Firma 018 GmbH",
+  "city": "Dietikon",
+  "sphere": "Медицина",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:19"
+ },
+ {
+  "uid": "CHE-154.943.564",
+  "company": "Beispiel Firma 019",
+  "city": "Basel",
+  "sphere": "Медицина",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:19"
+ },
+ {
+  "uid": "CHE-905.794.576",
+  "company": "Beispiel Firma 020",
+  "city": "Klingnau",
+  "sphere": "Медицина",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:19"
+ },
+ {
+  "uid": "CHE-234.064.128",
+  "company": "Beispiel Firma 021 AG",
+  "city": "Bern",
+  "sphere": "Медицина",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:19"
+ },
+ {
+  "uid": "CHE-832.366.828",
+  "company": "Beispiel Firma 022 GmbH",
+  "city": "Lausen",
+  "sphere": "Медицина",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:19"
+ },
+ {
+  "uid": "CHE-815.533.574",
+  "company": "Beispiel Firma 023 GmbH",
+  "city": "Neuenegg",
+  "sphere": "Медицина",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:19"
+ },
+ {
+  "uid": "CHE-859.746.431",
+  "company": "Beispiel Firma 024 AG",
+  "city": "Bern",
+  "sphere": "Медицина",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:19"
+ },
+ {
+  "uid": "CHE-572.804.371",
+  "company": "Beispiel Firma 025 AG",
+  "city": "Cham",
+  "sphere": "Медицина",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:19"
+ },
+ {
+  "uid": "CHE-310.317.150",
+  "company": "Beispiel Firma 026",
+  "city": "Olten",
+  "sphere": "Медицина",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:19"
+ },
+ {
+  "uid": "CHE-691.591.176",
+  "company": "Beispiel Firma 027 AG",
+  "city": "Liestal",
+  "sphere": "Медицина",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:19"
+ },
+ {
+  "uid": "CHE-522.072.909",
+  "company": "Beispiel Firma 028 AG",
+  "city": "Liestal",
+  "sphere": "Медицина",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:19"
+ },
+ {
+  "uid": "CHE-401.468.069",
+  "company": "Beispiel Firma 029 GmbH",
+  "city": "Sumiswald",
+  "sphere": "Медицина",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:19"
+ },
+ {
+  "uid": "CHE-255.562.946",
+  "company": "Beispiel Firma 030 AG",
+  "city": "Ellikon an der Thur",
+  "sphere": "Медицина",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:19"
+ },
+ {
+  "uid": "CHE-593.669.825",
+  "company": "Beispiel Firma 031 AG",
+  "city": "Basel",
+  "sphere": "Фармація",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:20"
+ },
+ {
+  "uid": "CHE-241.564.809",
+  "company": "Beispiel Firma 032 AG",
+  "city": "Küttigen",
+  "sphere": "Фармація",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:20"
+ },
+ {
+  "uid": "CHE-555.461.979",
+  "company": "Beispiel Firma 033",
+  "city": "Weinfelden",
+  "sphere": "Фармація",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:20"
+ },
+ {
+  "uid": "CHE-994.578.794",
+  "company": "Beispiel Firma 034 AG",
+  "city": "Zürich",
+  "sphere": "Фармація",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:20"
+ },
+ {
+  "uid": "CHE-613.523.322",
+  "company": "Beispiel Firma 035 GmbH",
+  "city": "Basel",
+  "sphere": "Фармація",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:20"
+ },
+ {
+  "uid": "CHE-744.189.998",
+  "company": "Beispiel Firma 036 GmbH",
+  "city": "Zürich",
+  "sphere": "Фармація",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:20"
+ },
+ {
+  "uid": "CHE-136.164.102",
+  "company": "Beispiel Firma 037 GmbH",
+  "city": "Wettingen",
+  "sphere": "Фармація",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:20"
+ },
+ {
+  "uid": "CHE-597.008.924",
+  "company": "Beispiel Firma 038 AG",
+  "city": "Solothurn",
+  "sphere": "Фармація",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:20"
+ },
+ {
+  "uid": "CHE-817.818.527",
+  "company": "Beispiel Firma 039 AG",
+  "city": "Flawil",
+  "sphere": "Фармація",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:20"
+ },
+ {
+  "uid": "CHE-167.377.510",
+  "company": "Beispiel Firma 040 GmbH",
+  "city": "Teufen (AR)",
+  "sphere": "Фармація",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:20"
+ },
+ {
+  "uid": "CHE-436.378.171",
+  "company": "Beispiel Firma 041 AG",
+  "city": "Cham",
+  "sphere": "Фармація",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:20"
+ },
+ {
+  "uid": "CHE-758.892.874",
+  "company": "Beispiel Firma 042 GmbH",
+  "city": "Cham",
+  "sphere": "Фармація",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:20"
+ },
+ {
+  "uid": "CHE-260.573.714",
+  "company": "Beispiel Firma 043",
+  "city": "Buchs (AG)",
+  "sphere": "Фармація",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:20"
+ },
+ {
+  "uid": "CHE-168.915.261",
+  "company": "Beispiel Firma 044 AG",
+  "city": "Chur",
+  "sphere": "Фармація",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:20"
+ },
+ {
+  "uid": "CHE-951.272.074",
+  "company": "Beispiel Firma 045 AG",
+  "city": "Aarburg",
+  "sphere": "Фармація",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:20"
+ },
+ {
+  "uid": "CHE-444.413.177",
+  "company": "Beispiel Firma 046 AG",
+  "city": "Rüti (ZH)",
+  "sphere": "Фармація",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:20"
+ },
+ {
+  "uid": "CHE-556.234.512",
+  "company": "Beispiel Firma 047 AG",
+  "city": "Zürich",
+  "sphere": "Фармація",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:20"
+ },
+ {
+  "uid": "CHE-213.037.344",
+  "company": "Beispiel Firma 048 GmbH",
+  "city": "Fehraltorf",
+  "sphere": "Фармація",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:20"
+ },
+ {
+  "uid": "CHE-194.646.078",
+  "company": "Beispiel Firma 049 AG",
+  "city": "Zürich",
+  "sphere": "Фармація",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:20"
+ },
+ {
+  "uid": "CHE-775.786.003",
+  "company": "Beispiel Firma 050 AG",
+  "city": "Winterthur",
+  "sphere": "Фармація",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:20"
+ },
+ {
+  "uid": "CHE-565.063.942",
+  "company": "Beispiel Firma 051 AG",
+  "city": "Gebenstorf",
+  "sphere": "Фармація",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:20"
+ },
+ {
+  "uid": "CHE-531.128.124",
+  "company": "Beispiel Firma 052 GmbH",
+  "city": "St. Gallen",
+  "sphere": "Фармація",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:20"
+ },
+ {
+  "uid": "CHE-161.420.952",
+  "company": "Beispiel Firma 053 GmbH",
+  "city": "Oberburg",
+  "sphere": "Фармація",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:20"
+ },
+ {
+  "uid": "CHE-788.469.925",
+  "company": "Beispiel Firma 054 AG",
+  "city": "Basel",
+  "sphere": "Фармація",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:20"
+ },
+ {
+  "uid": "CHE-773.071.778",
+  "company": "Beispiel Firma 055 AG",
+  "city": "Belp",
+  "sphere": "Фармація",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:20"
+ },
+ {
+  "uid": "CHE-760.237.271",
+  "company": "Beispiel Firma 056 AG",
+  "city": "Döttingen",
+  "sphere": "Фармація",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:20"
+ },
+ {
+  "uid": "CHE-885.622.007",
+  "company": "Beispiel Firma 057 AG",
+  "city": "Brugg",
+  "sphere": "Фармація",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:20"
+ },
+ {
+  "uid": "CHE-214.097.627",
+  "company": "Beispiel Firma 058 AG",
+  "city": "Egg",
+  "sphere": "Фармація",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:20"
+ },
+ {
+  "uid": "CHE-480.762.969",
+  "company": "Beispiel Firma 059 AG",
+  "city": "Lachen",
+  "sphere": "Фармація",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:20"
+ },
+ {
+  "uid": "CHE-883.889.640",
+  "company": "Beispiel Firma 060 AG",
+  "city": "Brig-Glis",
+  "sphere": "Фармація",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:20"
+ },
+ {
+  "uid": "CHE-509.624.333",
+  "company": "Beispiel Firma 061 AG",
+  "city": "Ittigen",
+  "sphere": "Харчування",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:21"
+ },
+ {
+  "uid": "CHE-161.205.069",
+  "company": "Beispiel Firma 062 Sàrl",
+  "city": "Prilly",
+  "sphere": "Харчування",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:21"
+ },
+ {
+  "uid": "CHE-654.736.045",
+  "company": "Beispiel Firma 063 GmbH",
+  "city": "Silvaplana",
+  "sphere": "Харчування",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:21"
+ },
+ {
+  "uid": "CHE-475.965.981",
+  "company": "Beispiel Firma 064 Sàrl",
+  "city": "Lausanne",
+  "sphere": "Харчування",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:21"
+ },
+ {
+  "uid": "CHE-671.776.063",
+  "company": "Beispiel Firma 065 Sàrl",
+  "city": "Genève",
+  "sphere": "Харчування",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:21"
+ },
+ {
+  "uid": "CHE-877.311.640",
+  "company": "Beispiel Firma 066 Sàrl",
+  "city": "Conthey",
+  "sphere": "Харчування",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:21"
+ },
+ {
+  "uid": "CHE-468.606.212",
+  "company": "Beispiel Firma 067 GmbH",
+  "city": "Meiringen",
+  "sphere": "Харчування",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:21"
+ },
+ {
+  "uid": "CHE-721.014.649",
+  "company": "Beispiel Firma 068 GmbH",
+  "city": "Schupfart",
+  "sphere": "Харчування",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:21"
+ },
+ {
+  "uid": "CHE-785.314.723",
+  "company": "Beispiel Firma 069",
+  "city": "Küsnacht (ZH)",
+  "sphere": "Харчування",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:21"
+ },
+ {
+  "uid": "CHE-106.389.168",
+  "company": "Beispiel Firma 070 AG",
+  "city": "Elsau",
+  "sphere": "Харчування",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:21"
+ },
+ {
+  "uid": "CHE-182.773.184",
+  "company": "Beispiel Firma 071 GmbH",
+  "city": "Affoltern am Albis",
+  "sphere": "Харчування",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:21"
+ },
+ {
+  "uid": "CHE-546.633.307",
+  "company": "Beispiel Firma 072 GmbH",
+  "city": "Feusisberg",
+  "sphere": "Харчування",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:21"
+ },
+ {
+  "uid": "CHE-814.249.544",
+  "company": "Beispiel Firma 073 AG",
+  "city": "Bern",
+  "sphere": "Харчування",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:21"
+ },
+ {
+  "uid": "CHE-161.527.171",
+  "company": "Beispiel Firma 074 Sàrl",
+  "city": "Echallens",
+  "sphere": "Харчування",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:21"
+ },
+ {
+  "uid": "CHE-572.401.464",
+  "company": "Beispiel Firma 075 GmbH",
+  "city": "Schüpfheim",
+  "sphere": "Харчування",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:21"
+ },
+ {
+  "uid": "CHE-769.410.280",
+  "company": "Beispiel Firma 076 GmbH",
+  "city": "Stäfa",
+  "sphere": "Харчування",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:21"
+ },
+ {
+  "uid": "CHE-593.113.976",
+  "company": "Beispiel Firma 077 GmbH",
+  "city": "Zürich",
+  "sphere": "Харчування",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:21"
+ },
+ {
+  "uid": "CHE-694.082.095",
+  "company": "Beispiel Firma 078 GmbH",
+  "city": "Teufen (AR)",
+  "sphere": "Харчування",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:21"
+ },
+ {
+  "uid": "CHE-481.321.533",
+  "company": "Beispiel Firma 079",
+  "city": "Cressier (FR)",
+  "sphere": "Харчування",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:21"
+ },
+ {
+  "uid": "CHE-655.478.182",
+  "company": "Beispiel Firma 080 Sàrl",
+  "city": "Genève",
+  "sphere": "Харчування",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:21"
+ },
+ {
+  "uid": "CHE-869.544.426",
+  "company": "Beispiel Firma 081 AG",
+  "city": "Zürich",
+  "sphere": "Харчування",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:21"
+ },
+ {
+  "uid": "CHE-914.023.621",
+  "company": "Beispiel Firma 082",
+  "city": "Amden",
+  "sphere": "Харчування",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:21"
+ },
+ {
+  "uid": "CHE-626.056.583",
+  "company": "Beispiel Firma 083 GmbH",
+  "city": "Samnaun",
+  "sphere": "Харчування",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:21"
+ },
+ {
+  "uid": "CHE-622.122.347",
+  "company": "Beispiel Firma 084 GmbH",
+  "city": "Lostorf",
+  "sphere": "Харчування",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:21"
+ },
+ {
+  "uid": "CHE-905.749.222",
+  "company": "Beispiel Firma 085 GmbH",
+  "city": "Frauenfeld",
+  "sphere": "Харчування",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:21"
+ },
+ {
+  "uid": "CHE-176.404.318",
+  "company": "Beispiel Firma 086 GmbH",
+  "city": "Köniz",
+  "sphere": "Харчування",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:21"
+ },
+ {
+  "uid": "CHE-341.820.309",
+  "company": "Beispiel Firma 087 GmbH",
+  "city": "Rapperswil-Jona",
+  "sphere": "Харчування",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:21"
+ },
+ {
+  "uid": "CHE-794.268.186",
+  "company": "Beispiel Firma 088",
+  "city": "Brione sopra Minusio",
+  "sphere": "Харчування",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:21"
+ },
+ {
+  "uid": "CHE-310.562.347",
+  "company": "Beispiel Firma 089 GmbH",
+  "city": "Winterthur",
+  "sphere": "Харчування",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:21"
+ },
+ {
+  "uid": "CHE-548.099.844",
+  "company": "Beispiel Firma 090",
+  "city": "Lumino",
+  "sphere": "Харчування",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:21"
+ },
+ {
+  "uid": "CHE-563.610.649",
+  "company": "Beispiel Firma 091",
+  "city": "Arbedo-Castione",
+  "sphere": "Готелі/туризм",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:22"
+ },
+ {
+  "uid": "CHE-599.081.300",
+  "company": "BEISPIEL FIRMA 092 AG",
+  "city": "Oberentfelden",
+  "sphere": "Готелі/туризм",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:22"
+ },
+ {
+  "uid": "CHE-861.343.746",
+  "company": "Beispiel Firma 093 AG",
+  "city": "Volketswil",
+  "sphere": "Готелі/туризм",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:22"
+ },
+ {
+  "uid": "CHE-712.374.238",
+  "company": "Beispiel Firma 094 SA",
+  "city": "Lausanne",
+  "sphere": "Готелі/туризм",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:22"
+ },
+ {
+  "uid": "CHE-946.238.551",
+  "company": "Beispiel Firma 095 AG",
+  "city": "Zug",
+  "sphere": "Готелі/туризм",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:22"
+ },
+ {
+  "uid": "CHE-807.850.630",
+  "company": "Beispiel Firma 096 Sàrl",
+  "city": "Pregny-Chambésy",
+  "sphere": "Готелі/туризм",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:22"
+ },
+ {
+  "uid": "CHE-500.306.217",
+  "company": "Beispiel Firma 097 AG",
+  "city": "Bern",
+  "sphere": "Готелі/туризм",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:22"
+ },
+ {
+  "uid": "CHE-347.536.870",
+  "company": "BEISPIEL FIRMA 098 SA",
+  "city": "Genève",
+  "sphere": "Готелі/туризм",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:22"
+ },
+ {
+  "uid": "CHE-908.145.687",
+  "company": "Beispiel Firma 099 SA",
+  "city": "Genève",
+  "sphere": "Готелі/туризм",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:22"
+ },
+ {
+  "uid": "CHE-284.827.868",
+  "company": "BEISPIEL FIRMA 100 AG",
+  "city": "Bleienbach",
+  "sphere": "Готелі/туризм",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:22"
+ },
+ {
+  "uid": "CHE-271.553.012",
+  "company": "Beispiel Firma 101 GmbH",
+  "city": "Zollikon",
+  "sphere": "Готелі/туризм",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:22"
+ },
+ {
+  "uid": "CHE-318.832.496",
+  "company": "Beispiel Firma 102 SA",
+  "city": "Fribourg",
+  "sphere": "Готелі/туризм",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:22"
+ },
+ {
+  "uid": "CHE-512.708.203",
+  "company": "Beispiel Firma 103 SA",
+  "city": "Etoy",
+  "sphere": "Готелі/туризм",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:22"
+ },
+ {
+  "uid": "CHE-434.498.887",
+  "company": "Beispiel Firma 104 Sàrl",
+  "city": "Marly",
+  "sphere": "Готелі/туризм",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:22"
+ },
+ {
+  "uid": "CHE-915.067.472",
+  "company": "BEISPIEL FIRMA 105",
+  "city": "St. Moritz",
+  "sphere": "Готелі/туризм",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:22"
+ },
+ {
+  "uid": "CHE-407.225.631",
+  "company": "BEISPIEL FIRMA 106",
+  "city": "St. Moritz",
+  "sphere": "Готелі/туризм",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:22"
+ },
+ {
+  "uid": "CHE-530.643.990",
+  "company": "Beispiel Firma 107 AG",
+  "city": "Oberentfelden",
+  "sphere": "Готелі/туризм",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:22"
+ },
+ {
+  "uid": "CHE-300.464.766",
+  "company": "Beispiel Firma 108",
+  "city": "Klosters",
+  "sphere": "Готелі/туризм",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:22"
+ },
+ {
+  "uid": "CHE-228.201.428",
+  "company": "Beispiel Firma 109",
+  "city": "Vaz/Obervaz",
+  "sphere": "Готелі/туризм",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:22"
+ },
+ {
+  "uid": "CHE-166.536.378",
+  "company": "Beispiel Firma 110",
+  "city": "Arosa",
+  "sphere": "Готелі/туризм",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:22"
+ },
+ {
+  "uid": "CHE-700.616.920",
+  "company": "Beispiel Firma 111",
+  "city": "St. Moritz",
+  "sphere": "Готелі/туризм",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:22"
+ },
+ {
+  "uid": "CHE-473.908.908",
+  "company": "Beispiel Firma 112",
+  "city": "Davos",
+  "sphere": "Готелі/туризм",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:22"
+ },
+ {
+  "uid": "CHE-795.604.335",
+  "company": "Beispiel Firma 113",
+  "city": "Sils im Engadin/Segl",
+  "sphere": "Готелі/туризм",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:22"
+ },
+ {
+  "uid": "CHE-927.034.077",
+  "company": "Beispiel Firma 114",
+  "city": "Vaz/Obervaz",
+  "sphere": "Готелі/туризм",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:22"
+ },
+ {
+  "uid": "CHE-922.329.312",
+  "company": "Beispiel Firma 115",
+  "city": "Pontresina",
+  "sphere": "Готелі/туризм",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:22"
+ },
+ {
+  "uid": "CHE-876.455.986",
+  "company": "Beispiel Firma 116",
+  "city": "Scuol",
+  "sphere": "Готелі/туризм",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:22"
+ },
+ {
+  "uid": "CHE-607.174.957",
+  "company": "Beispiel Firma 117",
+  "city": "Morschach",
+  "sphere": "Готелі/туризм",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:22"
+ },
+ {
+  "uid": "CHE-898.215.953",
+  "company": "Beispiel Firma 118 AG",
+  "city": "Brig-Glis",
+  "sphere": "Готелі/туризм",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:22"
+ },
+ {
+  "uid": "CHE-128.182.782",
+  "company": "Beispiel Firma 119 AG",
+  "city": "Basel",
+  "sphere": "Готелі/туризм",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:22"
+ },
+ {
+  "uid": "CHE-734.238.052",
+  "company": "Beispiel Firma 120",
+  "city": "Bern",
+  "sphere": "Готелі/туризм",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:22"
+ },
+ {
+  "uid": "CHE-926.674.765",
+  "company": "Beispiel Firma 121 AG",
+  "city": "Rüschlikon",
+  "sphere": "Ритейл",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:23"
+ },
+ {
+  "uid": "CHE-170.761.837",
+  "company": "Beispiel Firma 122 AG",
+  "city": "Bern",
+  "sphere": "Ритейл",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:23"
+ },
+ {
+  "uid": "CHE-586.403.630",
+  "company": "Beispiel Firma 123 GmbH",
+  "city": "Rorbas",
+  "sphere": "Ритейл",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:23"
+ },
+ {
+  "uid": "CHE-222.859.517",
+  "company": "Beispiel Firma 124 GmbH",
+  "city": "Rupperswil",
+  "sphere": "Ритейл",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:23"
+ },
+ {
+  "uid": "CHE-857.968.570",
+  "company": "Beispiel Firma 125 GmbH",
+  "city": "Thun",
+  "sphere": "Ритейл",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:23"
+ },
+ {
+  "uid": "CHE-691.649.189",
+  "company": "Beispiel Firma 126 GmbH",
+  "city": "Wil (SG)",
+  "sphere": "Ритейл",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:23"
+ },
+ {
+  "uid": "CHE-257.028.474",
+  "company": "Beispiel Firma 127 GmbH",
+  "city": "Bern",
+  "sphere": "Ритейл",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:23"
+ },
+ {
+  "uid": "CHE-632.025.214",
+  "company": "Beispiel Firma 128 AG",
+  "city": "Luzern",
+  "sphere": "Ритейл",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:23"
+ },
+ {
+  "uid": "CHE-831.534.690",
+  "company": "Beispiel Firma 129 GmbH",
+  "city": "Neuhausen am Rheinfall",
+  "sphere": "Ритейл",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:23"
+ },
+ {
+  "uid": "CHE-270.226.013",
+  "company": "Beispiel Firma 130 AG",
+  "city": "Wädenswil",
+  "sphere": "Ритейл",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:23"
+ },
+ {
+  "uid": "CHE-799.912.089",
+  "company": "Beispiel Firma 131 GmbH",
+  "city": "Zürich",
+  "sphere": "Ритейл",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:23"
+ },
+ {
+  "uid": "CHE-104.462.268",
+  "company": "Beispiel Firma 132 GmbH",
+  "city": "Uttigen",
+  "sphere": "Ритейл",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:23"
+ },
+ {
+  "uid": "CHE-614.692.364",
+  "company": "Beispiel Firma 133 AG",
+  "city": "Bremgarten (AG)",
+  "sphere": "Ритейл",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:23"
+ },
+ {
+  "uid": "CHE-894.590.027",
+  "company": "Beispiel Firma 134 GmbH",
+  "city": "Regensdorf",
+  "sphere": "Ритейл",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:23"
+ },
+ {
+  "uid": "CHE-305.860.827",
+  "company": "Beispiel Firma 135 SA",
+  "city": "Gampelen",
+  "sphere": "Ритейл",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:23"
+ },
+ {
+  "uid": "CHE-122.166.129",
+  "company": "Beispiel Firma 136 GmbH",
+  "city": "Ersigen",
+  "sphere": "Ритейл",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:23"
+ },
+ {
+  "uid": "CHE-368.532.582",
+  "company": "Beispiel Firma 137 GmbH",
+  "city": "Sarnen",
+  "sphere": "Ритейл",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:23"
+ },
+ {
+  "uid": "CHE-224.295.459",
+  "company": "Beispiel Firma 138 GmbH",
+  "city": "Meilen",
+  "sphere": "Ритейл",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:23"
+ },
+ {
+  "uid": "CHE-890.739.106",
+  "company": "Beispiel Firma 139 GmbH",
+  "city": "Baar",
+  "sphere": "Ритейл",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:23"
+ },
+ {
+  "uid": "CHE-444.794.318",
+  "company": "Beispiel Firma 140 AG",
+  "city": "Bern",
+  "sphere": "Ритейл",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:23"
+ },
+ {
+  "uid": "CHE-820.351.694",
+  "company": "Beispiel Firma 141 AG",
+  "city": "Zug",
+  "sphere": "Ритейл",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:23"
+ },
+ {
+  "uid": "CHE-775.662.861",
+  "company": "Beispiel Firma 142 AG",
+  "city": "Dietlikon",
+  "sphere": "Ритейл",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:23"
+ },
+ {
+  "uid": "CHE-896.025.637",
+  "company": "Beispiel Firma 143 AG",
+  "city": "Münchwilen (TG)",
+  "sphere": "Ритейл",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:23"
+ },
+ {
+  "uid": "CHE-777.517.419",
+  "company": "Beispiel Firma 144",
+  "city": "Münchenstein",
+  "sphere": "Ритейл",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:23"
+ },
+ {
+  "uid": "CHE-867.821.589",
+  "company": "Beispiel Firma 145",
+  "city": "Biezwil",
+  "sphere": "Ритейл",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:23"
+ },
+ {
+  "uid": "CHE-751.653.245",
+  "company": "Beispiel Firma 146 AG",
+  "city": "Köniz",
+  "sphere": "Ритейл",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:23"
+ },
+ {
+  "uid": "CHE-495.169.094",
+  "company": "Beispiel Firma 147 GmbH",
+  "city": "Schlatt-Haslen",
+  "sphere": "Ритейл",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:23"
+ },
+ {
+  "uid": "CHE-112.540.893",
+  "company": "Beispiel Firma 148 GmbH",
+  "city": "Fraubrunnen",
+  "sphere": "Ритейл",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:23"
+ },
+ {
+  "uid": "CHE-702.546.555",
+  "company": "Beispiel Firma 149 AG",
+  "city": "Zürich",
+  "sphere": "Ритейл",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:23"
+ },
+ {
+  "uid": "CHE-603.834.105",
+  "company": "Beispiel Firma 150 GmbH",
+  "city": "Zürich",
+  "sphere": "Ритейл",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:23"
+ },
+ {
+  "uid": "CHE-965.710.241",
+  "company": "Beispiel Firma 151 GmbH",
+  "city": "Engelberg",
+  "sphere": "Будівництво",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:24"
+ },
+ {
+  "uid": "CHE-250.119.549",
+  "company": "Beispiel Firma 152 AG",
+  "city": "St. Gallen",
+  "sphere": "Будівництво",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:24"
+ },
+ {
+  "uid": "CHE-827.853.146",
+  "company": "Beispiel Firma 153",
+  "city": "Wallisellen",
+  "sphere": "Будівництво",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:24"
+ },
+ {
+  "uid": "CHE-895.792.912",
+  "company": "Beispiel Firma 154 AG",
+  "city": "Wil (SG)",
+  "sphere": "Будівництво",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:24"
+ },
+ {
+  "uid": "CHE-640.915.334",
+  "company": "Beispiel Firma 155 GmbH",
+  "city": "Wollerau",
+  "sphere": "Будівництво",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:24"
+ },
+ {
+  "uid": "CHE-540.301.640",
+  "company": "Beispiel Firma 156 GmbH",
+  "city": "Regensdorf",
+  "sphere": "Будівництво",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:24"
+ },
+ {
+  "uid": "CHE-871.672.387",
+  "company": "Beispiel Firma 157 GmbH",
+  "city": "Cham",
+  "sphere": "Будівництво",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:24"
+ },
+ {
+  "uid": "CHE-992.815.492",
+  "company": "Beispiel Firma 158 AG",
+  "city": "Breitenbach",
+  "sphere": "Будівництво",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:24"
+ },
+ {
+  "uid": "CHE-403.757.113",
+  "company": "Beispiel Firma 159 GmbH",
+  "city": "Wollerau",
+  "sphere": "Будівництво",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:24"
+ },
+ {
+  "uid": "CHE-797.284.023",
+  "company": "Beispiel Firma 160 GmbH",
+  "city": "Sursee",
+  "sphere": "Будівництво",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:24"
+ },
+ {
+  "uid": "CHE-257.363.576",
+  "company": "Beispiel Firma 161 GmbH",
+  "city": "Stocken-Höfen",
+  "sphere": "Будівництво",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:24"
+ },
+ {
+  "uid": "CHE-284.842.388",
+  "company": "Beispiel Firma 162 GmbH",
+  "city": "Nidau",
+  "sphere": "Будівництво",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:24"
+ },
+ {
+  "uid": "CHE-686.000.184",
+  "company": "BEISPIEL FIRMA 163 SA",
+  "city": "Lausanne",
+  "sphere": "Будівництво",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:24"
+ },
+ {
+  "uid": "CHE-600.427.005",
+  "company": "Beispiel Firma 164 GmbH",
+  "city": "Biel/Bienne",
+  "sphere": "Будівництво",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:24"
+ },
+ {
+  "uid": "CHE-912.415.252",
+  "company": "Beispiel Firma 165 AG",
+  "city": "Beckenried",
+  "sphere": "Будівництво",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:24"
+ },
+ {
+  "uid": "CHE-712.380.799",
+  "company": "Beispiel Firma 166 AG",
+  "city": "Worb",
+  "sphere": "Будівництво",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:24"
+ },
+ {
+  "uid": "CHE-494.800.151",
+  "company": "Beispiel Firma 167 GmbH",
+  "city": "Wangen bei Olten",
+  "sphere": "Будівництво",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:24"
+ },
+ {
+  "uid": "CHE-327.484.081",
+  "company": "Beispiel Firma 168 AG",
+  "city": "Dübendorf",
+  "sphere": "Будівництво",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:24"
+ },
+ {
+  "uid": "CHE-566.535.470",
+  "company": "Beispiel Firma 169 GmbH",
+  "city": "Basel",
+  "sphere": "Будівництво",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:24"
+ },
+ {
+  "uid": "CHE-957.734.541",
+  "company": "Beispiel Firma 170 GmbH",
+  "city": "Herisau",
+  "sphere": "Будівництво",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:24"
+ },
+ {
+  "uid": "CHE-990.953.976",
+  "company": "Beispiel Firma 171 GmbH",
+  "city": "Frauenfeld",
+  "sphere": "Будівництво",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:24"
+ },
+ {
+  "uid": "CHE-277.961.800",
+  "company": "Beispiel Firma 172 GmbH",
+  "city": "Brugg",
+  "sphere": "Будівництво",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:24"
+ },
+ {
+  "uid": "CHE-147.242.597",
+  "company": "Beispiel Firma 173 AG",
+  "city": "Cham",
+  "sphere": "Будівництво",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:24"
+ },
+ {
+  "uid": "CHE-365.907.935",
+  "company": "Beispiel Firma 174 GmbH",
+  "city": "Münchenbuchsee",
+  "sphere": "Будівництво",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:24"
+ },
+ {
+  "uid": "CHE-317.907.772",
+  "company": "Beispiel Firma 175 GmbH",
+  "city": "Murgenthal",
+  "sphere": "Будівництво",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:24"
+ },
+ {
+  "uid": "CHE-775.362.979",
+  "company": "Beispiel Firma 176 GmbH",
+  "city": "Mosnang",
+  "sphere": "Будівництво",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:24"
+ },
+ {
+  "uid": "CHE-817.341.896",
+  "company": "Beispiel Firma 177 GmbH",
+  "city": "Zug",
+  "sphere": "Будівництво",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:24"
+ },
+ {
+  "uid": "CHE-394.731.176",
+  "company": "Beispiel Firma 178 GmbH",
+  "city": "Illnau-Effretikon",
+  "sphere": "Будівництво",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:24"
+ },
+ {
+  "uid": "CHE-893.195.355",
+  "company": "Beispiel Firma 179 GmbH",
+  "city": "Wittenbach",
+  "sphere": "Будівництво",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:24"
+ },
+ {
+  "uid": "CHE-237.721.129",
+  "company": "Beispiel Firma 180 GmbH",
+  "city": "Domat/Ems",
+  "sphere": "Будівництво",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:24"
+ },
+ {
+  "uid": "CHE-221.595.362",
+  "company": "Beispiel Firma 181 AG",
+  "city": "Balsthal",
+  "sphere": "Нерухомість",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:25"
+ },
+ {
+  "uid": "CHE-324.706.807",
+  "company": "Beispiel Firma 182 GmbH",
+  "city": "Engelberg",
+  "sphere": "Нерухомість",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:25"
+ },
+ {
+  "uid": "CHE-927.207.308",
+  "company": "Beispiel Firma 183 AG",
+  "city": "Chur",
+  "sphere": "Нерухомість",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:25"
+ },
+ {
+  "uid": "CHE-317.916.707",
+  "company": "Beispiel Firma 184 AG",
+  "city": "Neuenegg",
+  "sphere": "Нерухомість",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:25"
+ },
+ {
+  "uid": "CHE-636.095.053",
+  "company": "Beispiel Firma 185 AG",
+  "city": "Beckenried",
+  "sphere": "Нерухомість",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:25"
+ },
+ {
+  "uid": "CHE-805.645.935",
+  "company": "Beispiel Firma 186 GmbH",
+  "city": "Zürich",
+  "sphere": "Нерухомість",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:25"
+ },
+ {
+  "uid": "CHE-226.978.405",
+  "company": "Beispiel Firma 187 AG",
+  "city": "Olten",
+  "sphere": "Нерухомість",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:25"
+ },
+ {
+  "uid": "CHE-664.606.065",
+  "company": "Beispiel Firma 188 AG",
+  "city": "Adelboden",
+  "sphere": "Нерухомість",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:25"
+ },
+ {
+  "uid": "CHE-855.278.715",
+  "company": "Beispiel Firma 189 GmbH",
+  "city": "Bern",
+  "sphere": "Нерухомість",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:25"
+ },
+ {
+  "uid": "CHE-966.499.764",
+  "company": "Beispiel Firma 190 AG",
+  "city": "Appenzell",
+  "sphere": "Нерухомість",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:25"
+ },
+ {
+  "uid": "CHE-310.353.217",
+  "company": "Beispiel Firma 191 AG",
+  "city": "Suhr",
+  "sphere": "Нерухомість",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:25"
+ },
+ {
+  "uid": "CHE-171.237.036",
+  "company": "Beispiel Firma 192 AG",
+  "city": "Buochs",
+  "sphere": "Нерухомість",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:25"
+ },
+ {
+  "uid": "CHE-384.761.891",
+  "company": "Beispiel Firma 193 AG",
+  "city": "Rapperswil-Jona",
+  "sphere": "Нерухомість",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:25"
+ },
+ {
+  "uid": "CHE-509.845.710",
+  "company": "Beispiel Firma 194 GmbH",
+  "city": "Bülach",
+  "sphere": "Нерухомість",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:25"
+ },
+ {
+  "uid": "CHE-370.340.862",
+  "company": "Beispiel Firma 195 AG",
+  "city": "Niederhasli",
+  "sphere": "Нерухомість",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:25"
+ },
+ {
+  "uid": "CHE-301.999.219",
+  "company": "Beispiel Firma 196 AG",
+  "city": "Adelboden",
+  "sphere": "Нерухомість",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:25"
+ },
+ {
+  "uid": "CHE-110.507.548",
+  "company": "Beispiel Firma 197 GmbH",
+  "city": "Frutigen",
+  "sphere": "Нерухомість",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:25"
+ },
+ {
+  "uid": "CHE-645.641.061",
+  "company": "Beispiel Firma 198 AG",
+  "city": "Glarus Süd",
+  "sphere": "Нерухомість",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:25"
+ },
+ {
+  "uid": "CHE-164.695.764",
+  "company": "Beispiel Firma 199 AG",
+  "city": "Stallikon",
+  "sphere": "Нерухомість",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:25"
+ },
+ {
+  "uid": "CHE-984.112.431",
+  "company": "Beispiel Firma 200 GmbH",
+  "city": "Horw",
+  "sphere": "Нерухомість",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:25"
+ },
+ {
+  "uid": "CHE-618.423.320",
+  "company": "Beispiel Firma 201 AG",
+  "city": "Freienbach",
+  "sphere": "Нерухомість",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:25"
+ },
+ {
+  "uid": "CHE-185.818.239",
+  "company": "Beispiel Firma 202 GmbH",
+  "city": "Aarau",
+  "sphere": "Нерухомість",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:25"
+ },
+ {
+  "uid": "CHE-873.385.817",
+  "company": "Beispiel Firma 203 AG",
+  "city": "Schaffhausen",
+  "sphere": "Нерухомість",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:25"
+ },
+ {
+  "uid": "CHE-581.078.267",
+  "company": "Beispiel Firma 204 AG",
+  "city": "Zug",
+  "sphere": "Нерухомість",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:25"
+ },
+ {
+  "uid": "CHE-535.978.417",
+  "company": "Beispiel Firma 205 AG",
+  "city": "Dietlikon",
+  "sphere": "Нерухомість",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:25"
+ },
+ {
+  "uid": "CHE-350.269.296",
+  "company": "Beispiel Firma 206 AG",
+  "city": "Zürich",
+  "sphere": "Нерухомість",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:25"
+ },
+ {
+  "uid": "CHE-874.234.486",
+  "company": "Beispiel Firma 207 AG",
+  "city": "Zollikofen",
+  "sphere": "Нерухомість",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:25"
+ },
+ {
+  "uid": "CHE-919.541.567",
+  "company": "BEISPIEL FIRMA 208 AG",
+  "city": "Hochdorf",
+  "sphere": "Нерухомість",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:25"
+ },
+ {
+  "uid": "CHE-794.961.347",
+  "company": "Beispiel Firma 209 AG",
+  "city": "Zollikon",
+  "sphere": "Нерухомість",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:25"
+ },
+ {
+  "uid": "CHE-647.307.041",
+  "company": "Beispiel Firma 210 GmbH",
+  "city": "Hochdorf",
+  "sphere": "Нерухомість",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:25"
+ },
+ {
+  "uid": "CHE-769.602.945",
+  "company": "Beispiel Firma 211 GmbH",
+  "city": "Widnau",
+  "sphere": "IT",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:26"
+ },
+ {
+  "uid": "CHE-197.224.561",
+  "company": "Beispiel Firma 212 AG",
+  "city": "Sarnen",
+  "sphere": "IT",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:26"
+ },
+ {
+  "uid": "CHE-768.840.614",
+  "company": "Beispiel Firma 213 GmbH",
+  "city": "Spiez",
+  "sphere": "IT",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:26"
+ },
+ {
+  "uid": "CHE-851.821.017",
+  "company": "Beispiel Firma 214 AG",
+  "city": "Freienbach",
+  "sphere": "IT",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:26"
+ },
+ {
+  "uid": "CHE-162.402.520",
+  "company": "Beispiel Firma 215 AG",
+  "city": "Cham",
+  "sphere": "IT",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:26"
+ },
+ {
+  "uid": "CHE-556.374.917",
+  "company": "Beispiel Firma 216 AG",
+  "city": "Hergiswil (NW)",
+  "sphere": "IT",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:26"
+ },
+ {
+  "uid": "CHE-129.212.032",
+  "company": "Beispiel Firma 217 GmbH",
+  "city": "Adliswil",
+  "sphere": "IT",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:26"
+ },
+ {
+  "uid": "CHE-778.773.511",
+  "company": "Beispiel Firma 218 GmbH",
+  "city": "Brig-Glis",
+  "sphere": "IT",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:26"
+ },
+ {
+  "uid": "CHE-342.034.331",
+  "company": "Beispiel Firma 219 AG",
+  "city": "St. Gallen",
+  "sphere": "IT",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:26"
+ },
+ {
+  "uid": "CHE-843.863.858",
+  "company": "Beispiel Firma 220 AG",
+  "city": "Zürich",
+  "sphere": "IT",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:26"
+ },
+ {
+  "uid": "CHE-883.535.780",
+  "company": "Beispiel Firma 221 AG",
+  "city": "Goldach",
+  "sphere": "IT",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:26"
+ },
+ {
+  "uid": "CHE-379.929.498",
+  "company": "Beispiel Firma 222 GmbH",
+  "city": "Winterthur",
+  "sphere": "IT",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:26"
+ },
+ {
+  "uid": "CHE-212.982.978",
+  "company": "Beispiel Firma 223",
+  "city": "Zürich",
+  "sphere": "IT",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:26"
+ },
+ {
+  "uid": "CHE-319.805.585",
+  "company": "Beispiel Firma 224 GmbH",
+  "city": "Lommis",
+  "sphere": "IT",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:26"
+ },
+ {
+  "uid": "CHE-790.281.928",
+  "company": "Beispiel Firma 225",
+  "city": "Beromünster",
+  "sphere": "IT",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:26"
+ },
+ {
+  "uid": "CHE-654.460.877",
+  "company": "Beispiel Firma 226 GmbH",
+  "city": "Meisterschwanden",
+  "sphere": "IT",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:26"
+ },
+ {
+  "uid": "CHE-363.742.586",
+  "company": "Beispiel Firma 227",
+  "city": "Muttenz",
+  "sphere": "IT",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:26"
+ },
+ {
+  "uid": "CHE-187.313.571",
+  "company": "Beispiel Firma 228 AG",
+  "city": "Frauenfeld",
+  "sphere": "IT",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:26"
+ },
+ {
+  "uid": "CHE-519.715.575",
+  "company": "Beispiel Firma 229 GmbH",
+  "city": "Ebikon",
+  "sphere": "IT",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:26"
+ },
+ {
+  "uid": "CHE-762.934.470",
+  "company": "Beispiel Firma 230 GmbH",
+  "city": "Egliswil",
+  "sphere": "IT",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:26"
+ },
+ {
+  "uid": "CHE-770.562.436",
+  "company": "Beispiel Firma 231 GmbH",
+  "city": "Zuzwil (SG)",
+  "sphere": "IT",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:26"
+ },
+ {
+  "uid": "CHE-446.853.239",
+  "company": "Beispiel Firma 232 GmbH",
+  "city": "Bern",
+  "sphere": "IT",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:26"
+ },
+ {
+  "uid": "CHE-628.504.523",
+  "company": "Beispiel Firma 233 AG",
+  "city": "Domleschg",
+  "sphere": "IT",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:26"
+ },
+ {
+  "uid": "CHE-367.920.935",
+  "company": "Beispiel Firma 234 GmbH",
+  "city": "Frauenfeld",
+  "sphere": "IT",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:26"
+ },
+ {
+  "uid": "CHE-525.089.088",
+  "company": "Beispiel Firma 235 AG",
+  "city": "Zürich",
+  "sphere": "IT",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:26"
+ },
+ {
+  "uid": "CHE-180.602.407",
+  "company": "Beispiel Firma 236 AG",
+  "city": "Reinach (BL)",
+  "sphere": "IT",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:26"
+ },
+ {
+  "uid": "CHE-916.981.088",
+  "company": "Beispiel Firma 237 GmbH",
+  "city": "Arni (AG)",
+  "sphere": "IT",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:26"
+ },
+ {
+  "uid": "CHE-743.561.374",
+  "company": "Beispiel Firma 238 GmbH",
+  "city": "Ebikon",
+  "sphere": "IT",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:26"
+ },
+ {
+  "uid": "CHE-979.177.726",
+  "company": "Beispiel Firma 239 GmbH",
+  "city": "Münsingen",
+  "sphere": "IT",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:26"
+ },
+ {
+  "uid": "CHE-769.785.774",
+  "company": "Beispiel Firma 240 GmbH",
+  "city": "Leibstadt",
+  "sphere": "Логістика",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:27"
+ },
+ {
+  "uid": "CHE-499.707.702",
+  "company": "Beispiel Firma 241 GmbH",
+  "city": "Lutzenberg",
+  "sphere": "Логістика",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:27"
+ },
+ {
+  "uid": "CHE-435.841.226",
+  "company": "Beispiel Firma 242 GmbH",
+  "city": "Cham",
+  "sphere": "Логістика",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:27"
+ },
+ {
+  "uid": "CHE-800.461.345",
+  "company": "Beispiel Firma 243 GmbH",
+  "city": "Emmen",
+  "sphere": "Логістика",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:27"
+ },
+ {
+  "uid": "CHE-890.368.760",
+  "company": "Beispiel Firma 244 AG",
+  "city": "Collombey-Muraz",
+  "sphere": "Логістика",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:27"
+ },
+ {
+  "uid": "CHE-706.318.697",
+  "company": "Beispiel Firma 245 GmbH",
+  "city": "Erlenbach (ZH)",
+  "sphere": "Логістика",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:27"
+ },
+ {
+  "uid": "CHE-323.986.538",
+  "company": "Beispiel Firma 246 GmbH",
+  "city": "Olten",
+  "sphere": "Логістика",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:27"
+ },
+ {
+  "uid": "CHE-592.734.957",
+  "company": "Beispiel Firma 247 GmbH",
+  "city": "Erlen",
+  "sphere": "Логістика",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:27"
+ },
+ {
+  "uid": "CHE-946.702.146",
+  "company": "Beispiel Firma 248 S.A.",
+  "city": "Nyon",
+  "sphere": "Логістика",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:27"
+ },
+ {
+  "uid": "CHE-814.360.124",
+  "company": "Beispiel Firma 249 GmbH",
+  "city": "Würenlingen",
+  "sphere": "Логістика",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:27"
+ },
+ {
+  "uid": "CHE-634.523.606",
+  "company": "Beispiel Firma 250 GmbH",
+  "city": "Guggisberg",
+  "sphere": "Логістика",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:27"
+ },
+ {
+  "uid": "CHE-228.214.253",
+  "company": "Beispiel Firma 251 GmbH",
+  "city": "Niederhasli",
+  "sphere": "Логістика",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:27"
+ },
+ {
+  "uid": "CHE-697.265.249",
+  "company": "Beispiel Firma 252 GmbH",
+  "city": "Rümlang",
+  "sphere": "Логістика",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:27"
+ },
+ {
+  "uid": "CHE-648.074.514",
+  "company": "Beispiel Firma 253 GmbH",
+  "city": "Spreitenbach",
+  "sphere": "Логістика",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:27"
+ },
+ {
+  "uid": "CHE-257.780.537",
+  "company": "Beispiel Firma 254 SA",
+  "city": "Neuchâtel",
+  "sphere": "Логістика",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:27"
+ },
+ {
+  "uid": "CHE-179.341.298",
+  "company": "Beispiel Firma 255 AG",
+  "city": "Sarnen",
+  "sphere": "Логістика",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:27"
+ },
+ {
+  "uid": "CHE-924.597.243",
+  "company": "Beispiel Firma 256 GmbH",
+  "city": "Wangen-Brüttisellen",
+  "sphere": "Логістика",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:27"
+ },
+ {
+  "uid": "CHE-779.773.910",
+  "company": "Beispiel Firma 257 GmbH",
+  "city": "Einsiedeln",
+  "sphere": "Логістика",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:27"
+ },
+ {
+  "uid": "CHE-888.286.644",
+  "company": "Beispiel Firma 258 GmbH",
+  "city": "Opfikon",
+  "sphere": "Логістика",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:27"
+ },
+ {
+  "uid": "CHE-627.368.967",
+  "company": "Beispiel Firma 259 GmbH",
+  "city": "Brienz (BE)",
+  "sphere": "Логістика",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:27"
+ },
+ {
+  "uid": "CHE-383.600.469",
+  "company": "BEISPIEL FIRMA 260 SARL",
+  "city": "Lausanne",
+  "sphere": "Логістика",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:27"
+ },
+ {
+  "uid": "CHE-612.199.058",
+  "company": "Beispiel Firma 261 GmbH",
+  "city": "Gossau (SG)",
+  "sphere": "Логістика",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:27"
+ },
+ {
+  "uid": "CHE-110.724.933",
+  "company": "Beispiel Firma 262 Sàrl",
+  "city": "Lausanne",
+  "sphere": "Логістика",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:27"
+ },
+ {
+  "uid": "CHE-507.410.850",
+  "company": "Beispiel Firma 263 GmbH",
+  "city": "Muotathal",
+  "sphere": "Логістика",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:27"
+ },
+ {
+  "uid": "CHE-821.760.782",
+  "company": "Beispiel Firma 264 GmbH",
+  "city": "Emmen",
+  "sphere": "Логістика",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:27"
+ },
+ {
+  "uid": "CHE-346.650.747",
+  "company": "Beispiel Firma 265 GmbH",
+  "city": "Opfikon",
+  "sphere": "Логістика",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:27"
+ },
+ {
+  "uid": "CHE-865.501.576",
+  "company": "Beispiel Firma 266 GmbH",
+  "city": "Zell (LU)",
+  "sphere": "Логістика",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:27"
+ },
+ {
+  "uid": "CHE-756.950.012",
+  "company": "Beispiel Firma 267",
+  "city": "Trimmis",
+  "sphere": "Логістика",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:27"
+ },
+ {
+  "uid": "CHE-103.848.493",
+  "company": "Beispiel Firma 268 AG",
+  "city": "Balsthal",
+  "sphere": "Логістика",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:27"
+ },
+ {
+  "uid": "CHE-786.111.140",
+  "company": "Beispiel Firma 269 GmbH",
+  "city": "Zürich",
+  "sphere": "Освіта",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:28"
+ },
+ {
+  "uid": "CHE-582.099.680",
+  "company": "Beispiel Firma 270 GmbH",
+  "city": "Bad Ragaz",
+  "sphere": "Освіта",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:28"
+ },
+ {
+  "uid": "CHE-525.522.961",
+  "company": "Beispiel Firma 271 GmbH",
+  "city": "Arosa",
+  "sphere": "Освіта",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:28"
+ },
+ {
+  "uid": "CHE-936.317.255",
+  "company": "Beispiel Firma 272",
+  "city": "Schwyz",
+  "sphere": "Освіта",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:28"
+ },
+ {
+  "uid": "CHE-668.170.262",
+  "company": "Beispiel Firma 273",
+  "city": "Gambarogno",
+  "sphere": "Освіта",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:28"
+ },
+ {
+  "uid": "CHE-518.232.311",
+  "company": "Beispiel Firma 274",
+  "city": "Thurnen",
+  "sphere": "Освіта",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:28"
+ },
+ {
+  "uid": "CHE-455.178.359",
+  "company": "Beispiel Firma 275",
+  "city": "Münchenstein",
+  "sphere": "Освіта",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:28"
+ },
+ {
+  "uid": "CHE-489.489.254",
+  "company": "Beispiel Firma 276",
+  "city": "Ebikon",
+  "sphere": "Освіта",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:28"
+ },
+ {
+  "uid": "CHE-997.081.053",
+  "company": "Beispiel Firma 277 AG",
+  "city": "Pfäfers",
+  "sphere": "Освіта",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:28"
+ },
+ {
+  "uid": "CHE-219.587.146",
+  "company": "Beispiel Firma 278 AG",
+  "city": "Schänis",
+  "sphere": "Освіта",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:28"
+ },
+ {
+  "uid": "CHE-254.113.669",
+  "company": "Beispiel Firma 279 GmbH",
+  "city": "Horgen",
+  "sphere": "Освіта",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:28"
+ },
+ {
+  "uid": "CHE-601.636.623",
+  "company": "Beispiel Firma 280 AG",
+  "city": "Rothenthurm",
+  "sphere": "Освіта",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:28"
+ },
+ {
+  "uid": "CHE-657.261.133",
+  "company": "Beispiel Firma 281 GmbH",
+  "city": "Rickenbach (TG)",
+  "sphere": "Освіта",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:28"
+ },
+ {
+  "uid": "CHE-788.063.902",
+  "company": "Beispiel Firma 282 GmbH",
+  "city": "Reinach (BL)",
+  "sphere": "Освіта",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:28"
+ },
+ {
+  "uid": "CHE-328.943.358",
+  "company": "Beispiel Firma 283 AG",
+  "city": "Zürich",
+  "sphere": "Освіта",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:28"
+ },
+ {
+  "uid": "CHE-371.914.464",
+  "company": "Beispiel Firma 284 GmbH",
+  "city": "Lachen",
+  "sphere": "Освіта",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:28"
+ },
+ {
+  "uid": "CHE-345.329.372",
+  "company": "Beispiel Firma 285 AG",
+  "city": "Schwyz",
+  "sphere": "Освіта",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:28"
+ },
+ {
+  "uid": "CHE-125.894.900",
+  "company": "Beispiel Firma 286 AG",
+  "city": "Gossau (SG)",
+  "sphere": "Освіта",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:28"
+ },
+ {
+  "uid": "CHE-299.080.316",
+  "company": "Beispiel Firma 287 GmbH",
+  "city": "Richterswil",
+  "sphere": "Освіта",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:28"
+ },
+ {
+  "uid": "CHE-955.009.021",
+  "company": "Beispiel Firma 288",
+  "city": "Aarau",
+  "sphere": "Освіта",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:28"
+ },
+ {
+  "uid": "CHE-591.796.105",
+  "company": "Beispiel Firma 289 AG",
+  "city": "Basel",
+  "sphere": "Освіта",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:28"
+ },
+ {
+  "uid": "CHE-832.023.222",
+  "company": "Beispiel Firma 290 AG",
+  "city": "Bern",
+  "sphere": "Освіта",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:28"
+ },
+ {
+  "uid": "CHE-889.576.286",
+  "company": "Beispiel Firma 291 AG",
+  "city": "Luzern",
+  "sphere": "Освіта",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:28"
+ },
+ {
+  "uid": "CHE-362.887.118",
+  "company": "Beispiel Firma 292 AG",
+  "city": "St. Gallen",
+  "sphere": "Освіта",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:28"
+ },
+ {
+  "uid": "CHE-925.194.793",
+  "company": "Beispiel Firma 293 AG",
+  "city": "Zürich",
+  "sphere": "Освіта",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:28"
+ },
+ {
+  "uid": "CHE-605.740.596",
+  "company": "Beispiel Firma 294 GmbH",
+  "city": "Günsberg",
+  "sphere": "Освіта",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:28"
+ },
+ {
+  "uid": "CHE-321.828.621",
+  "company": "Beispiel Firma 295 GmbH",
+  "city": "Tuggen",
+  "sphere": "Освіта",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:28"
+ },
+ {
+  "uid": "CHE-480.297.470",
+  "company": "Beispiel Firma 296 GmbH",
+  "city": "Muhen",
+  "sphere": "Освіта",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:28"
+ },
+ {
+  "uid": "CHE-377.380.957",
+  "company": "Beispiel Firma 297",
+  "city": "Trin",
+  "sphere": "Освіта",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:28"
+ },
+ {
+  "uid": "CHE-854.350.600",
+  "company": "Beispiel Firma 298 AG",
+  "city": "Stammheim",
+  "sphere": "Агро",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:28"
+ },
+ {
+  "uid": "CHE-295.199.697",
+  "company": "Beispiel Firma 299 GmbH",
+  "city": "Hochwald",
+  "sphere": "Агро",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:28"
+ },
+ {
+  "uid": "CHE-569.090.866",
+  "company": "Beispiel Firma 300 GmbH",
+  "city": "Vaz/Obervaz",
+  "sphere": "Агро",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:28"
+ },
+ {
+  "uid": "CHE-888.049.771",
+  "company": "Beispiel Firma 301 GmbH",
+  "city": "Lyss",
+  "sphere": "Агро",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:28"
+ },
+ {
+  "uid": "CHE-565.377.731",
+  "company": "Beispiel Firma 302 GmbH",
+  "city": "Walterswil (BE)",
+  "sphere": "Агро",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:28"
+ },
+ {
+  "uid": "CHE-709.117.497",
+  "company": "Beispiel Firma 303 AG",
+  "city": "Zürich",
+  "sphere": "Агро",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:28"
+ },
+ {
+  "uid": "CHE-391.795.406",
+  "company": "Beispiel Firma 304 AG",
+  "city": "Uesslingen-Buch",
+  "sphere": "Агро",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:28"
+ },
+ {
+  "uid": "CHE-670.105.512",
+  "company": "Beispiel Firma 305 AG",
+  "city": "Münchwilen (AG)",
+  "sphere": "Агро",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:28"
+ },
+ {
+  "uid": "CHE-326.089.061",
+  "company": "Beispiel Firma 306 GmbH",
+  "city": "Schwarzenburg",
+  "sphere": "Агро",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:28"
+ },
+ {
+  "uid": "CHE-921.380.322",
+  "company": "Beispiel Firma 307 GmbH",
+  "city": "Beggingen",
+  "sphere": "Агро",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:28"
+ },
+ {
+  "uid": "CHE-668.948.263",
+  "company": "Beispiel Firma 308 GmbH",
+  "city": "Zug",
+  "sphere": "Агро",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:28"
+ },
+ {
+  "uid": "CHE-898.680.327",
+  "company": "Beispiel Firma 309 Sàrl",
+  "city": "Collonge-Bellerive",
+  "sphere": "Агро",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:28"
+ },
+ {
+  "uid": "CHE-145.480.536",
+  "company": "Beispiel Firma 310 GmbH",
+  "city": "Vaz/Obervaz",
+  "sphere": "Агро",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:28"
+ },
+ {
+  "uid": "CHE-477.587.648",
+  "company": "Beispiel Firma 311 GmbH",
+  "city": "Naters",
+  "sphere": "Агро",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:28"
+ },
+ {
+  "uid": "CHE-730.842.303",
+  "company": "Beispiel Firma 312 AG",
+  "city": "Buttisholz",
+  "sphere": "Агро",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:28"
+ },
+ {
+  "uid": "CHE-692.811.699",
+  "company": "Beispiel Firma 313 AG",
+  "city": "Bichelsee-Balterswil",
+  "sphere": "Агро",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:28"
+ },
+ {
+  "uid": "CHE-642.557.458",
+  "company": "Beispiel Firma 314 GmbH",
+  "city": "Trachselwald",
+  "sphere": "Агро",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:28"
+ },
+ {
+  "uid": "CHE-673.076.373",
+  "company": "Beispiel Firma 315 GmbH",
+  "city": "St. Gallen",
+  "sphere": "Агро",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:28"
+ },
+ {
+  "uid": "CHE-290.717.610",
+  "company": "Beispiel Firma 316 GmbH",
+  "city": "Unterägeri",
+  "sphere": "Агро",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:28"
+ },
+ {
+  "uid": "CHE-318.707.218",
+  "company": "Beispiel Firma 317 GmbH",
+  "city": "Lyssach",
+  "sphere": "Агро",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:28"
+ },
+ {
+  "uid": "CHE-844.366.048",
+  "company": "Beispiel Firma 318 AG",
+  "city": "Ballwil",
+  "sphere": "Агро",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:28"
+ },
+ {
+  "uid": "CHE-624.304.764",
+  "company": "Beispiel Firma 319 GmbH",
+  "city": "Böckten",
+  "sphere": "Агро",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:28"
+ },
+ {
+  "uid": "CHE-147.732.855",
+  "company": "Beispiel Firma 320 GmbH",
+  "city": "Langnau im Emmental",
+  "sphere": "Агро",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:28"
+ },
+ {
+  "uid": "CHE-314.206.437",
+  "company": "Beispiel Firma 321 AG",
+  "city": "Rickenbach (LU)",
+  "sphere": "Агро",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:28"
+ },
+ {
+  "uid": "CHE-648.731.571",
+  "company": "Beispiel Firma 322 AG",
+  "city": "Fraubrunnen",
+  "sphere": "Агро",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:28"
+ },
+ {
+  "uid": "CHE-803.342.889",
+  "company": "Beispiel Firma 323 GmbH",
+  "city": "Sennwald",
+  "sphere": "Агро",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:28"
+ },
+ {
+  "uid": "CHE-259.163.077",
+  "company": "Beispiel Firma 324 GmbH",
+  "city": "Mettmenstetten",
+  "sphere": "Агро",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:28"
+ },
+ {
+  "uid": "CHE-793.510.539",
+  "company": "Beispiel Firma 325 GmbH",
+  "city": "Rapperswil (BE)",
+  "sphere": "Агро",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:28"
+ },
+ {
+  "uid": "CHE-750.806.279",
+  "company": "Beispiel Firma 326 AG",
+  "city": "Röthenbach im Emmental",
+  "sphere": "Агро",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:28"
+ },
+ {
+  "uid": "CHE-204.251.364",
+  "company": "Beispiel Firma 327 GmbH",
+  "city": "Hettlingen",
+  "sphere": "Авто",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:29"
+ },
+ {
+  "uid": "CHE-517.498.438",
+  "company": "Beispiel Firma 328 GmbH",
+  "city": "Hettlingen",
+  "sphere": "Авто",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:29"
+ },
+ {
+  "uid": "CHE-199.458.182",
+  "company": "Beispiel Firma 329 AG",
+  "city": "Collombey-Muraz",
+  "sphere": "Авто",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:29"
+ },
+ {
+  "uid": "CHE-630.336.117",
+  "company": "Beispiel Firma 330",
+  "city": "Burgdorf",
+  "sphere": "Авто",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:29"
+ },
+ {
+  "uid": "CHE-847.353.846",
+  "company": "Beispiel Firma 331 Sàrl",
+  "city": "Gurmels",
+  "sphere": "Авто",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:29"
+ },
+ {
+  "uid": "CHE-592.938.276",
+  "company": "Beispiel Firma 332 GmbH",
+  "city": "St. Gallen",
+  "sphere": "Авто",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:29"
+ },
+ {
+  "uid": "CHE-228.764.855",
+  "company": "Beispiel Firma 333 GmbH",
+  "city": "Hagneck",
+  "sphere": "Авто",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:29"
+ },
+ {
+  "uid": "CHE-768.829.541",
+  "company": "Beispiel Firma 334 GmbH",
+  "city": "Klingnau",
+  "sphere": "Авто",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:29"
+ },
+ {
+  "uid": "CHE-313.215.497",
+  "company": "Beispiel Firma 335 AG",
+  "city": "Allschwil",
+  "sphere": "Авто",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:29"
+ },
+ {
+  "uid": "CHE-761.723.396",
+  "company": "Beispiel Firma 336 AG",
+  "city": "Buochs",
+  "sphere": "Авто",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:29"
+ },
+ {
+  "uid": "CHE-151.296.946",
+  "company": "Beispiel Firma 337 GmbH",
+  "city": "Dotzigen",
+  "sphere": "Авто",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:29"
+ },
+ {
+  "uid": "CHE-416.460.869",
+  "company": "Beispiel Firma 338 GmbH",
+  "city": "Niederglatt",
+  "sphere": "Авто",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:29"
+ },
+ {
+  "uid": "CHE-178.984.720",
+  "company": "Beispiel Firma 339 GmbH",
+  "city": "Balsthal",
+  "sphere": "Авто",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:29"
+ },
+ {
+  "uid": "CHE-542.585.632",
+  "company": "Beispiel Firma 340 GmbH",
+  "city": "Niederbipp",
+  "sphere": "Авто",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:29"
+ },
+ {
+  "uid": "CHE-575.545.697",
+  "company": "BEISPIEL FIRMA 341 AG",
+  "city": "Unterägeri",
+  "sphere": "Авто",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:29"
+ },
+ {
+  "uid": "CHE-616.270.850",
+  "company": "Beispiel Firma 342 GmbH",
+  "city": "Luzern",
+  "sphere": "Авто",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:29"
+ },
+ {
+  "uid": "CHE-358.206.299",
+  "company": "Beispiel Firma 343 GmbH",
+  "city": "Ormalingen",
+  "sphere": "Авто",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:29"
+ },
+ {
+  "uid": "CHE-381.497.628",
+  "company": "Beispiel Firma 344 GmbH",
+  "city": "Wolfhalden",
+  "sphere": "Авто",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:29"
+ },
+ {
+  "uid": "CHE-261.160.303",
+  "company": "Beispiel Firma 345 SA",
+  "city": "Samedan",
+  "sphere": "Авто",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:29"
+ },
+ {
+  "uid": "CHE-114.139.604",
+  "company": "Beispiel Firma 346 AG",
+  "city": "Affoltern am Albis",
+  "sphere": "Авто",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:29"
+ },
+ {
+  "uid": "CHE-513.347.059",
+  "company": "Beispiel Firma 347 AG",
+  "city": "Albula/Alvra",
+  "sphere": "Авто",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:29"
+ },
+ {
+  "uid": "CHE-889.744.247",
+  "company": "Beispiel Firma 348 Sàrl",
+  "city": "Sion",
+  "sphere": "Авто",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:29"
+ },
+ {
+  "uid": "CHE-218.360.344",
+  "company": "Beispiel Firma 349 GmbH",
+  "city": "Niederbipp",
+  "sphere": "Авто",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:30"
+ },
+ {
+  "uid": "CHE-378.902.812",
+  "company": "Beispiel Firma 350 AG",
+  "city": "Biberist",
+  "sphere": "Авто",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:30"
+ },
+ {
+  "uid": "CHE-701.424.518",
+  "company": "Beispiel Firma 351 AG",
+  "city": "Aarau",
+  "sphere": "Авто",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:30"
+ },
+ {
+  "uid": "CHE-717.430.051",
+  "company": "Beispiel Firma 352 Sàrl",
+  "city": "Delémont",
+  "sphere": "Авто",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:30"
+ },
+ {
+  "uid": "CHE-424.937.454",
+  "company": "Beispiel Firma 353 GmbH",
+  "city": "Niederbipp",
+  "sphere": "Авто",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:30"
+ },
+ {
+  "uid": "CHE-140.006.854",
+  "company": "Beispiel Firma 354 Sàrl",
+  "city": "Basse-Vendline",
+  "sphere": "Авто",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:30"
+ },
+ {
+  "uid": "CHE-253.627.121",
+  "company": "Beispiel Firma 355 SA",
+  "city": "Satigny",
+  "sphere": "Авто",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:30"
+ },
+ {
+  "uid": "CHE-379.692.267",
+  "company": "Beispiel Firma 356 AG",
+  "city": "Kreuzlingen",
+  "sphere": "Енергетика",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:31"
+ },
+ {
+  "uid": "CHE-471.771.774",
+  "company": "Beispiel Firma 357 AG",
+  "city": "Freienbach",
+  "sphere": "Енергетика",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:31"
+ },
+ {
+  "uid": "CHE-597.936.698",
+  "company": "Beispiel Firma 358 SA",
+  "city": "Freienbach",
+  "sphere": "Енергетика",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:31"
+ },
+ {
+  "uid": "CHE-446.690.575",
+  "company": "Beispiel Firma 359 GmbH",
+  "city": "Thun",
+  "sphere": "Енергетика",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:31"
+ },
+ {
+  "uid": "CHE-975.002.944",
+  "company": "Beispiel Firma 360 AG",
+  "city": "Thun",
+  "sphere": "Енергетика",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:31"
+ },
+ {
+  "uid": "CHE-769.232.601",
+  "company": "Beispiel Firma 361 AG",
+  "city": "Lugano",
+  "sphere": "Енергетика",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:31"
+ },
+ {
+  "uid": "CHE-135.182.675",
+  "company": "Beispiel Firma 362 GmbH",
+  "city": "Bettlach",
+  "sphere": "Енергетика",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:31"
+ },
+ {
+  "uid": "CHE-601.731.486",
+  "company": "Beispiel Firma 363 Sàrl",
+  "city": "Corminboeuf",
+  "sphere": "Енергетика",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:31"
+ },
+ {
+  "uid": "CHE-893.895.323",
+  "company": "Beispiel Firma 364 GmbH",
+  "city": "Beromünster",
+  "sphere": "Енергетика",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:31"
+ },
+ {
+  "uid": "CHE-748.991.871",
+  "company": "Beispiel Firma 365",
+  "city": "Oberdorf (NW)",
+  "sphere": "Енергетика",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:31"
+ },
+ {
+  "uid": "CHE-956.108.944",
+  "company": "Beispiel Firma 366 Sàrl",
+  "city": "Rennaz",
+  "sphere": "Енергетика",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:31"
+ },
+ {
+  "uid": "CHE-774.864.675",
+  "company": "Beispiel Firma 367 GmbH",
+  "city": "Maur",
+  "sphere": "Енергетика",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:31"
+ },
+ {
+  "uid": "CHE-201.437.464",
+  "company": "Beispiel Firma 368 GmbH",
+  "city": "Maur",
+  "sphere": "Енергетика",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:31"
+ },
+ {
+  "uid": "CHE-593.439.550",
+  "company": "Beispiel Firma 369 AG",
+  "city": "Liestal",
+  "sphere": "Енергетика",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:31"
+ },
+ {
+  "uid": "CHE-979.379.483",
+  "company": "Beispiel Firma 370 AG",
+  "city": "Thusis",
+  "sphere": "Енергетика",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:31"
+ },
+ {
+  "uid": "CHE-249.958.572",
+  "company": "Beispiel Firma 371 GmbH",
+  "city": "Selzach",
+  "sphere": "Енергетика",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:31"
+ },
+ {
+  "uid": "CHE-419.286.409",
+  "company": "Beispiel Firma 372 AG",
+  "city": "Ruswil",
+  "sphere": "Енергетика",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:31"
+ },
+ {
+  "uid": "CHE-631.778.297",
+  "company": "Beispiel Firma 373 GmbH",
+  "city": "Ruswil",
+  "sphere": "Енергетика",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:31"
+ },
+ {
+  "uid": "CHE-182.612.500",
+  "company": "Beispiel Firma 374 Sàrl",
+  "city": "Autigny",
+  "sphere": "Енергетика",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:31"
+ },
+ {
+  "uid": "CHE-495.172.021",
+  "company": "Beispiel Firma 375 GmbH",
+  "city": "Oberriet (SG)",
+  "sphere": "Енергетика",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:31"
+ },
+ {
+  "uid": "CHE-257.034.517",
+  "company": "Beispiel Firma 376 AG",
+  "city": "Aesch (ZH)",
+  "sphere": "Енергетика",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:31"
+ },
+ {
+  "uid": "CHE-968.900.246",
+  "company": "Beispiel Firma 377 AG",
+  "city": "Reichenbach im Kandertal",
+  "sphere": "Енергетика",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:31"
+ },
+ {
+  "uid": "CHE-700.629.087",
+  "company": "Beispiel Firma 378 GmbH",
+  "city": "Thun",
+  "sphere": "Енергетика",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:31"
+ },
+ {
+  "uid": "CHE-300.557.540",
+  "company": "Beispiel Firma 379 AG",
+  "city": "Köniz",
+  "sphere": "Енергетика",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:31"
+ },
+ {
+  "uid": "CHE-793.385.228",
+  "company": "Beispiel Firma 380 GmbH",
+  "city": "Herisau",
+  "sphere": "Енергетика",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:31"
+ },
+ {
+  "uid": "CHE-397.590.133",
+  "company": "Beispiel Firma 381 GmbH",
+  "city": "Lyssach",
+  "sphere": "Енергетика",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:31"
+ },
+ {
+  "uid": "CHE-323.877.429",
+  "company": "BEISPIEL FIRMA 382",
+  "city": "Männedorf",
+  "sphere": "Енергетика",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:31"
+ },
+ {
+  "uid": "CHE-527.964.011",
+  "company": "Beispiel Firma 383 AG",
+  "city": "Thierachern",
+  "sphere": "Енергетика",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:31"
+ },
+ {
+  "uid": "CHE-663.884.822",
+  "company": "Beispiel Firma 384 Sàrl",
+  "city": "Cortaillod",
+  "sphere": "Енергетика",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:31"
+ },
+ {
+  "uid": "CHE-937.948.286",
+  "company": "Beispiel Firma 385 GmbH",
+  "city": "Oensingen",
+  "sphere": "Краса/фітнес",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:31"
+ },
+ {
+  "uid": "CHE-243.651.135",
+  "company": "Beispiel Firma 386 GmbH",
+  "city": "Solothurn",
+  "sphere": "Краса/фітнес",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:31"
+ },
+ {
+  "uid": "CHE-500.158.460",
+  "company": "Beispiel Firma 387 GmbH",
+  "city": "Solothurn",
+  "sphere": "Краса/фітнес",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:31"
+ },
+ {
+  "uid": "CHE-457.031.572",
+  "company": "Beispiel Firma 388 GmbH",
+  "city": "Dietlikon",
+  "sphere": "Краса/фітнес",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:31"
+ },
+ {
+  "uid": "CHE-353.861.226",
+  "company": "Beispiel Firma 389 GmbH",
+  "city": "Zürich",
+  "sphere": "Краса/фітнес",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:31"
+ },
+ {
+  "uid": "CHE-145.549.903",
+  "company": "Beispiel Firma 390 GmbH",
+  "city": "Rorschach",
+  "sphere": "Краса/фітнес",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:31"
+ },
+ {
+  "uid": "CHE-132.983.986",
+  "company": "Beispiel Firma 391 Sàrl",
+  "city": "Versoix",
+  "sphere": "Краса/фітнес",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:31"
+ },
+ {
+  "uid": "CHE-523.590.207",
+  "company": "Beispiel Firma 392 GmbH",
+  "city": "Münchenbuchsee",
+  "sphere": "Краса/фітнес",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:31"
+ },
+ {
+  "uid": "CHE-542.282.261",
+  "company": "Beispiel Firma 393 GmbH",
+  "city": "Zürich",
+  "sphere": "Краса/фітнес",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:32"
+ },
+ {
+  "uid": "CHE-245.859.528",
+  "company": "Beispiel Firma 394 GmbH",
+  "city": "Cham",
+  "sphere": "Краса/фітнес",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:32"
+ },
+ {
+  "uid": "CHE-740.329.266",
+  "company": "Beispiel Firma 395 GmbH",
+  "city": "Luzern",
+  "sphere": "Краса/фітнес",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:32"
+ },
+ {
+  "uid": "CHE-177.265.255",
+  "company": "Beispiel Firma 396 GmbH",
+  "city": "Gaiserwald",
+  "sphere": "Краса/фітнес",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:32"
+ },
+ {
+  "uid": "CHE-713.631.716",
+  "company": "Beispiel Firma 397 GmbH",
+  "city": "Baden",
+  "sphere": "Краса/фітнес",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:32"
+ },
+ {
+  "uid": "CHE-798.753.279",
+  "company": "Beispiel Firma 398 GmbH",
+  "city": "Luzern",
+  "sphere": "Краса/фітнес",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:32"
+ },
+ {
+  "uid": "CHE-379.779.690",
+  "company": "Beispiel Firma 399 AG",
+  "city": "Gonten",
+  "sphere": "Краса/фітнес",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:32"
+ },
+ {
+  "uid": "CHE-352.040.824",
+  "company": "Beispiel Firma 400 GmbH",
+  "city": "St. Gallen",
+  "sphere": "Краса/фітнес",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:32"
+ },
+ {
+  "uid": "CHE-904.895.430",
+  "company": "Beispiel Firma 401 GmbH",
+  "city": "Spiez",
+  "sphere": "Краса/фітнес",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:32"
+ },
+ {
+  "uid": "CHE-493.441.931",
+  "company": "Beispiel Firma 402 GmbH",
+  "city": "Kloten",
+  "sphere": "Краса/фітнес",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:32"
+ },
+ {
+  "uid": "CHE-692.060.295",
+  "company": "Beispiel Firma 403 GmbH",
+  "city": "Zürich",
+  "sphere": "Краса/фітнес",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:32"
+ },
+ {
+  "uid": "CHE-159.356.948",
+  "company": "Beispiel Firma 404 GmbH",
+  "city": "Rothenburg",
+  "sphere": "Краса/фітнес",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:32"
+ },
+ {
+  "uid": "CHE-628.123.486",
+  "company": "Beispiel Firma 405 AG",
+  "city": "Schaffhausen",
+  "sphere": "Краса/фітнес",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:32"
+ },
+ {
+  "uid": "CHE-554.552.071",
+  "company": "Beispiel Firma 406",
+  "city": "Küsnacht (ZH)",
+  "sphere": "Краса/фітнес",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:33"
+ },
+ {
+  "uid": "CHE-169.450.520",
+  "company": "Beispiel Firma 407 GmbH",
+  "city": "Gunzgen",
+  "sphere": "Краса/фітнес",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:33"
+ },
+ {
+  "uid": "CHE-828.123.056",
+  "company": "Beispiel Firma 408 GmbH",
+  "city": "Obersiggenthal",
+  "sphere": "Краса/фітнес",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:33"
+ },
+ {
+  "uid": "CHE-410.997.059",
+  "company": "Beispiel Firma 409 GmbH",
+  "city": "Aarau",
+  "sphere": "Краса/фітнес",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:33"
+ },
+ {
+  "uid": "CHE-527.211.383",
+  "company": "Beispiel Firma 410 GmbH",
+  "city": "Därstetten",
+  "sphere": "Краса/фітнес",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:33"
+ },
+ {
+  "uid": "CHE-804.049.788",
+  "company": "Beispiel Firma 411 Sàrl",
+  "city": "Neuchâtel",
+  "sphere": "Краса/фітнес",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:33"
+ },
+ {
+  "uid": "CHE-537.960.109",
+  "company": "Beispiel Firma 412 GmbH",
+  "city": "Wohlen (AG)",
+  "sphere": "Краса/фітнес",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:33"
+ },
+ {
+  "uid": "CHE-954.534.402",
+  "company": "Beispiel Firma 413 AG",
+  "city": "Basel",
+  "sphere": "Краса/фітнес",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:33"
+ },
+ {
+  "uid": "CHE-465.181.311",
+  "company": "Beispiel Firma 414 GmbH",
+  "city": "Grenchen",
+  "sphere": "Юристи/бухгалтерія",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:34"
+ },
+ {
+  "uid": "CHE-838.110.753",
+  "company": "Beispiel Firma 415 GmbH",
+  "city": "Herisau",
+  "sphere": "Юристи/бухгалтерія",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:34"
+ },
+ {
+  "uid": "CHE-639.636.519",
+  "company": "Beispiel Firma 416",
+  "city": "Courtepin",
+  "sphere": "Юристи/бухгалтерія",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:34"
+ },
+ {
+  "uid": "CHE-335.522.921",
+  "company": "Beispiel Firma 417 GmbH",
+  "city": "Regensdorf",
+  "sphere": "Юристи/бухгалтерія",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:34"
+ },
+ {
+  "uid": "CHE-463.899.308",
+  "company": "Beispiel Firma 418 AG",
+  "city": "Reichenbach im Kandertal",
+  "sphere": "Юристи/бухгалтерія",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:34"
+ },
+ {
+  "uid": "CHE-625.684.162",
+  "company": "Beispiel Firma 419 GmbH",
+  "city": "Sarnen",
+  "sphere": "Юристи/бухгалтерія",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:34"
+ },
+ {
+  "uid": "CHE-882.506.391",
+  "company": "Beispiel Firma 420 GmbH",
+  "city": "Winkel",
+  "sphere": "Юристи/бухгалтерія",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:34"
+ },
+ {
+  "uid": "CHE-693.887.713",
+  "company": "Beispiel Firma 421 GmbH",
+  "city": "Bürglen (TG)",
+  "sphere": "Юристи/бухгалтерія",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:34"
+ },
+ {
+  "uid": "CHE-598.592.733",
+  "company": "Beispiel Firma 422 AG",
+  "city": "Steinhausen",
+  "sphere": "Юристи/бухгалтерія",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:34"
+ },
+ {
+  "uid": "CHE-149.392.629",
+  "company": "Beispiel Firma 423 GmbH",
+  "city": "Trasadingen",
+  "sphere": "Юристи/бухгалтерія",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:34"
+ },
+ {
+  "uid": "CHE-518.671.030",
+  "company": "Beispiel Firma 424",
+  "city": "Risch",
+  "sphere": "Юристи/бухгалтерія",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:34"
+ },
+ {
+  "uid": "CHE-131.096.002",
+  "company": "Beispiel Firma 425 GmbH",
+  "city": "Luzern",
+  "sphere": "Юристи/бухгалтерія",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:34"
+ },
+ {
+  "uid": "CHE-775.855.791",
+  "company": "Beispiel Firma 426 GmbH",
+  "city": "Ruswil",
+  "sphere": "Юристи/бухгалтерія",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:34"
+ },
+ {
+  "uid": "CHE-270.140.788",
+  "company": "Beispiel Firma 427 GmbH",
+  "city": "Bern",
+  "sphere": "Юристи/бухгалтерія",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:34"
+ },
+ {
+  "uid": "CHE-713.577.324",
+  "company": "Beispiel Firma 428 GmbH",
+  "city": "Wiesendangen",
+  "sphere": "Юристи/бухгалтерія",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:34"
+ },
+ {
+  "uid": "CHE-142.146.696",
+  "company": "Beispiel Firma 429 AG",
+  "city": "Muri bei Bern",
+  "sphere": "Юристи/бухгалтерія",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:34"
+ },
+ {
+  "uid": "CHE-441.104.969",
+  "company": "Beispiel Firma 430 AG",
+  "city": "Aarau",
+  "sphere": "Юристи/бухгалтерія",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:34"
+ },
+ {
+  "uid": "CHE-807.032.502",
+  "company": "Beispiel Firma 431 AG",
+  "city": "Muri bei Bern",
+  "sphere": "Юристи/бухгалтерія",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:34"
+ },
+ {
+  "uid": "CHE-222.387.004",
+  "company": "Beispiel Firma 432 GmbH",
+  "city": "Interlaken",
+  "sphere": "Юристи/бухгалтерія",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:34"
+ },
+ {
+  "uid": "CHE-401.723.333",
+  "company": "Beispiel Firma 433 AG",
+  "city": "Olten",
+  "sphere": "Юристи/бухгалтерія",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:34"
+ },
+ {
+  "uid": "CHE-663.949.686",
+  "company": "Beispiel Firma 434 GmbH",
+  "city": "Muri bei Bern",
+  "sphere": "Юристи/бухгалтерія",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:34"
+ },
+ {
+  "uid": "CHE-619.914.307",
+  "company": "Beispiel Firma 435 GmbH",
+  "city": "Rupperswil",
+  "sphere": "Юристи/бухгалтерія",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:34"
+ },
+ {
+  "uid": "CHE-387.057.216",
+  "company": "Beispiel Firma 436 AG",
+  "city": "Zürich",
+  "sphere": "Юристи/бухгалтерія",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:34"
+ },
+ {
+  "uid": "CHE-943.993.734",
+  "company": "Beispiel Firma 437 AG",
+  "city": "Kriens",
+  "sphere": "Юристи/бухгалтерія",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:34"
+ },
+ {
+  "uid": "CHE-647.835.937",
+  "company": "Beispiel Firma 438 GmbH",
+  "city": "Bottmingen",
+  "sphere": "Юристи/бухгалтерія",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:34"
+ },
+ {
+  "uid": "CHE-343.153.234",
+  "company": "Beispiel Firma 439",
+  "city": "Wetzikon (ZH)",
+  "sphere": "Юристи/бухгалтерія",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:34"
+ },
+ {
+  "uid": "CHE-492.450.732",
+  "company": "Beispiel Firma 440 GmbH",
+  "city": "Zürich",
+  "sphere": "Юристи/бухгалтерія",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:34"
+ },
+ {
+  "uid": "CHE-176.880.452",
+  "company": "Beispiel Firma 441 GmbH",
+  "city": "Zug",
+  "sphere": "Юристи/бухгалтерія",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:34"
+ },
+ {
+  "uid": "CHE-302.175.244",
+  "company": "Beispiel Firma 442 AG",
+  "city": "Zug",
+  "sphere": "Юристи/бухгалтерія",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:34"
+ },
+ {
+  "uid": "CHE-793.980.827",
+  "company": "Beispiel Firma 443 GmbH",
+  "city": "Bern",
+  "sphere": "Фінанси",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:35"
+ },
+ {
+  "uid": "CHE-283.210.033",
+  "company": "Beispiel Firma 444 GmbH",
+  "city": "Sursee",
+  "sphere": "Фінанси",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:35"
+ },
+ {
+  "uid": "CHE-246.615.526",
+  "company": "Beispiel Firma 445 GmbH",
+  "city": "Hinwil",
+  "sphere": "Фінанси",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:35"
+ },
+ {
+  "uid": "CHE-358.083.559",
+  "company": "Beispiel Firma 446 AG",
+  "city": "Chur",
+  "sphere": "Фінанси",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:35"
+ },
+ {
+  "uid": "CHE-278.552.172",
+  "company": "Beispiel Firma 447 AG",
+  "city": "Roggwil (TG)",
+  "sphere": "Фінанси",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:35"
+ },
+ {
+  "uid": "CHE-160.623.369",
+  "company": "Beispiel Firma 448 AG",
+  "city": "Eggersriet",
+  "sphere": "Фінанси",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:35"
+ },
+ {
+  "uid": "CHE-230.645.533",
+  "company": "Beispiel Firma 449 GmbH",
+  "city": "Bülach",
+  "sphere": "Фінанси",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:35"
+ },
+ {
+  "uid": "CHE-991.477.398",
+  "company": "Beispiel Firma 450 AG",
+  "city": "Olten",
+  "sphere": "Фінанси",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:35"
+ },
+ {
+  "uid": "CHE-865.745.380",
+  "company": "Beispiel Firma 451 AG",
+  "city": "Zug",
+  "sphere": "Фінанси",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:35"
+ },
+ {
+  "uid": "CHE-525.943.647",
+  "company": "Beispiel Firma 452 AG",
+  "city": "Geroldswil",
+  "sphere": "Фінанси",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:35"
+ },
+ {
+  "uid": "CHE-288.114.454",
+  "company": "Beispiel Firma 453 AG",
+  "city": "Feldbrunnen-St. Niklaus",
+  "sphere": "Фінанси",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:35"
+ },
+ {
+  "uid": "CHE-954.513.920",
+  "company": "Beispiel Firma 454 GmbH",
+  "city": "Altdorf (UR)",
+  "sphere": "Фінанси",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:35"
+ },
+ {
+  "uid": "CHE-838.346.221",
+  "company": "Beispiel Firma 455 GmbH",
+  "city": "Baar",
+  "sphere": "Фінанси",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:35"
+ },
+ {
+  "uid": "CHE-913.106.003",
+  "company": "Beispiel Firma 456 AG",
+  "city": "Cham",
+  "sphere": "Фінанси",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:35"
+ },
+ {
+  "uid": "CHE-275.329.040",
+  "company": "Beispiel Firma 457 AG",
+  "city": "Luzern",
+  "sphere": "Фінанси",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:35"
+ },
+ {
+  "uid": "CHE-915.083.962",
+  "company": "Beispiel Firma 458 GmbH",
+  "city": "Wil (SG)",
+  "sphere": "Фінанси",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:35"
+ },
+ {
+  "uid": "CHE-213.006.295",
+  "company": "Beispiel Firma 459 AG",
+  "city": "Olten",
+  "sphere": "Фінанси",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:35"
+ },
+ {
+  "uid": "CHE-887.458.753",
+  "company": "Beispiel Firma 460 AG",
+  "city": "Lugano",
+  "sphere": "Фінанси",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:35"
+ },
+ {
+  "uid": "CHE-454.119.466",
+  "company": "Beispiel Firma 461",
+  "city": "Basel",
+  "sphere": "Фінанси",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:35"
+ },
+ {
+  "uid": "CHE-375.867.272",
+  "company": "Beispiel Firma 462 GmbH",
+  "city": "Zürich",
+  "sphere": "Фінанси",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:35"
+ },
+ {
+  "uid": "CHE-673.468.566",
+  "company": "Beispiel Firma 463",
+  "city": "Carouge (GE)",
+  "sphere": "Фінанси",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:35"
+ },
+ {
+  "uid": "CHE-563.860.198",
+  "company": "Beispiel Firma 464 GmbH",
+  "city": "Luzern",
+  "sphere": "Фінанси",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:35"
+ },
+ {
+  "uid": "CHE-563.261.796",
+  "company": "Beispiel Firma 465 AG",
+  "city": "St. Gallen",
+  "sphere": "Фінанси",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:35"
+ },
+ {
+  "uid": "CHE-273.693.026",
+  "company": "Beispiel Firma 466 GmbH",
+  "city": "Luzern",
+  "sphere": "Фінанси",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:35"
+ },
+ {
+  "uid": "CHE-188.759.024",
+  "company": "Beispiel Firma 467 GmbH",
+  "city": "Zürich",
+  "sphere": "Фінанси",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:35"
+ },
+ {
+  "uid": "CHE-246.149.524",
+  "company": "Beispiel Firma 468 AG",
+  "city": "Zollikon",
+  "sphere": "Фінанси",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:35"
+ },
+ {
+  "uid": "CHE-668.593.817",
+  "company": "Beispiel Firma 469 AG",
+  "city": "Freienbach",
+  "sphere": "Фінанси",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:35"
+ },
+ {
+  "uid": "CHE-182.112.858",
+  "company": "Beispiel Firma 470 AG",
+  "city": "Uttigen",
+  "sphere": "Фінанси",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:35"
+ },
+ {
+  "uid": "CHE-339.941.435",
+  "company": "Beispiel Firma 471 AG",
+  "city": "Zürich",
+  "sphere": "Фінанси",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:35"
+ },
+ {
+  "uid": "CHE-254.186.504",
+  "company": "Beispiel Firma 472 SA",
+  "city": "Lausanne",
+  "sphere": "Промисловість",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:35"
+ },
+ {
+  "uid": "CHE-417.842.363",
+  "company": "Beispiel Firma 473 SA",
+  "city": "Moutier",
+  "sphere": "Промисловість",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:35"
+ },
+ {
+  "uid": "CHE-670.113.173",
+  "company": "Beispiel Firma 474 GmbH",
+  "city": "Reute (AR)",
+  "sphere": "Промисловість",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:35"
+ },
+ {
+  "uid": "CHE-127.847.892",
+  "company": "Beispiel Firma 475 AG",
+  "city": "Zürich",
+  "sphere": "Промисловість",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:35"
+ },
+ {
+  "uid": "CHE-304.615.142",
+  "company": "Beispiel Firma 476 GmbH",
+  "city": "Glarus Nord",
+  "sphere": "Промисловість",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:35"
+ },
+ {
+  "uid": "CHE-290.662.481",
+  "company": "Beispiel Firma 477",
+  "city": "Hunzenschwil",
+  "sphere": "Промисловість",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:35"
+ },
+ {
+  "uid": "CHE-462.834.186",
+  "company": "Beispiel Firma 478 GmbH",
+  "city": "Raperswilen",
+  "sphere": "Промисловість",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:35"
+ },
+ {
+  "uid": "CHE-388.073.198",
+  "company": "Beispiel Firma 479 GmbH",
+  "city": "Stein am Rhein",
+  "sphere": "Промисловість",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:35"
+ },
+ {
+  "uid": "CHE-488.624.905",
+  "company": "Beispiel Firma 480 AG",
+  "city": "Baden",
+  "sphere": "Промисловість",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:35"
+ },
+ {
+  "uid": "CHE-174.352.047",
+  "company": "Beispiel Firma 481 AG",
+  "city": "Uster",
+  "sphere": "Промисловість",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:35"
+ },
+ {
+  "uid": "CHE-524.549.271",
+  "company": "Beispiel Firma 482 AG",
+  "city": "Diepoldsau",
+  "sphere": "Промисловість",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:35"
+ },
+ {
+  "uid": "CHE-870.751.618",
+  "company": "Beispiel Firma 483 GmbH",
+  "city": "Kreuzlingen",
+  "sphere": "Промисловість",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:35"
+ },
+ {
+  "uid": "CHE-191.989.895",
+  "company": "Beispiel Firma 484 GmbH",
+  "city": "Nidau",
+  "sphere": "Промисловість",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:35"
+ },
+ {
+  "uid": "CHE-485.696.073",
+  "company": "Beispiel Firma 485 AG",
+  "city": "Meilen",
+  "sphere": "Промисловість",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:35"
+ },
+ {
+  "uid": "CHE-219.189.165",
+  "company": "Beispiel Firma 486 SA",
+  "city": "Genève",
+  "sphere": "Промисловість",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:35"
+ },
+ {
+  "uid": "CHE-206.027.406",
+  "company": "Beispiel Firma 487 GmbH",
+  "city": "Frauenfeld",
+  "sphere": "Промисловість",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:35"
+ },
+ {
+  "uid": "CHE-367.800.797",
+  "company": "Beispiel Firma 488",
+  "city": "Rheinfelden",
+  "sphere": "Промисловість",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:35"
+ },
+ {
+  "uid": "CHE-575.862.181",
+  "company": "Beispiel Firma 489",
+  "city": "Heimberg",
+  "sphere": "Промисловість",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:35"
+ },
+ {
+  "uid": "CHE-464.030.589",
+  "company": "BEISPIEL FIRMA 490 SA",
+  "city": "Genève",
+  "sphere": "Промисловість",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:35"
+ },
+ {
+  "uid": "CHE-960.439.812",
+  "company": "Beispiel Firma 491 Sàrl",
+  "city": "Les Ponts-de-Martel",
+  "sphere": "Промисловість",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:35"
+ },
+ {
+  "uid": "CHE-866.550.850",
+  "company": "Beispiel Firma 492 S.A.",
+  "city": "Vouvry",
+  "sphere": "Промисловість",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:35"
+ },
+ {
+  "uid": "CHE-729.527.651",
+  "company": "Beispiel Firma 493 Sàrl",
+  "city": "Saint-Léonard",
+  "sphere": "Промисловість",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:35"
+ },
+ {
+  "uid": "CHE-919.725.570",
+  "company": "Beispiel Firma 494 AG",
+  "city": "Altendorf",
+  "sphere": "Промисловість",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:35"
+ },
+ {
+  "uid": "CHE-941.792.805",
+  "company": "Beispiel Firma 495 SA",
+  "city": "Perly-Certoux",
+  "sphere": "Промисловість",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:35"
+ },
+ {
+  "uid": "CHE-401.088.413",
+  "company": "Beispiel Firma 496 SA",
+  "city": "Collex-Bossy",
+  "sphere": "Промисловість",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:35"
+ },
+ {
+  "uid": "CHE-728.197.597",
+  "company": "Beispiel Firma 497 SA",
+  "city": "Villars-Sainte-Croix",
+  "sphere": "Промисловість",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:35"
+ },
+ {
+  "uid": "CHE-219.199.614",
+  "company": "Beispiel Firma 498 SA",
+  "city": "Genève",
+  "sphere": "Промисловість",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:35"
+ },
+ {
+  "uid": "CHE-373.303.337",
+  "company": "Beispiel Firma 499 GmbH",
+  "city": "Zug",
+  "sphere": "Промисловість",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, GmbH",
+  "ts": "2026-10-19 14:36:35"
+ },
+ {
+  "uid": "CHE-947.899.614",
+  "company": "Beispiel Firma 500 AG",
+  "city": "Olten",
+  "sphere": "Промисловість",
+  "addr": "",
+  "note": "zefix, EXISTIEREND, AG",
+  "ts": "2026-10-19 14:36:35"
+ }
+]

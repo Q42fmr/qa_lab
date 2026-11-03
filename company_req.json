@@ -1,0 +1,72 @@
+{
+ "_meta": {
+  "collected": "2026-10-12",
+  "source": "синтетичні зразки для демо (не реальні компанії)",
+  "note": "P.IVA з валідною контрольною цифрою; REA — формат ПРОВІНЦІЯ-НОМЕР"
+ },
+ "it-it": [
+  {
+   "name": "Esempio Società 001 S.p.A",
+   "piva": "39085450219",
+   "rea": "BZ-53611",
+   "src": "https://example.com/azienda-01",
+   "ts": "2026-10-12"
+  },
+  {
+   "name": "Esempio Società 002 Srl",
+   "piva": "46353730404",
+   "rea": "FO-904553",
+   "src": "https://example.com/azienda-02",
+   "ts": "2026-10-12"
+  },
+  {
+   "name": "Esempio Società 003 S.p.A",
+   "piva": "31795690960",
+   "rea": "MB-671518",
+   "src": "https://example.com/azienda-03",
+   "ts": "2026-10-12"
+  },
+  {
+   "name": "Esempio Società 004 S.r.l",
+   "piva": "39247790965",
+   "rea": "MI-3165345",
+   "src": "https://example.com/azienda-04",
+   "ts": "2026-10-12"
+  },
+  {
+   "name": "Esempio Società 005 Srl",
+   "piva": "05460660961",
+   "rea": "MI-6643181",
+   "src": "https://example.com/azienda-05",
+   "ts": "2026-10-12"
+  },
+  {
+   "name": "Esempio Società 006 Srl",
+   "piva": "40729840963",
+   "rea": "MI-4941597",
+   "src": "https://example.com/azienda-06",
+   "ts": "2026-10-12"
+  },
+  {
+   "name": "Esempio Società 007 SpA",
+   "piva": "79151030966",
+   "rea": "MI-4922407",
+   "src": "https://example.com/azienda-07",
+   "ts": "2026-10-12"
+  },
+  {
+   "name": "Esempio Società 008 S.r.l",
+   "piva": "02068631007",
+   "rea": "RM-8009299",
+   "src": "https://example.com/azienda-08",
+   "ts": "2026-10-12"
+  },
+  {
+   "name": "Esempio Società 009 Srl",
+   "piva": "68521300019",
+   "rea": "TO-7516986",
+   "src": "https://example.com/azienda-09",
+   "ts": "2026-10-12"
+  }
+ ]
+}

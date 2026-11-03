@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>📊 Статистика — qa_lab</title>
+<style>
+:root{
+  --bg:#14171c; --panel:#1c2027; --panel2:#232833; --line:#2e3542;
+  --text:#d8dce3; --dim:#8a93a3; --brass:#c9974a; --brass-dim:#8a6a38;
+  --err:#e5655e; --warn:#e0a93e; --info:#6fa8dc; --ok:#7dbf7d;
+  --mono:'Consolas','Cascadia Mono',monospace;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:14px/1.5 system-ui,'Segoe UI',sans-serif}
+header{display:flex;align-items:center;gap:12px;padding:12px 20px;background:var(--panel);border-bottom:1px solid var(--line)}
+h1{font-size:17px;margin:0;font-weight:600}
+h1 b{color:var(--brass)}
+main{max-width:1200px;margin:0 auto;padding:18px 20px 40px}
+.muted{color:var(--dim);font-size:12px}
+input,select,button{background:var(--panel2);border:1px solid var(--line);color:var(--text);border-radius:6px;padding:4px 10px;font:12px var(--mono)}
+select,button{cursor:pointer}
+button:hover,select:hover{border-color:var(--brass-dim)}
+button.on{border-color:var(--brass);color:var(--brass)}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:10px;margin:14px 0}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:12px 14px}
+.card .v{font:600 26px var(--mono);color:var(--brass);margin-top:2px}
+.card .v.time{color:var(--ok)}
+.card .s{font-size:11px;color:var(--dim)}
+.periods{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:10px;margin:14px 0}
+.period{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:10px 14px;display:flex;justify-content:space-between;align-items:center}
+.period .nm{font-size:12px;color:var(--dim)}
+.period .fx{font:600 18px var(--mono)}
+.period .tm{font:12px var(--mono);color:var(--ok)}
+section{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin:14px 0}
+.sechdr{display:flex;align-items:center;gap:8px;margin-bottom:10px;flex-wrap:wrap}
+.sechdr h2{font-size:14px;margin:0;flex:1}
+#chart,#phChart{display:flex;align-items:flex-end;gap:4px;min-height:190px;overflow-x:auto;padding-top:18px}
+.bcol{display:flex;flex-direction:column;align-items:center;gap:4px;min-width:22px;flex:1}
+.bar{width:100%;max-width:46px;background:var(--brass);border-radius:3px 3px 0 0;position:relative;transition:height .25s}
+.bar.today{background:var(--ok)}
+.bar .bv{position:absolute;top:-17px;left:50%;transform:translateX(-50%);font:10px var(--mono);color:var(--dim);white-space:nowrap}
+.blbl{font:10px var(--mono);color:var(--dim);white-space:nowrap}
+table{width:100%;border-collapse:collapse;font:12px var(--mono)}
+th,td{padding:6px 10px;border-bottom:1px solid var(--line);text-align:right;white-space:nowrap}
+th:first-child,td:first-child{text-align:left}
+th{color:var(--dim);font-weight:normal}
+td.tm{color:var(--ok)}
+#phThemes th{cursor:pointer;user-select:none}
+#phThemes th.sorted{color:var(--brass)}
+#phThemes td:first-child{white-space:normal}
+td.tm{color:var(--ok)}
+td.zero{color:var(--dim)}
+td.hot{color:var(--ok)}
+td.cold{color:var(--warn)}
+.wrap{max-height:520px;overflow:auto}
+#empty{padding:30px;text-align:center;color:var(--dim)}
+a{color:var(--info)}
+</style>
+<script src="/i18n-dict.js"></script>
+<script src="/i18n.js"></script>
+</head>
+<body>
+<header>
+  <h1>📊 Статистика <b>qa_lab</b></h1>
+  <span data-i18n-slot style="float:right"></span>
+  <button data-tab="fixes" class="on">Фікси</button>
+  <button data-tab="photos" style="border-color:var(--line)">Фото і теми</button>
+  <span style="flex:1"></span>
+  <span id="fxTools" style="display:contents">
+    <select id="fProj" title="проєкт"><option value="">всі проєкти</option></select>
+    <select id="fAct" title="тип дії"><option value="">всі дії</option></select>
+    <button id="reload">⟳ Оновити</button>
+    <span class="muted" id="range"></span>
+  </span>
+  <span id="phTools" style="display:none">
+    <button id="phReload">⟳ Оновити</button>
+    <span class="muted" id="phTs"></span>
+  </span>
+</header>
+<main id="tab-fixes">
+  <div class="cards" id="totals"></div>
+  <div class="periods" id="periods"></div>
+
+  <section>
+    <div class="sechdr">
+      <h2>Динаміка фіксів</h2>
+      <button data-g="day" class="on">Дні (30)</button>
+      <button data-g="week" style="border-color:var(--line)">Тижні (12)</button>
+      <button data-g="month" style="border-color:var(--line)">Місяці</button>
+    </div>
+    <div id="chart"></div>
+  </section>
+
+  <section>
+    <div class="sechdr"><h2>По місяцях</h2></div>
+    <table>
+      <thead><tr><th>Місяць</th><th>Тасок</th><th>Віток</th><th>Комітів</th><th>Фіксів</th><th>⏱ Збережено</th></tr></thead>
+      <tbody id="months"></tbody>
+    </table>
+  </section>
+
+  <section>
+    <div class="sechdr">
+      <h2>ClickUp-таски з автофіксами</h2>
+      <button id="cuRefresh" title="перечитати статуси з ClickUp (обходить 15-хв кеш)">⟳ Оновити статуси</button>
+      <span class="muted" id="cuMeta"></span>
+    </div>
+    <div class="cards" id="cuCards"><span class="muted">завантаження статусів з ClickUp…</span></div>
+    <table>
+      <thead><tr><th>Місяць закриття</th><th>✅ Закрито тасок</th><th>Фіксів у них</th></tr></thead>
+      <tbody id="cuMonths"></tbody>
+    </table>
+    <details style="margin-top:10px">
+      <summary class="muted">усі таски з фіксами (<span id="cuCount">0</span>)</summary>
+      <table style="margin-top:8px">
+        <thead><tr><th>Таска</th><th>Статус</th><th>Віток</th><th>Фіксів</th><th>Закрита</th></tr></thead>
+        <tbody id="cuList"></tbody>
+      </table>
+    </details>
+  </section>
+
+  <p class="muted">Фікс = файл, зачеплений комітом лаби (автофікси перевірок, візуальні фікси,
+    масові заміни, локальні правки; revert не рахується). Час: <span id="mpf">1</span> хв на фікс.
+    Історія тут повна: цифри рахуються з окремого append-only реєстру
+    (<code>stats/&lt;місяць&gt;.jsonl</code>), який не обрізається. Межа
+    <span id="cap">2000</span> комітів на проєкт стосується лише вкладки «Журнал».</p>
+</main>
+
+<main id="tab-photos" style="display:none">
+  <div class="cards" id="phTotals"></div>
+
+  <section>
+    <div class="sechdr">
+      <h2>Поповнення бази</h2>
+      <button data-pg="day" class="on">Дні (30)</button>
+      <button data-pg="month" style="border-color:var(--line)">Місяці</button>
+    </div>
+    <div id="phChart"></div>
+  </section>
+
+  <section>
+    <div class="sechdr">
+      <h2>Теми</h2>
+      <input id="phQ" placeholder="фільтр теми…" style="width:220px">
+      <span class="muted" id="phCount" style="margin-left:auto"></span>
+    </div>
+    <div class="wrap"><table id="phThemes">
+      <thead><tr>
+        <th data-ps="name">тема</th>
+        <th data-ps="photos" class="sorted">фото</th>
+        <th data-ps="unused">не використано</th>
+        <th data-ps="used">використань</th>
+        <th data-ps="last">останнє поповнення</th>
+      </tr></thead>
+      <tbody></tbody>
+    </table></div>
+  </section>
+
+  <section>
+    <div class="sechdr"><h2>Джерела фото</h2></div>
+    <table id="phHosts"><tbody></tbody></table>
+  </section>
+
+  <p class="muted">Дані — з локальної бази лінків <code>photo_db.json</code>
+    (вкладка «Медіа → Фото БД»). «Не використано» — фото, які ще жодного разу
+    не підставлялись у вітку: це і є вільний запас теми.</p>
+</main>
+<script>
+const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
+const ACT_NAMES={autofix:'автофікс перевірок','visual-fix':'візуальний фікс',replace:'масова заміна',local:'локальні вайти',edit:'ручна правка',revert:'відкат'};
+let DATA={entries:[],minutes_per_fix:1}, grp='day';
+
+const pad=n=>String(n).padStart(2,'0');
+const dayKey=ts=>ts.slice(0,10), monKey=ts=>ts.slice(0,7);
+function weekKey(ts){ // ключ = дата понеділка того тижня
+  const d=new Date(ts.slice(0,10)+'T00:00:00');
+  d.setDate(d.getDate()-((d.getDay()+6)%7));
+  return `${d.getFullYear()}-${pad(d.getMonth()+1)}-${pad(d.getDate())}`;
+}
+const MONTHS=['січ','лют','бер','кві','тра','чер','лип','сер','вер','жов','лис','гру'];
+const dayLbl=k=>k.slice(8,10)+'.'+k.slice(5,7);
+const monLbl=k=>MONTHS[+k.slice(5,7)-1]+' '+k.slice(2,4);
+function weekLbl(k){const d=new Date(k+'T00:00:00'),e=new Date(d);e.setDate(d.getDate()+6);
+  return `${pad(d.getDate())}.${pad(d.getMonth()+1)}–${pad(e.getDate())}.${pad(e.getMonth()+1)}`}
+
+function fmtTime(min){
+  if(!min)return '0 хв';
+  const d=Math.floor(min/1440),h=Math.floor(min%1440/60),m=min%60,parts=[];
+  if(d)parts.push(d+' д');if(h)parts.push(h+' год');if(m&&!d)parts.push(m+' хв');
+  return parts.join(' ')||'0 хв';
+}
+const isFix=e=>e.action!=='revert';
+const fixes=e=>isFix(e)?e.files:0;
+
+function agg(entries){ // зведення по набору записів
+  const br=new Set(),tk=new Set();let commits=0,fx=0;
+  for(const e of entries){
+    if(!isFix(e))continue;
+    commits++;fx+=e.files;br.add(e.project+':'+e.branch);
+    if(e.task_id)tk.add(e.task_id);
+  }
+  return {tasks:tk.size,branches:br.size,commits,fixes:fx,minutes:fx*DATA.minutes_per_fix};
+}
+
+function filtered(){
+  const p=$('#fProj').value,a=$('#fAct').value;
+  return DATA.entries.filter(e=>(!p||e.project===p)&&(!a||e.action===a));
+}
+
+function card(nm,v,sub,cls=''){return `<div class="card"><div class="s">${nm}</div><div class="v ${cls}">${v}</div><div class="s">${sub||''}</div></div>`}
+
+function render(){
+  const es=filtered(),t=agg(es);
+  $('#totals').innerHTML=
+    card('Тасок',t.tasks,'з прив\u2019язкою ClickUp')+
+    card('Віток (вайтів)',t.branches,'отримали фікси')+
+    card('Комітів',t.commits,'фікс-комітів лаби')+
+    card('Фіксів',t.fixes,'зачеплених файлів')+
+    card('⏱ Збережено часу',fmtTime(t.minutes),DATA.minutes_per_fix+' хв × фікс','time');
+
+  // сьогодні / тиждень / місяць
+  const now=new Date(),today=`${now.getFullYear()}-${pad(now.getMonth()+1)}-${pad(now.getDate())}`;
+  const wk=weekKey(today),mo=today.slice(0,7);
+  const per=[['Сьогодні',e=>dayKey(e.ts)===today],
+             ['Цей тиждень',e=>weekKey(e.ts)===wk],
+             ['Цей місяць',e=>monKey(e.ts)===mo]];
+  $('#periods').innerHTML=per.map(([nm,f])=>{
+    const a=agg(es.filter(f));
+    return `<div class="period"><span class="nm">${nm}</span>
+      <span class="fx">${a.fixes} фікс.</span><span class="tm">${fmtTime(a.minutes)}</span></div>`;
+  }).join('');
+
+  renderChart(es);
+  renderMonths(es);
+  const r=es.length?`${es[0].ts.slice(0,10)} → ${es[es.length-1].ts.slice(0,10)} · ${es.length} комітів в історії`:'історія порожня';
+  $('#range').textContent=r;
+}
+
+function buckets(es,keyFn){
+  const m=new Map();
+  for(const e of es){const k=keyFn(e.ts);if(!m.has(k))m.set(k,[]);m.get(k).push(e)}
+  return m;
+}
+function lastKeys(step,n){ // останні n ключів календарно (включно з порожніми)
+  const out=[],d=new Date();
+  const loc=x=>`${x.getFullYear()}-${pad(x.getMonth()+1)}-${pad(x.getDate())}`;
+  if(step==='day')for(let i=n-1;i>=0;i--){const x=new Date(d);x.setDate(d.getDate()-i);out.push(loc(x))}
+  if(step==='week'){const mon=new Date(weekKey(loc(d))+'T00:00:00');
+    for(let i=n-1;i>=0;i--){const x=new Date(mon);x.setDate(mon.getDate()-7*i);out.push(loc(x))}}
+  return out;
+}
+
+function renderChart(es){
+  const cfg={day:[dayKey,dayLbl,30],week:[weekKey,weekLbl,12],month:[monKey,monLbl,0]}[grp];
+  const [keyFn,lblFn,n]=cfg, m=buckets(es,keyFn);
+  let keys;
+  if(grp==='month')keys=[...m.keys()].sort();               // усі наявні місяці
+  else keys=lastKeys(grp,n);
+  if(!keys.length){$('#chart').innerHTML='<div id="empty">даних немає</div>';return}
+  const vals=keys.map(k=>agg(m.get(k)||[]));
+  const max=Math.max(1,...vals.map(v=>v.fixes));
+  const now=new Date(),todayK=keyFn(`${now.getFullYear()}-${pad(now.getMonth()+1)}-${pad(now.getDate())} 00:00:00`);
+  $('#chart').innerHTML=keys.map((k,i)=>{
+    const v=vals[i],h=Math.round(v.fixes/max*150);
+    const tip=`${lblFn(k)}: ${v.fixes} фікс. · ${v.commits} коміт. · ${v.branches} віток · ${v.tasks} тасок · ${fmtTime(v.minutes)}`;
+    return `<div class="bcol" title="${tip}">
+      <div class="bar ${k===todayK?'today':''}" style="height:${Math.max(h,v.fixes?3:0)}px">${v.fixes?`<span class="bv">${v.fixes}</span>`:''}</div>
+      <span class="blbl">${lblFn(k)}</span></div>`;
+  }).join('');
+}
+
+function renderMonths(es){
+  const m=buckets(es,monKey),keys=[...m.keys()].sort().reverse();
+  $('#months').innerHTML=keys.map(k=>{
+    const v=agg(m.get(k));
+    return `<tr><td>${monLbl(k)}</td><td>${v.tasks}</td><td>${v.branches}</td>
+      <td>${v.commits}</td><td>${v.fixes}</td><td class="tm">${fmtTime(v.minutes)}</td></tr>`;
+  }).join('')||'<tr><td colspan="6" class="muted">даних немає</td></tr>';
+}
+
+$$('.sechdr button[data-g]').forEach(b=>b.onclick=()=>{
+  grp=b.dataset.g;
+  $$('.sechdr button[data-g]').forEach(x=>{x.classList.toggle('on',x===b);
+    x.style.borderColor=x===b?'':'var(--line)';x.style.color=x===b?'':'var(--text)'});
+  render();
+});
+$('#fProj').onchange=render;
+$('#fAct').onchange=render;
+$('#reload').onclick=load;
+
+async function load(){
+  const r=await fetch('/api/stats');
+  DATA=await r.json();
+  $('#mpf').textContent=DATA.minutes_per_fix;
+  $('#cap').textContent=DATA.journal_cap;
+  const projs=[...new Set(DATA.entries.map(e=>e.project))];
+  /* value обов'язковий: без нього значенням стає ТЕКСТ, і переклад
+     інтерфейсу зламав би фільтр (id проєкту латиницею, тож сьогодні не
+     збігається зі словником, але покладатись на це не варто). */
+  $('#fProj').innerHTML='<option value="">всі проєкти</option>'+projs.map(p=>`<option value="${p}" data-i18n-skip>${p}</option>`).join('');
+  const acts=[...new Set(DATA.entries.map(e=>e.action))];
+  $('#fAct').innerHTML='<option value="">всі дії</option>'+acts.map(a=>`<option value="${a}">${ACT_NAMES[a]||a}</option>`).join('');
+  render();
+}
+load();
+
+/* ---------------- ClickUp-таски з автофіксами ---------------- */
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+async function loadCU(refresh){
+  $('#cuCards').innerHTML='<span class="muted">завантаження статусів з ClickUp…</span>';
+  let d;
+  try{
+    const r=await fetch('/api/stats/clickup'+(refresh?'?refresh=1':''));
+    if(!r.ok)throw new Error((await r.json()).detail||r.status);
+    d=await r.json();
+  }catch(e){
+    $('#cuCards').innerHTML=`<span class="muted" style="color:var(--err)">не вдалося отримати статуси: ${esc(e.message)}</span>`;
+    return;
+  }
+  const open=d.total-d.closed;
+  const pct=d.total?Math.round(d.closed/d.total*100):0;
+  const closedFixes=d.tasks.filter(t=>t.closed).reduce((s,t)=>s+t.fixes,0);
+  $('#cuCards').innerHTML=
+    card('Тасок з автофіксами',d.total,'вітки отримали фікс-коміти')+
+    card('✅ Закрито',d.closed,`${pct}% від тасок з фіксами`)+
+    card('🔄 Ще у роботі',open,'')+
+    card('Фіксів у закритих',closedFixes,`≈ ${fmtTime(closedFixes*DATA.minutes_per_fix)} збережено`,'time');
+  $('#cuMeta').textContent=d.generated?`статуси станом на ${d.generated}${d.cached?' (кеш)':''}`:'';
+  // по місяцях закриття
+  const m=new Map();
+  for(const t of d.tasks){
+    if(!t.closed||!t.date_closed)continue;
+    const k=t.date_closed.slice(0,7);
+    const v=m.get(k)||{n:0,fx:0};v.n++;v.fx+=t.fixes;m.set(k,v);
+  }
+  const noDate=d.tasks.filter(t=>t.closed&&!t.date_closed).length;
+  $('#cuMonths').innerHTML=[...m.entries()].sort().reverse().map(([k,v])=>
+    `<tr><td>${monLbl(k)}</td><td>${v.n}</td><td>${v.fx}</td></tr>`).join('')
+    +(noDate?`<tr><td class="muted">без дати закриття</td><td>${noDate}</td><td></td></tr>`:'')
+    ||'<tr><td colspan="3" class="muted">закритих тасок ще немає</td></tr>';
+  // повний список
+  $('#cuCount').textContent=d.total;
+  $('#cuList').innerHTML=d.tasks.map(t=>`<tr>
+    <td style="max-width:420px;overflow:hidden;text-overflow:ellipsis">${
+      t.url?`<a href="${esc(t.url)}" target="_blank">${esc(t.name||t.id)}</a>`:esc(t.name||t.id)}</td>
+    <td style="color:${t.closed?'var(--ok)':t.failed?'var(--err)':'var(--warn)'}">${esc(t.status)}</td>
+    <td>${t.branches}</td><td>${t.fixes}</td><td>${t.date_closed||''}</td></tr>`).join('');
+}
+$('#cuRefresh').onclick=()=>loadCU(true);
+loadCU();
+
+/* ---------------- вкладка «Фото і теми» ----------------
+   Дані з /api/photodb/stats: усе агрегує бекенд, у браузер їде підсумок,
+   а не 36 тисяч записів бази. Вантажимо ліниво — на першому відкритті
+   вкладки, щоб сторінка статистики фіксів не платила за це нічим. */
+let phData=null, phGrain='day', phSort='photos', phDir=-1;
+const phNum=n=>String(n).replace(/\B(?=(\d{3})+(?!\d))/g,' ');
+
+async function phLoad(){
+  const r=await fetch('/api/photodb/stats');
+  if(!r.ok){$('#phTotals').innerHTML='<span class="muted">не вдалось прочитати фото-БД</span>';return}
+  phData=await r.json();
+  $('#phTs').textContent='оновлено '+new Date().toLocaleTimeString('uk-UA');
+  phTotals();phChart();phThemes();phHosts();
+}
+
+function phTotals(){
+  const d=phData, pct=d.total?Math.round(d.unused/d.total*100):0;
+  $('#phTotals').innerHTML=
+    card('фото в базі',phNum(d.total))+
+    card('тем',phNum(d.themes))+
+    card('не використано',phNum(d.unused),`${pct}% — вільний запас`,'time')+
+    card('використань',phNum(d.used_total))+
+    card('фото у 2+ темах',phNum(d.multi_theme))+
+    card('у середньому на тему',d.themes?phNum(Math.round(d.total/d.themes)):'0');
+}
+
+function phChart(){
+  let rows=phData.by_day;
+  if(phGrain==='month'){
+    const m={};rows.forEach(r=>{const k=r.day.slice(0,7);m[k]=(m[k]||0)+r.photos});
+    rows=Object.entries(m).map(([day,photos])=>({day,photos}));
+  }else rows=rows.slice(-30);
+  const max=Math.max(1,...rows.map(r=>r.photos));
+  // один масовий імпорт (35 тис. за день) робить решту стовпців нульовими —
+  // тримаємо мінімум 3px, щоб дні з десятками фото було видно
+  $('#phChart').innerHTML=rows.map(r=>`<div class="bcol">
+      <div class="bar" style="height:${Math.max(3,Math.round(r.photos/max*150))}px">
+        <span class="bv">${phNum(r.photos)}</span></div>
+      <div class="blbl">${esc(phGrain==='month'?monLbl(r.day+'-01'):dayLbl(r.day))}</div>
+    </div>`).join('')||'<p class="muted">порожньо</p>';
+}
+
+function phThemes(){
+  const q=$('#phQ').value.trim().toLowerCase();
+  const rows=phData.per_theme.filter(t=>!q||t.name.toLowerCase().includes(q))
+    .slice().sort((a,b)=>{
+      const x=a[phSort],y=b[phSort];
+      return (typeof x==='string'?x.localeCompare(y):x-y)*phDir;
+    });
+  $('#phCount').textContent=`${rows.length} з ${phData.per_theme.length}`;
+  $('#phThemes tbody').innerHTML=rows.map(t=>{
+    // «запас вичерпано» видно одразу: тема без невикористаних — жовта
+    const cls=t.unused===0?'cold':(t.unused>t.photos/2?'hot':'');
+    return `<tr><td>${esc(t.name)}</td><td>${phNum(t.photos)}</td>
+      <td class="${cls}">${phNum(t.unused)}</td>
+      <td class="${t.used?'':'zero'}">${phNum(t.used)}</td>
+      <td class="muted">${esc(t.last)}</td></tr>`;
+  }).join('')||'<tr><td colspan="5" class="muted">нічого не знайшлось</td></tr>';
+  $$('#phThemes th').forEach(th=>th.classList.toggle('sorted',th.dataset.ps===phSort));
+}
+
+function phHosts(){
+  const tot=phData.total||1;
+  $('#phHosts tbody').innerHTML=phData.hosts.map(h=>`<tr>
+      <td>${esc(h.name)}</td><td>${phNum(h.photos)}</td>
+      <td>${Math.round(h.photos/tot*100)}%</td></tr>`).join('');
+}
+
+$('#phReload').onclick=phLoad;
+$('#phQ').oninput=()=>phData&&phThemes();
+$$('[data-pg]').forEach(b=>b.onclick=()=>{
+  phGrain=b.dataset.pg;
+  $$('[data-pg]').forEach(x=>{x.classList.toggle('on',x===b);
+    x.style.borderColor=x===b?'':'var(--line)'});
+  if(phData)phChart();
+});
+$$('#phThemes th').forEach(th=>th.onclick=()=>{
+  if(phSort===th.dataset.ps)phDir=-phDir;
+  else{phSort=th.dataset.ps;phDir=th.dataset.ps==='name'?1:-1}
+  phThemes();
+});
+
+/* перемикач вкладок; #photos у хеші відкриває фото одразу (лінк із лаби) */
+function showTab(name){
+  $('#tab-fixes').style.display=name==='photos'?'none':'';
+  $('#tab-photos').style.display=name==='photos'?'':'none';
+  $('#fxTools').style.display=name==='photos'?'none':'contents';
+  $('#phTools').style.display=name==='photos'?'contents':'none';
+  $$('[data-tab]').forEach(b=>{b.classList.toggle('on',b.dataset.tab===name);
+    b.style.borderColor=b.dataset.tab===name?'':'var(--line)'});
+  location.hash=name==='photos'?'#photos':'';
+  if(name==='photos'&&!phData)phLoad();
+}
+$$('[data-tab]').forEach(b=>b.onclick=()=>showTab(b.dataset.tab));
+// перехід за хешем має працювати і без перезавантаження: лінк «статистика ↗»
+// з лаби веде на /stats#photos, а браузер на зміну самого лише хеша
+// сторінку не перевантажує
+addEventListener('hashchange',()=>showTab(location.hash==='#photos'?'photos':'fixes'));
+if(location.hash==='#photos')showTab('photos');
+</script>
+</body>
+</html>

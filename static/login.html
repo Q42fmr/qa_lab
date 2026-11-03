@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Вхід — qa_lab</title>
+<style>
+  :root{
+    --bg:#14171c; --panel:#1b1f26; --line:#2a3038; --ink:#d8dce3;
+    --dim:#8a93a3; --accent:#c9974a; --err:#c76a5e;
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; min-height:100vh; display:flex; align-items:center; justify-content:center;
+    background:var(--bg); color:var(--ink);
+    font:15px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+    padding:24px;
+  }
+  .card{ width:100%; max-width:360px; }
+  h1{
+    font-size:15px; letter-spacing:.18em; text-transform:uppercase;
+    margin:0 0 26px; font-weight:600;
+  }
+  h1 b{ color:var(--accent); }
+  label{ display:block; font-size:12px; color:var(--dim); margin:0 0 5px; }
+  input{
+    width:100%; padding:10px 12px; margin-bottom:14px;
+    background:var(--panel); color:var(--ink);
+    border:1px solid var(--line); border-radius:6px;
+    font-size:14px; font-family:inherit;
+  }
+  input:focus{ outline:none; border-color:var(--accent); }
+  button{
+    width:100%; padding:11px 14px; border-radius:6px; border:1px solid transparent;
+    font-size:14px; font-family:inherit; font-weight:600; cursor:pointer;
+  }
+  .primary{ background:var(--accent); color:#1a140a; }
+  .primary:hover{ filter:brightness(1.08); }
+  .primary:disabled{ opacity:.55; cursor:default; }
+  /* Офіційний білий варіант кнопки Slack. На темній картці вона єдина
+     світла пляма — видно, що це інший шлях входу, а не другий такий самий
+     прямокутник. Сам знак не перефарбовуємо: у брендбуці це заборонено,
+     тому фон і мусить бути світлим. */
+  .slack{
+    background:#fff; color:#1d1c1d; border-color:#fff;
+    display:flex; align-items:center; justify-content:center; gap:10px;
+    height:44px; padding:0 16px; letter-spacing:.01em;
+  }
+  .slack:hover{ background:#f2f2f2; border-color:#f2f2f2; }
+  .slack:active{ background:#e6e6e6; border-color:#e6e6e6; }
+  .slack:focus-visible{ outline:2px solid var(--accent); outline-offset:2px; }
+  .slack svg{ flex:none; }
+  .sep{
+    display:flex; align-items:center; gap:12px;
+    color:var(--dim); font-size:12px; margin:20px 0;
+  }
+  .sep::before,.sep::after{ content:""; flex:1; height:1px; background:var(--line); }
+  .msg{
+    display:none; margin:0 0 16px; padding:9px 12px; border-radius:6px;
+    background:rgba(199,106,94,.12); border:1px solid rgba(199,106,94,.4);
+    color:var(--err); font-size:13px;
+  }
+  .msg.on{ display:block; }
+  .hint{ margin:18px 0 0; color:var(--dim); font-size:12px; text-align:center; }
+</style>
+<script src="/i18n-dict.js"></script>
+<script src="/i18n.js"></script>
+</head>
+<body>
+
+<div class="card">
+  <h1><span style="text-transform:none">qa<b>_lab</b></span></h1>
+  <span data-i18n-slot style="float:right"></span>
+
+  <div id="msg" class="msg"></div>
+
+  <form id="form" autocomplete="on">
+    <label for="login">Логін</label>
+    <input id="login" name="username" type="text" autocomplete="username" autofocus>
+
+    <label for="password">Пароль</label>
+    <input id="password" name="password" type="password" autocomplete="current-password">
+
+    <button type="submit" class="primary" id="submit">Увійти</button>
+  </form>
+
+  <div id="slackBlock" style="display:none">
+    <div class="sep">або</div>
+    <button type="button" class="slack" id="slackBtn">
+      <svg width="20" height="20" viewBox="0 0 122.8 122.8" aria-hidden="true">
+        <path fill="#E01E5A" d="M25.8 77.6a12.9 12.9 0 1 1-12.9-12.9h12.9v12.9zm6.5 0a12.9 12.9 0 0 1 25.8 0v32.3a12.9 12.9 0 0 1-25.8 0V77.6z"/>
+        <path fill="#36C5F0" d="M45.2 25.8a12.9 12.9 0 1 1 12.9-12.9v12.9H45.2zm0 6.5a12.9 12.9 0 0 1 0 25.8H12.9a12.9 12.9 0 0 1 0-25.8h32.3z"/>
+        <path fill="#2EB67D" d="M96.9 45.2a12.9 12.9 0 1 1 12.9 12.9H96.9V45.2zm-6.5 0a12.9 12.9 0 0 1-25.8 0V12.9a12.9 12.9 0 0 1 25.8 0v32.3z"/>
+        <path fill="#ECB22E" d="M77.6 96.9a12.9 12.9 0 1 1-12.9 12.9V96.9h12.9zm0-6.5a12.9 12.9 0 0 1 0-25.8h32.3a12.9 12.9 0 0 1 0 25.8H77.6z"/>
+      </svg>
+      Увійти через Slack
+    </button>
+  </div>
+
+  <p class="hint" id="hint"></p>
+</div>
+
+<script>
+const $ = id => document.getElementById(id);
+
+function say(text){
+  const box = $('msg');
+  box.textContent = text || '';
+  box.classList.toggle('on', !!text);
+}
+
+// Помилки зі Slack-колбека приходять як ?err=… — туди людину закидає
+// редіректом, тому текст показуємо тут, а адресу одразу чистимо, щоб
+// повідомлення не «прилипло» після перезавантаження.
+const params = new URLSearchParams(location.search);
+if (params.get('err')) {
+  say(params.get('err'));
+  history.replaceState(null, '', location.pathname);
+}
+
+// Чи взагалі налаштований Slack — якщо ні, кнопки не показуємо, щоб не
+// пропонувати шлях, який гарантовано впаде.
+fetch('/api/auth/me').then(r => r.json()).then(d => {
+  if (d.user) { location.replace('/'); return; }      // вже залогінений
+  if (d.slack) $('slackBlock').style.display = '';
+  else $('hint').textContent = 'вхід через Slack не налаштований';
+}).catch(() => {});
+
+$('slackBtn').onclick = () => {
+  // Повна навігація, НЕ fetch: OAuth потребує справжнього переходу браузера.
+  location.assign('/api/auth/slack/start');
+};
+
+$('form').onsubmit = async ev => {
+  ev.preventDefault();
+  say('');
+  const btn = $('submit');
+  btn.disabled = true;
+  btn.textContent = 'Заходимо…';
+  try {
+    const r = await fetch('/api/auth/login', {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({login: $('login').value, password: $('password').value}),
+    });
+    if (r.ok) { location.replace('/'); return; }
+    const d = await r.json().catch(() => ({}));
+    say(d.detail || 'не вдалося увійти');
+  } catch (e) {
+    say('сервер недоступний');
+  }
+  btn.disabled = false;
+  btn.textContent = 'Увійти';
+};
+</script>
+</body>
+</html>

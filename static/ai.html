@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🤖 ШІ-міст — qa_lab</title>
+<style>
+:root{
+  --bg:#14171c; --panel:#1c2027; --panel2:#232833; --line:#2e3542;
+  --text:#d8dce3; --dim:#8a93a3; --brass:#c9974a; --brass-dim:#8a6a38;
+  --err:#e5655e; --warn:#e0a93e; --info:#6fa8dc; --ok:#7dbf7d;
+  --mono:'Consolas','Cascadia Mono',monospace;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font:14px/1.5 system-ui,'Segoe UI',sans-serif}
+header{display:flex;align-items:center;gap:12px;padding:12px 20px;background:var(--panel);border-bottom:1px solid var(--line)}
+h1{font-size:17px;margin:0;font-weight:600}
+h1 b{color:var(--brass)}
+a{color:var(--info);text-decoration:none}
+main{max-width:1280px;margin:0 auto;padding:18px 20px 40px}
+.muted{color:var(--dim);font-size:12px}
+input,select,button,textarea{background:var(--panel2);border:1px solid var(--line);color:var(--text);border-radius:6px;padding:6px 10px;font:12px var(--mono)}
+button{cursor:pointer}
+button:hover{border-color:var(--brass-dim)}
+button.go{border-color:var(--brass);color:var(--brass)}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin:14px 0}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:12px 14px}
+.card .v{font:600 24px var(--mono);color:var(--brass);margin-top:2px}
+.card .v.ok{color:var(--ok)} .card .v.err{color:var(--err)}
+.card .s{font-size:11px;color:var(--dim)}
+section{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin:14px 0}
+.sechdr{display:flex;align-items:center;gap:8px;margin-bottom:10px;flex-wrap:wrap}
+.sechdr h2{font-size:14px;margin:0;flex:1}
+table{width:100%;border-collapse:collapse;font:12px var(--mono)}
+th,td{padding:6px 10px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+th{color:var(--dim);font-weight:500;position:sticky;top:0;background:var(--panel)}
+tr:hover td{background:var(--panel2)}
+.tag{display:inline-block;padding:1px 7px;border-radius:10px;font:11px var(--mono);border:1px solid var(--line)}
+.s-fixed{color:var(--ok);border-color:var(--ok)}
+.s-clean{color:var(--info);border-color:var(--info)}
+.s-dry-run{color:var(--dim)}
+.s-no_fix,.s-not_ours{color:var(--warn);border-color:var(--warn)}
+.s-escalated,.s-error,.s-unresolved{color:var(--err);border-color:var(--err)}
+.s-duplicate{color:var(--dim)}
+.pill{display:inline-block;margin:1px 3px 1px 0;padding:1px 6px;border:1px solid var(--line);border-radius:4px;font:11px var(--mono);color:var(--dim)}
+.pill.hit{color:var(--brass);border-color:var(--brass-dim)}
+.pill.fired{color:var(--ok);border-color:var(--ok)}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media(max-width:900px){.grid2{grid-template-columns:1fr}}
+textarea{width:100%;min-height:70px;resize:vertical}
+pre{margin:0;font:11px/1.5 var(--mono);color:var(--dim);white-space:pre-wrap;word-break:break-word}
+.warnbar{background:#2a2114;border:1px solid var(--brass-dim);color:var(--brass);border-radius:8px;padding:8px 12px;margin:10px 0;font-size:12px}
+.skill{border-bottom:1px solid var(--line);padding:8px 0}
+.skill b{color:var(--brass)}
+.skill .sym{display:block;margin:2px 0}
+.skill.off{opacity:.45}
+.skill .acts{float:right;display:flex;gap:6px}
+.skill .acts button{padding:2px 8px;font-size:11px}
+.src-custom{color:var(--ok);border-color:var(--ok)}
+.src-override{color:var(--warn);border-color:var(--warn)}
+.src-auto{color:var(--err);border-color:var(--err)}
+.form{background:var(--panel2);border:1px solid var(--brass-dim);border-radius:8px;padding:12px 14px;margin-bottom:14px}
+.form .row{display:grid;grid-template-columns:150px 1fr;gap:8px;align-items:start;margin-bottom:8px}
+.form label{color:var(--dim);font-size:12px;padding-top:6px}
+.form .hint{grid-column:2;color:var(--dim);font-size:11px;margin-top:-4px}
+.form input,.form textarea{width:100%}
+.err{color:var(--err);font-size:12px;margin-top:6px}
+</style>
+<script src="/i18n-dict.js"></script>
+<script src="/i18n.js"></script>
+</head>
+<body>
+<header>
+  <h1>🤖 <b>ШІ-міст</b> — запити від TSM</h1>
+  <span data-i18n-slot style="float:right"></span>
+  <span class="muted" id="mode"></span>
+  <span style="flex:1"></span>
+  <a href="/">← до лаби</a>
+</header>
+
+<main>
+  <div id="bar"></div>
+
+  <div class="cards" id="cards"></div>
+
+  <section>
+    <div class="sechdr">
+      <h2>Проба роутингу</h2>
+      <span class="muted">нічого не запускає і не рахує колом — лише показує,
+        який тест міст обрав би і чому</span>
+    </div>
+    <textarea id="probe" placeholder="Напиши скаргу так, як її написав би саппорт. Наприклад: «в шапке логотип не тот, стоит чужой бренд»"></textarea>
+    <div style="display:flex;gap:8px;margin-top:8px;flex-wrap:wrap;align-items:center">
+      <input id="pbranch" placeholder="вітка (необов'язково)" style="width:200px">
+      <input id="pdomain" placeholder="домен (необов'язково)" style="width:200px">
+      <label class="muted"><input type="checkbox" id="pmodel" checked> питати Claude</label>
+      <button class="go" onclick="probe()">Показати вибір</button>
+    </div>
+    <div id="probeout" style="margin-top:12px"></div>
+  </section>
+
+  <section>
+    <div class="sechdr">
+      <h2>Журнал запитів</h2>
+      <span class="muted" id="logmeta"></span>
+      <button onclick="load()">Оновити</button>
+    </div>
+    <div style="max-height:520px;overflow:auto">
+      <table id="log"><thead><tr>
+        <th>час</th><th>вітка</th><th>коло</th><th>статус</th>
+        <th>обрано → спрацювало</th><th>результат</th>
+      </tr></thead><tbody></tbody></table>
+    </div>
+  </section>
+
+  <section>
+    <div class="sechdr">
+      <h2>Скіли перевірок</h2>
+      <span class="muted" id="covmeta"></span>
+      <button class="go" onclick="editSkill('')">+ Новий скіл</button>
+      <button onclick="togglePrompt()">Що бачить модель</button>
+      <button onclick="loadSkills()">Оновити</button>
+    </div>
+    <div class="muted" style="margin-bottom:10px">
+      Скіл — це те, за чим модель упізнає перевірку в прозі. Вбудовані картки
+      їдуть з кодом; збережений тут запис кладеться зверху, а видалення
+      повертає дефолт. <b>Вимкнений скіл ховає перевірку від моделі</b> —
+      обрати її ШІ вже не зможе, але людина з вкладки перевірок запускає її
+      як і раніше.
+    </div>
+    <div id="editor"></div>
+    <pre id="prompt" style="display:none;max-height:300px;overflow:auto;
+      background:var(--panel2);padding:10px;border-radius:8px"></pre>
+    <div id="orphans"></div>
+    <div id="skills"></div>
+    <datalist id="checkids"></datalist>
+  </section>
+
+  <section>
+    <div class="sechdr">
+      <h2>Мапа вердиктів TSM</h2>
+      <span class="muted" id="vmmeta"></span>
+      <button onclick="loadVerdicts()">Оновити</button>
+    </div>
+    <div class="muted" style="margin-bottom:10px">
+      Куди веде кожна ЇХНЯ перевірка. Ключ — <b>ім'я перевірки</b>, а не фраза
+      з поради: імена не перейменовують, а формулювання вони переписують
+      (за 16 днів між v0.6.17 і v0.9.26 — 22% рядків). Дефолти їдуть з кодом;
+      правка кладеться зверху, видалення повертає дефолт.
+      <b>Незнайоме ім'я розбирає модель</b> — один раз, і далі це вже таблиця.
+    </div>
+    <div id="vmwarn"></div>
+    <div id="verdicts"></div>
+  </section>
+</main>
+
+<script>
+const $ = s => document.querySelector(s);
+const esc = s => String(s == null ? '' : s).replace(/[&<>"]/g,
+  c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+
+async function api(url, opt) {
+  const r = await fetch(url, opt);
+  if (r.status === 401) { location.href = '/login'; return null; }
+  if (!r.ok) throw new Error(await r.text());
+  return r.json();
+}
+
+function pills(items, cls) {
+  return (items || []).map(x => `<span class="pill ${cls || ''}">${esc(x)}</span>`).join('');
+}
+
+async function load() {
+  const d = await api('/api/ai/log?limit=200');
+  if (!d) return;
+  const c = d.counters;
+  $('#mode').textContent = d.apply
+    ? 'коміти УВІМКНЕНІ' : 'сухий прогін — у git нічого не пише';
+  $('#bar').innerHTML = d.apply ? '' :
+    `<div class="warnbar">Сухий прогін: міст усе рахує і пише в журнал, але
+     в git не комітить. Вмикається <code>AI_BRIDGE_APPLY=1</code>, коли по
+     журналу видно, що роутинг не блукає.</div>`
+    + (d.model.ready ? '' :
+    `<div class="warnbar">Claude не працює (${esc(d.model.why)}) — роутинг іде
+     на самих словах з карток скілів. Це гірше, але робоче.</div>`)
+    + (c.tsm_unknown ? `<div class="warnbar">Вердиктів TSM не впізнано:
+     <b>${esc(c.tsm_unknown)}</b>${c.tsm_unknown_last
+        ? ' , останній ' + esc(c.tsm_unknown_last) : ''}.${
+     (c.tsm_new || []).length
+        ? ` Перевірки, які назвали себе самі: <b>${
+            c.tsm_new.map(([n, k]) => esc(n) + ' ×' + esc(k)).join(', ')
+          }</b> — саме їх і бракує в мапі.`
+        : ' Схоже, у них переписали формулювання порад.'}
+     Такі рядки йдуть повз безкоштовну мапу в платну модель. Перечитай
+     <code>advice.py</code> у TSM і онови мапу вердиктів.</div>` : '')
+    // ДРЕЙФ У РОЗРІЗІ ВЕРСІЇ ДЖЕРЕЛА. Сама лише сума каже «щось зламалось»;
+    // розбивка каже, з якого їхнього релізу це почалось — а між двома їхніми
+    // зрізами буває під сорок випусків.
+    + ((c.sources || []).length > 1 || ((c.sources || [])[0] || {}).drift
+       ? `<div class="warnbar">Хто присилає вердикти:
+     ${c.sources.map(x => `<b>${esc(x.source || '?')} ${esc(x.version || 'без версії')}</b>
+       — запитів ${esc(x.n)}${x.drift ? ', повз мапу ' + esc(x.drift) : ''}`).join(' · ')}.
+     ${c.sources.some(x => x.drift)
+        ? 'Дрейф прив\'язаний до версії — видно, з якого релізу почалось.'
+        : ''}</div>` : '');
+
+  $('#cards').innerHTML = [
+    ['запитів усього', c.total, ''],
+    ['автофіксів', c.fixes, 'ok'],
+    ['файлів полагоджено', c.files_fixed, 'ok'],
+    ['ескалацій', c.escalations, c.escalations ? 'err' : ''],
+    ['віток', c.branches, ''],
+    ['витрачено, $', (c.usd || 0).toFixed(4), ''],
+  ].map(([s, v, k]) =>
+    `<div class="card"><div class="s">${s}</div><div class="v ${k}">${esc(v)}</div></div>`
+  ).join('');
+
+  $('#logmeta').textContent =
+    `модель ${d.model.name} · автофікс з груп: ${d.autofix_groups.join(', ')}`
+    + ` · за місяць $${(d.spent_month_usd || 0).toFixed(4)}`
+    + (d.budget_usd ? ` з $${d.budget_usd}` : '') + ` · БД: ${c.db ? 'так' : 'файли'}`;
+
+  $('#log').querySelector('tbody').setAttribute('data-i18n-skip', '');
+  $('#log tbody').innerHTML = (d.rows || []).map(r => `
+    <tr>
+      <td class="muted">${esc(r.ts)}</td>
+      <td>${esc(r.branch || '—')}${r.domain ? `<div class="muted">${esc(r.domain)}</div>` : ''}</td>
+      <td>${r.round || ''}</td>
+      <td><span class="tag s-${esc(r.status)}">${esc(r.status)}</span>
+          <div class="muted">${esc(r.router)}</div></td>
+      <td>${pills(r.routed)}${Object.keys(r.fired || {}).length
+            ? '<div>' + pills(Object.entries(r.fired).map(([k, v]) => `${k}:${v}`), 'fired') + '</div>'
+            : ''}</td>
+      <td>${r.commit ? `<b>${esc(r.commit.slice(0, 10))}</b> · ${r.files} файл(ів)<br>` : ''}
+          <span class="muted">${esc(r.note || '')}</span>
+          ${r.text_head ? `<div class="muted">«${esc(r.text_head)}»</div>` : ''}</td>
+    </tr>`).join('') || '<tr><td colspan="6" class="muted">запитів ще не було</td></tr>';
+}
+
+async function probe() {
+  const body = {
+    text: $('#probe').value,
+    branch: $('#pbranch').value.trim(),
+    domain: $('#pdomain').value.trim(),
+    use_model: $('#pmodel').checked,
+  };
+  $('#probeout').innerHTML = '<span class="muted">рахую…</span>';
+  let d;
+  try {
+    d = await api('/api/ai/dry-run',
+      {method: 'POST', headers: {'content-type': 'application/json'},
+       body: JSON.stringify(body)});
+  } catch (e) { $('#probeout').innerHTML = `<pre>${esc(e.message)}</pre>`; return; }
+  if (!d) return;
+  const r = d.routing;
+  const notOurs = (r.not_ours || []).map(x =>
+    `<div class="warnbar">Поза зоною лаби (<b>${esc(x.id)}</b>): ${esc(x['чому'])}</div>`).join('');
+  const cands = (r.candidates || []).map(x =>
+    `<tr><td>${esc(x.id)}</td><td>${x.score}</td>
+       <td>${pills(x.hits, 'hit')}</td><td>${pills(x.anti)}</td>
+       <td class="muted">${x.fixable ? 'є автофікс' : 'діагностика'} · ${esc(x.group)}</td></tr>`).join('');
+  $('#probeout').innerHTML = `
+    ${notOurs}
+    <div class="grid2">
+      <div>
+        <div class="muted">вітка</div>
+        <div>${d.branch ? `<b>${esc(d.branch)}</b> <span class="muted">(${esc(d.identified.how)})</span>`
+                        : `<span class="tag s-error">не визначено</span>
+                           <span class="muted">${esc(d.identified.error || '')}</span>`}</div>
+        <div class="muted" style="margin-top:8px">що запустить (${esc(r.router)})</div>
+        <div>${pills(r.checks, 'fired') || '<span class="muted">нічого</span>'}</div>
+        ${r.confidence ? `<div class="muted">впевненість ${r.confidence}</div>` : ''}
+        ${r.reason ? `<div class="muted">${esc(r.reason)}</div>` : ''}
+        ${r.agreement != null ? `<div class="muted">згода зі словами: ${r.agreement}</div>` : ''}
+        ${d.history.length ? `<div class="muted" style="margin-top:8px">раніше на цій вітці
+           спрацьовували:</div><div>${pills(d.history)}</div>` : ''}
+        ${r.model && r.model.error ? `<div class="muted" style="margin-top:8px">Claude: ${esc(r.model.error)}</div>` : ''}
+        ${r.model && r.model.usd ? `<div class="muted">коштувало $${r.model.usd}</div>` : ''}
+      </div>
+      <div>
+        <div class="muted">кандидати за словами</div>
+        <table><thead><tr><th>чек</th><th>бал</th><th>збіглось</th>
+          <th>«не про це»</th><th></th></tr></thead>
+          <tbody>${cands || '<tr><td colspan="5" class="muted">нічого не зматчилось</td></tr>'}</tbody></table>
+      </div>
+    </div>`;
+}
+
+let SK = null;
+
+function togglePrompt() {
+  const b = $('#prompt');
+  b.style.display = b.style.display === 'none' ? 'block' : 'none';
+  if (SK) b.textContent = SK.prompt;
+}
+
+async function loadSkills() {
+  const d = await api('/api/ai/skills');
+  if (!d) return;
+  SK = d;
+  const c = d.coverage;
+  $('#covmeta').textContent =
+    `${c.enriched}/${c.total} перевірок мають скіл · своїх записів ${c.custom}`
+    + (c.inactive.length ? ` · вимкнено ${c.inactive.length}` : '')
+    + ` · проєкт ${d.ptype} · сховище: ${d.store === 'mongo' ? 'Mongo' : 'файл'}`;
+
+  $('#checkids').setAttribute('data-i18n-skip', '');
+  $('#checkids').innerHTML = d.cards.map(c =>
+    `<option value="${esc(c.id)}">${esc(c.name)}</option>`).join('');
+
+  $('#orphans').innerHTML = (d.orphans || []).length ? `
+    <div class="warnbar">Записи без своєї перевірки (чек видалили або ще не
+      написали): ${d.orphans.map(o => `${esc(o.id)}
+      <button onclick="delSkill('${esc(o.id)}')">видалити</button>`).join(', ')}</div>` : '';
+
+  $('#skills').innerHTML = d.cards.map(c => {
+    const src = {'built-in': 'вбудований', 'custom': 'свій',
+                 'override': 'правка', 'auto': 'без скіла'}[c.source];
+    return `
+    <div class="skill ${c.active ? '' : 'off'}">
+      <span class="acts">
+        <button onclick="editSkill('${esc(c.id)}')">правити</button>
+        ${c.source === 'built-in' || c.source === 'auto' ? '' :
+          `<button onclick="toggleActive('${esc(c.id)}',${!c.active})">
+             ${c.active ? 'вимкнути' : 'увімкнути'}</button>
+           <button onclick="delSkill('${esc(c.id)}')">
+             ${c.source === 'override' ? 'скинути' : 'видалити'}</button>`}
+      </span>
+      <b>${esc(c.id)}</b>
+      <span class="pill src-${esc(c.source)}">${esc(src)}</span>
+      <span class="pill">${esc(c.group)}</span>
+      ${c.fixable ? '<span class="pill fired">автофікс</span>'
+                  : '<span class="pill">діагностика</span>'}
+      ${c.active ? '' : '<span class="pill src-auto">вимкнено — модель його не бачить</span>'}
+      <span class="sym" data-i18n-skip>${esc(c['симптом'])}</span>
+      <div data-i18n-skip>${pills(c['слова'], 'hit')}</div>
+      ${c['не про це'].length ? `<div class="muted">не про це: <span data-i18n-skip>${pills(c['не про це'])}</span></div>` : ''}
+      ${c['лагодить'] ? `<div class="muted">лагодить: <span data-i18n-skip>${esc(c['лагодить'])}</span></div>` : ''}
+      ${c.updated_at ? `<div class="muted">правив <span data-i18n-skip>${esc(c.author || '?')} · ${esc(c.updated_at)}</span></div>` : ''}
+    </div>`;
+  }).join('');
+}
+
+function editSkill(id) {
+  const c = (SK && SK.cards.find(x => x.id === id)) || null;
+  $('#editor').innerHTML = `
+    <div class="form">
+      <div class="row"><label>перевірка</label>
+        <input id="f_id" list="checkids" value="${esc(id)}"
+               ${id ? 'readonly' : ''} placeholder="напр. logo_domain">
+      </div>
+      ${id ? '' : `<div class="row"><span></span><span class="hint">
+        Виберіть зі списку наявних перевірок. Скіл для перевірки, якої ще
+        немає, збережеться, але працювати почне, коли з'явиться сам чек.
+      </span></div>`}
+      <div class="row"><label>симптом</label>
+        <textarea id="f_sym" placeholder="Що бачить людина на живому сайті. Саме цей рядок читає модель.">${esc(c ? c['симптом'] : '')}</textarea>
+      </div>
+      <div class="row"><label>слова-тригери</label>
+        <textarea id="f_words" placeholder="через кому або з нового рядка: лого, логотип, logo, бренд">${esc(c ? c['слова'].join(', ') : '')}</textarea>
+      </div>
+      <div class="row"><span></span><span class="hint">
+        Пишіть КОРЕНЕМ, без закінчення: «посилан» ловить і «посилання», і
+        «посиланням». Коротші за 4 літери шукаються точним словом. Додавайте
+        і російські форми — скарги приходять російською.
+      </span></div>
+      <div class="row"><label>«не про це»</label>
+        <textarea id="f_anti" placeholder="що відсікти від сусідньої перевірки: favicon, іконка вкладки">${esc(c ? c['не про це'].join(', ') : '')}</textarea>
+      </div>
+      <div class="row"><span></span><span class="hint">
+        Найважливіше поле, коли кілька перевірок ділять одне слово. Саме воно
+        розводить п'ять «лого»-перевірок між собою.
+      </span></div>
+      <div class="row"><label>що лагодить</label>
+        <input id="f_fix" value="${esc(c ? c['лагодить'] : '')}"
+               placeholder="одним рядком; порожньо = лише діагностика">
+      </div>
+      <div class="row"><span></span><span>
+        <button class="go" onclick="saveSkill()">Зберегти</button>
+        <button onclick="$('#editor').innerHTML=''">Скасувати</button>
+        <span class="err" id="f_err"></span>
+      </span></div>
+    </div>`;
+  $('#editor').scrollIntoView({block: 'nearest'});
+}
+
+async function saveSkill() {
+  const body = {
+    check_id: $('#f_id').value.trim(),
+    'симптом': $('#f_sym').value,
+    'слова': $('#f_words').value,
+    'не про це': $('#f_anti').value,
+    'лагодить': $('#f_fix').value,
+    active: true,
+  };
+  try {
+    await api('/api/ai/skills', {method: 'POST',
+      headers: {'content-type': 'application/json'}, body: JSON.stringify(body)});
+  } catch (e) {
+    let msg = e.message;
+    try { msg = JSON.parse(msg).detail || msg; } catch (_) {}
+    $('#f_err').textContent = msg;
+    return;
+  }
+  $('#editor').innerHTML = '';
+  loadSkills();
+}
+
+async function toggleActive(id, active) {
+  await api(`/api/ai/skills/${encodeURIComponent(id)}/active`, {method: 'POST',
+    headers: {'content-type': 'application/json'},
+    body: JSON.stringify({active})});
+  loadSkills();
+}
+
+async function delSkill(id) {
+  if (!confirm(`Прибрати запис для ${id}?\nЯкщо в перевірки є вбудована картка, повернеться вона.`)) return;
+  await api(`/api/ai/skills/${encodeURIComponent(id)}`, {method: 'DELETE'});
+  loadSkills();
+}
+
+// ------------------------------------------------------- мапа вердиктів
+const VCLS = {
+  ours: ['наше', 'ok'], not_ours: ['не наше', 'warn'],
+  no_check: ['чека немає', 'warn'], visual: ['візуальний прогін', 'warn'],
+  tool_failure: ['збій їхньої тули', 'muted'], soft: ['жовте', 'muted'],
+};
+
+async function loadVerdicts() {
+  const d = await api('/api/ai/verdicts');
+  if (!d) return;
+  $('#vmmeta').textContent =
+    `${d.count} записів · ${d.overlaid} правок поверх ${d.seeded} дефолтів · сховище: ${d.store}`;
+
+  // Дві смуги, і обидві про те, що мапа могла зіпсуватись мовчки.
+  let warn = '';
+  if (d.stale.length) warn += `<div class="bar warn">Каталог перевірок змінився після того,
+    як модель дала відповідь: <b>${d.stale.map(esc).join(', ')}</b>. Нових чеків ці записи
+    не побачать — перевір їх очима.</div>`;
+  if (d.quiet.length) warn += `<div class="bar warn">Кликали, а жодного разу не спрацювало:
+    ${d.quiet.map(q => `<b>${esc(q.key)}</b> ×${q.routed}`).join(', ')}.
+    Або запис хибний, або ім'я склеїло два різні дефекти — тоді йому потрібен варіант по логах.</div>`;
+  $('#vmwarn').innerHTML = warn;
+
+  const row = e => {
+    const [label, cls] = VCLS[e.class] || [e.class, 'muted'];
+    const st = e.stats || {};
+    const лічильник = st.routed ? `${st.fired || 0}/${st.routed}` : '—';
+    const куди = e.class === 'ours'
+      ? [...(e.php || []), ...(e.node || [])].map(esc).join(', ')
+      : (e.not_ours ? esc(e.not_ours) : '');
+    const хто = {seed: 'дефолт', model: 'модель', human: 'людина'}[e.by] || esc(e.by);
+    return `<tr>
+      <td class="mono">${esc(e.name)}</td>
+      <td class="${cls}">${label}</td>
+      <td class="mono">${куди}</td>
+      <td>${e.variants && e.variants.length ? `${e.variants.length} варіант(и)` : ''}</td>
+      <td class="muted">${хто}${e.origin === 'накладка' ? ' · правлено' : ''}</td>
+      <td class="mono">${лічильник}</td>
+      <td class="muted">${esc(e.reason || '')}</td>
+    </tr>`;
+  };
+  $('#verdicts').innerHTML = `<table><thead><tr>
+      <th>їхня перевірка</th><th>клас</th><th>наші чеки / клас</th>
+      <th>варіанти</th><th>звідки</th><th title="спрацювало / запускали">fired/routed</th>
+      <th>чому</th></tr></thead><tbody data-i18n-skip>
+    ${d.entries.map(row).join('')}</tbody></table>`;
+}
+
+load();
+loadSkills();
+loadVerdicts();
+</script>
+</body>
+</html>

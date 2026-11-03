@@ -1,0 +1,140 @@
+# =============================================================================
+# qa_lab — ПРОД (Docker Swarm + Traefik)
+# =============================================================================
+#   білд:   docker compose -f docker-compose.prod.yml build --push
+#   деплой: docker stack deploy --with-registry-auth --prune \
+#             --compose-file docker-compose.prod.yml "$CI_ENVIRONMENT_STACK"
+#
+# ПЕРЕДУМОВИ НА КЛАСТЕРІ (не в CI-змінних — це найчастіша причина
+# «пайплайн зелений, а таски pending»):
+#   • зовнішня overlay-мережа Traefik:
+#       docker network create --driver overlay --attachable traefik-public
+#   • мітка ноди, до якої прив'язаний volume зі станом:
+#       docker node update --label-add backend-worker=true <нода>
+#   Перевірити все це можна ручною джобою `verify_cluster` у пайплайні.
+#
+# ОДИН СЕРВІС. Nginx-едж тут не потрібен: FastAPI сам віддає і UI (`/`,
+# `/stats`, `/analytics`, `/spec`), і API — менше рухомих частин.
+#
+# Swarm ігнорує `restart:`, `container_name`, `shm_size` і `depends_on`.
+# `shm_size` особливо важливо: саме тому Chrome отримує --disable-dev-shm-usage
+# через BROWSER_EXTRA_ARGS (див. docker/Dockerfile).
+
+services:
+  qa_lab:
+    image: ${CI_REGISTRY_IMAGE:-qa_lab}:app-${IMAGE_TAG:-latest}
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+      target: prod
+    env_file:
+      - .env
+    environment:
+      # Стан — на volume, інакше він живе в шарі образу і зникає при кожному
+      # оновленні сервісу.
+      QA_LAB_STATE_DIR: /app/var
+      # Без цих двох прапорців Chrome у контейнері не стартує взагалі.
+      BROWSER_EXTRA_ARGS: "--no-sandbox --disable-dev-shm-usage"
+    volumes:
+      - qa_lab-state:/app/var
+    networks:
+      - traefik-public
+      - backend
+    healthcheck:
+      # Дешева перевірка: не ходить ні в GitLab, ні в ClickUp.
+      # ⚠️ Саме /api/health, а не /api/status: усі ендпоінти закриває
+      # auth-middleware, і на /api/status healthcheck отримує 401 → таска
+      # ніколи не стає healthy → update_config.failure_action відкочує
+      # цілком робочий деплой. /api/health для того й у PUBLIC_PATHS.
+      test: ["CMD", "python", "-c",
+             "import urllib.request;urllib.request.urlopen('http://127.0.0.1:8030/api/health',timeout=5)"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 30s
+    # Лаба тримає php-деплої і Chrome — дати їм час лягти разом із сервісом.
+    stop_grace_period: 30s
+    deploy:
+      mode: replicated
+      replicas: 1
+      # РІВНО одна репліка: стан лежить у файлах без БД, а локи — у пам'яті
+      # одного процесу. Дві репліки писали б в один volume наввипередки.
+      update_config:
+        order: stop-first
+        failure_action: rollback
+        delay: 10s
+      rollback_config:
+        order: stop-first
+      placement:
+        constraints:
+          # Volume прив'язує сервіс до конкретної ноди — без цього обмеження
+          # Swarm може перекинути таску на іншу, і вона стартує з порожнім
+          # станом (кеш віток, домени, вся аналітика лишаються на старій).
+          - node.labels.backend-worker == true
+      resources:
+        limits:
+          # Візуальний прогін: 1 воркер ≈ 1 фізичне ядро + 1.4 ГБ RAM.
+          # Тримати в парі з VISUAL_WORKERS у .env.
+          memory: 6G
+        reservations:
+          memory: 2G
+      restart_policy:
+        condition: any
+        delay: 5s
+        window: 30s
+      labels:
+        - "traefik.enable=true"
+        - "traefik.swarm.network=traefik-public"
+        - "traefik.constraint-label=traefik-public"
+        - "traefik.http.routers.${CI_PROJECT_NAME:-qa_lab}.rule=Host(`${DOMAIN_NAME}`)"
+        - "traefik.http.routers.${CI_PROJECT_NAME:-qa_lab}.entrypoints=http"
+        # BasicAuth тут СВІДОМО НЕМАЄ, і повертати його на цей роутер не можна.
+        # Він стояв, доки в лаби не було власного входу; з 14.08 вхід є
+        # (логін+пароль або Slack-OIDC), тобто гейт став другим на тому самому
+        # origin — а два гейти на одному origin несумісні:
+        #
+        #   Chrome шле збережений Basic-пароль ПРЕВЕНТИВНО на кожен запит хоста.
+        #   Наш застосунок віддає на невдалий вхід і на протухлу сесію 401 БЕЗ
+        #   `WWW-Authenticate` — браузер читає це як «пароль відхилено» і
+        #   викидає його з кеша. Наступний запит іде голим, Traefik питає
+        #   пароль знову, вже посеред роботи.
+        #
+        # Заміряно 26.08 на копії цього бутерброда (проксі, що відповідає як
+        # Traefik, справжній Chrome через CDP): без жодного 401 від застосунку
+        # навігація несе Authorization і вікна немає; варто одному 401
+        # пройти — наступний запит іде без пароля. Кейс, з якого почалось:
+        # користувач вводить логін у лабу і отримує вікно BasicAuth утретє.
+        #
+        # Якщо гейт на вході знадобиться знову — він мусить бути або на ІНШОМУ
+        # origin, або не Basic (forward-auth з редіректом на свою форму).
+        - "traefik.http.services.${CI_PROJECT_NAME:-qa_lab}.loadbalancer.server.port=8030"
+        # --- прев'ю вітки: ДРУГИЙ хост на цей самий сервіс ---
+        # Лаба розводить запити за Host сама (див. preview.py): на цьому хості
+        # не існує жодного маршруту лаби, там лише проксі до php -S піднятої
+        # вітки. Тому окремого сервісу і публікації портів не потрібно.
+        #
+        # BasicAuth сюди свідомо НЕ вішаємо: це інший origin, браузер попросив
+        # би пароль удруге. Гейт там сильніший — одноразовий токен на 60 с, що
+        # обмінюється на host-only куку з терміном на сервері.
+        #
+        # Дефолт `preview.disabled.invalid` — щоб незаведена CI-змінна не
+        # створила правило `Host()` з порожнім значенням: Traefik такий роутер
+        # відкидає з помилкою, а так він просто ніколи не збігається.
+        # ⚠️ Значення мусить бути ОДНИМ лейблом під базовим доменом
+        # (lab-preview.example.com), інакше не потрапляє під wildcard.
+        - "traefik.http.routers.${CI_PROJECT_NAME:-qa_lab}-preview.rule=Host(`${PREVIEW_HOST:-preview.disabled.invalid}`)"
+        - "traefik.http.routers.${CI_PROJECT_NAME:-qa_lab}-preview.entrypoints=http"
+
+networks:
+  # Обидві мережі мають існувати на кластері заздалегідь.
+  traefik-public:
+    external: true
+  backend:
+    external: true
+
+volumes:
+  # Увесь стан лаби: cache/ (знімки віток, ~2 МБ на вітку), deploy/, screens/,
+  # visual/, lighthouse/, stats/ і checkruns/ (вічна історія), усі json-и.
+  # ⚠️ Єдина копія — бекап volume треба заводити окремо: `stats_backfill`
+  # відновить з GitLab лише коміти, але не прогони чеків і не домени.
+  qa_lab-state:

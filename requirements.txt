@@ -1,0 +1,13 @@
+fastapi>=0.110
+uvicorn[standard]>=0.29
+requests>=2.31
+python-dotenv>=1.0
+websockets>=12.0
+Pillow>=10.0
+# Visual checks measure the background from screenshot pixels: _Shot turns the
+# PNG into an array, _bg_from_pixels takes the median, _preview_verdict diffs
+# frames. Without numpy the Visual tab fails with ModuleNotFoundError.
+numpy>=1.26
+# Lab users. Imported ONLY when MONGO_URI is set; otherwise users.json in the
+# state root is the store, so a native run needs neither Mongo nor this package.
+pymongo>=4.6

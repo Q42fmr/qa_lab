@@ -1,0 +1,59 @@
+##############################################################################
+# qa_lab — systemd unit (Linux).
+#
+# Ставиться як СЕРВІС КОРИСТУВАЧА, не системний: лаб пише у свою теку
+# (cache/, deploy/, state/), лазить у ~/.config і піднімає headless-Chrome —
+# усе це зручніше робити від власного юзера, без root.
+#
+#   mkdir -p ~/.config/systemd/user
+#   cp qa_lab.service ~/.config/systemd/user/
+#   $EDITOR ~/.config/systemd/user/qa_lab.service   # виправ WorkingDirectory
+#   systemctl --user daemon-reload
+#   systemctl --user enable --now qa_lab
+#
+# Щоб сервіс жив і коли ти не залогінений (інакше systemd глушить сесію):
+#   sudo loginctl enable-linger $USER
+#
+# Повний розбір — README, розділ «4.1 Запуск на Linux».
+##############################################################################
+
+[Unit]
+Description=qa_lab — QA-сервер для white-pages
+Documentation=file:%h/qa_lab/README.md
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=exec
+
+# ВИПРАВ ПІД СЕБЕ: тека, у якій лежить app.py
+WorkingDirectory=%h/qa_lab
+
+# Без --reload: перезапуском керує systemd, а reload-воркер плутає
+# supervision (systemd бачить батька, який сам себе перезапускає).
+ExecStart=%h/qa_lab/.venv/bin/uvicorn app:app --host 127.0.0.1 --port 8030 --timeout-graceful-shutdown 3
+
+# .env читає сам застосунок (python-dotenv), але systemd не дає ані PATH
+# з профілю, ані локалі — тож задаємо явно. Без UTF-8 логи й імена файлів
+# з кирилицею ламаються.
+Environment=PYTHONUNBUFFERED=1
+Environment=PYTHONIOENCODING=utf-8
+Environment=LANG=C.UTF-8
+Environment=LC_ALL=C.UTF-8
+Environment=PATH=%h/qa_lab/.venv/bin:/usr/local/bin:/usr/bin:/bin
+
+Restart=on-failure
+RestartSec=3
+
+# Зупинка: TERM усій групі, щоб разом із сервером лягли php-деплої і
+# headless-Chrome, які він наплодив. 20 с — запас на graceful-shutdown.
+KillMode=control-group
+KillSignal=SIGTERM
+TimeoutStopSec=20
+
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=qa_lab
+
+[Install]
+WantedBy=default.target

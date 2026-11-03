@@ -1,0 +1,477 @@
+# =============================================================================
+# qa_lab — GitLab CI/CD
+# =============================================================================
+# Форма — як у сусідніх стеках компанії (`news-parser`,
+# `sibling-backend`): `.auto-deploy` рендерить `.env` і робить
+# `docker stack deploy`, `build` збирає й пушить образ, `.production` —
+# шаблон деплой-джоби на раннері-менеджері.
+#
+#   git push origin main  →  build (зібрати → ПРОГНАТИ ТЕСТИ В ОБРАЗІ → push)
+#                         →  production (docker stack deploy, автоматично)
+#
+# Фіча-гілки допустимі, але необов'язкові: на них іде тільки `build`, деплой
+# не запускається. Мерджити нічого не треба — різниця між дев і прод живе не
+# в коді, а в CI-змінних і в тому, який compose-файл ти запускаєш.
+#
+# АДРЕСА: https://lab.example.com  (сусід — parser-ui.example.com)
+# Задається CI-змінною DOMAIN_NAME; пайплайн падає, якщо вона порожня.
+#
+# -----------------------------------------------------------------------------
+# ДВІ ВІДМІННОСТІ ВІД ЗРАЗКА — обидві свідомі:
+#
+# 1. Рендер `.env` лежить у `before_script` спільного `.auto-deploy`, а не
+#    продубльований у `build` і в деплої. У зразку два однакові блоки по ~20
+#    рядків sed, і вони вже розходились між собою; тут джерело одне.
+#
+# 2. Шаблон зветься `.env.prod.example`, а не `.env.example`. У цьому
+#    репозиторії `.env.example` — детальний файл-довідка для локальної
+#    роботи (з реальними дефолтами й коментарями), і перетворювати його на
+#    набір плейсхолдерів означало б відібрати в розробника документацію.
+#
+# -----------------------------------------------------------------------------
+# CI/CD-змінні (Settings → CI/CD → Variables). Секрети — Masked.
+#
+# ДЛЯ `build` НЕ ПОТРІБНО ЖОДНОЇ. Образ не залежить від секретів, тестовий
+# гейт усередині нього — тим паче. Заводь змінні перед першим деплоєм, а не
+# перед першим пушем.
+#
+# --- обов'язкові для деплою (guard зупиняє джобу) ----------------------------
+#   DOMAIN_NAME           lab.example.com
+#   ADMIN_PASSWORD        пароль адміна ЗАСТОСУНКУ — єдина учетка,
+#                         яка зайде завжди                            [Masked]
+#
+# --- решта: можна не заводити, лаба підніметься -----------------------------
+# Порожнє значення = інтеграція просто вимкнена. Що саме вимкнулось —
+# видно в логу джоби, блок «== інтеграції ==».
+#
+#   ADMIN_LOGIN           логін адміна застосунку            (дефолт admin)
+#   ADMIN_NAME            його ім'я в UI              (дефолт Administrator)
+#
+#   GITLAB_URL            GitLab, звідки лаба бере ВІТКИ
+#                         (дефолт https://gitlab.example.com)
+#   GITLAB_PROJECT        напр. development/white-pages
+#   GITLAB_TOKEN          Project Access Token (Developer + api)      [Masked]
+#                         ⚠️ порожній = лаба працює на fixtures/ (MOCK_MODE),
+#                         тобто піднімається, але справжніх віток не бачить
+#   MOCK_MODE             1 — примусовий мок навіть із живим токеном (дефолт 0)
+#
+#   CLICKUP_TOKEN         pk_...                                      [Masked]
+#   CLICKUP_VIEW_ID       id в'ю зі списками
+#   CLICKUP_ME            username у ClickUp (за ним шукаються @згадки)
+#   CLICKUP_WEBHOOK_SECRET  секрет підпису вебхука ClickUp            [Masked]
+#                           заводити НЕ треба: лаба реєструє вебхук сама і
+#                           тримає ключ у томі стану. Заповнена змінна = ручний
+#                           режим (лаба в ClickUp не ходить і вірить їй)
+#   CU_QUEUE_ENABLED      0 = сховати перемикачі черги (вето стенда)
+#                         порожньо = вкладка ClickUp віддає 400 з поясненням
+#
+#   SLACK_CLIENT_ID  SLACK_CLIENT_SECRET[Masked]  SLACK_TEAM_ID
+#                         вхід через Slack (OIDC). Потрібні ВСІ ТРИ або
+#                         ЖОДНОЇ: половину трійки деплой відхиляє голосно
+#                         (guard у `script` деплою) — інакше модуль
+#                         вимикається цілком, а виглядає це як «кнопка
+#                         входу зникла сама собою».
+#                         Де взяти: api.slack.com/apps → застосунок →
+#                         Basic Information → App Credentials (Client ID і
+#                         Client Secret; Signing Secret і Verification Token
+#                         лежать поруч — не вони). TEAM_ID — з адреси
+#                         веб-клієнта: app.slack.com/client/T…
+#                         ⚠️ Галку *Protected* цим трьом не ставити, поки
+#                         гілка деплою не protected — приїдуть порожніми, і
+#                         тоді спрацює саме guard вище.
+#   SLACK_REDIRECT_URI    заводити НЕ треба: виводиться з DOMAIN_NAME як
+#                         https://<домен>/api/auth/slack/callback. Рівно цей
+#                         рядок мусить лежати в застосунку Slack у
+#                         OAuth & Permissions → Redirect URLs, інакше Slack
+#                         відповість `bad_redirect_uri`. Значення друкується
+#                         в лог деплою — звіряти очима.
+#
+#   MONGO_URI             mongodb://user:pass@mongo:27017/?authSource=admin [Masked]
+#                         БАЗА. На кластері вона відповідає ЛИШЕ як
+#                         `mongo:27017` і лише зсередини оверлею backend —
+#                         стек лаби в ньому вже є (networks: backend).
+#                         Своєї Mongo стек не піднімає: користується спільною.
+#                         Порожньо = лаба працює на json-файлах на volume;
+#                         це робочий режим, а не поломка.
+#                         Локальний двійник бази — сервіс `mongo` у
+#                         docker-compose.dev.yml (там же ганяються тести БД).
+#   MONGO_DB              qa_lab · MONGO_USERS_COLL  users
+#                         MONGO_SKILLS_COLL  ai_skills — скіли ШІ-моста
+#   QA_LAB_SECRET_KEY        підпис сесійної куки; порожньо = згенерується сам [Masked]
+#
+#   QA_LAB_BRIDGE_TOKEN      токен ШІ-моста для TSM [Masked]
+#                         порожньо = міст закритий (401), решта лаби працює
+#                         `openssl rand -hex 32`
+#   ANTHROPIC_API_KEY     ключ Claude для роутингу скарг [Masked]
+#                         порожньо = роутер працює на словах з карток скілів
+#   AI_MODEL              claude-opus-5 (дефолт)
+#   AI_BRIDGE_APPLY       0 = сухий прогін (дефолт), 1 = мосту дозволено комітити
+#   AI_AUTOFIX_GROUPS     auto (дефолт) — з яких груп чеків дозволено лагодити
+#   AI_BUDGET_USD         0 = без стелі; понад стелю роутер з'їжджає на слова
+#   AI_CLICKUP            1 = писати результат коментарем у таску
+#   AI_MAX_ROUNDS         2 = скільки кіл по одній проблемі, далі ескалація
+#   AI_COOLDOWN_S         900 = вікно, у якому повтор вважається дублем
+#
+#   PREVIEW_HOST          піддомен, на якому людина клацає вітку руками.
+#                         ЗАВОДИТИ НЕ ТРЕБА: якщо змінної немає, пайплайн
+#                         виводить ім'я з DOMAIN_NAME, додаючи `-preview` до
+#                         першого лейбла —
+#                         lab.example.com -> lab-preview.example.com
+#                         Саме одним лейблом, бо wildcard і в DNS, і в TLS
+#                         матчить рівно один: `preview.lab.…` вимагав
+#                         би окремого DNS-запису й окремого серта.
+#                         Щоб ВИМКНУТИ прев'ю — заведи змінну ПОРОЖНЬОЮ
+#                         (порожнє значення тут означає «вимкнено», на
+#                         відміну від решти змінних).
+#
+#   VUE_GITLAB_PROJECT VUE_GITLAB_TOKEN[Masked]
+#            TELEGRAM_BOT_TOKEN[Masked] TELEGRAM_CHAT_ID
+#            MAGNIFIC_API_KEY[Masked] PEXELS_API_KEY[Masked] PIXABAY_API_KEY[Masked]
+#            VISUAL_WORKERS VISUAL_TABS CHECK_WORKERS FORM_TEST_NAME FORM_TEST_EMAIL FORM_TEST_PHONE
+#
+# ⚠️ ПАСТКА «Protected variables». Змінна з галкою *Protected* видається лише
+#    джобам на protected-гілці. Якщо `main` не позначений protected, секрети
+#    приїдуть ПОРОЖНІМИ — guard на плейсхолдери цього не спіймає (вони чесно
+#    заміняться на порожній рядок), і зламається вже рантайм: лаба тихо піде в
+#    MOCK_MODE, а Slack-вхід і Mongo просто не ввімкнуться. Тому або `main`
+#    protected (і розробнику дано право пушити в неї), або змінним не
+#    ставити *Protected*.
+#
+# ⚠️ Значення не мають містити символ `|` — він розділювач у sed.
+# =============================================================================
+
+stages:
+  - build
+  - production
+
+variables:
+  # Незмінний тег на коміт. Саме тому не `latest`: із плаваючим тегом
+  # `docker stack deploy` бачить ту саму рядкову координату образу і може
+  # мовчки лишити сервіс на старій версії. Обидві джоби виводять його
+  # однаково, тому передавати між стадіями нічого не треба.
+  IMAGE_TAG: "$CI_COMMIT_SHORT_SHA"
+
+# -----------------------------------------------------------------------------
+# .auto-deploy — рендер конфігу + власне деплой.
+# -----------------------------------------------------------------------------
+.auto-deploy:
+  dependencies: []
+  before_script:
+    - 'echo "$CI_REGISTRY_PASSWORD" | docker login --username "$CI_REGISTRY_USER" --password-stdin "$CI_REGISTRY"'
+    - 'test -f .env.prod.example || (echo ".env.prod.example file is missing" && exit 1)'
+    - 'cp .env.prod.example .env'
+
+    # BasicAuth перед лабою більше немає — гейт один, власний вхід застосунку
+    # (див. чому саме, у `docker-compose.prod.yml` над лейблами роутера).
+    # Разом з ним поїхали `ADMIN_UI_USER` / `ADMIN_UI_PASSWORD` /
+    # `ADMIN_UI_PASSWORD_HASH` і перевірка форми bcrypt: підставляти нікуди.
+    # Учетка адміна ЗАСТОСУНКУ — це `ADMIN_LOGIN` / `ADMIN_PASSWORD` нижче.
+
+    # Значення йде в ЛЕЙБЛ Traefik, а `docker stack deploy` бере такі значення
+    # лише з оточення процесу. Порожнє значення — робочий стан: роутер отримає
+    # ніколи-не-збіжний хост, і прев'ю вимкнене.
+    #
+    # Ім'я виводимо з DOMAIN_NAME, а не просимо завести руками. Кожен проєкт
+    # компанії отримує піддомен без ручної роботи на сервері, а в наших
+    # лейблах немає ні `certresolver`, ні `tls` — отже DNS і серт зроблені
+    # глобально, найпевніше wildcard на `*.example.com`. Wildcard і в DNS,
+    # і в TLS (RFC 6125) матчить РІВНО ОДИН лейбл, тому єдина форма без
+    # ручного запису й окремого серта — додати `-preview` до першого лейбла:
+    #   lab.example.com  ->  lab-preview.example.com
+    # `preview.lab.example.com` під wildcard уже НЕ підпадає.
+    #
+    # Дефіс у `${PREVIEW_HOST-$d}` ОДИН, і це не одрук. З `:-` заведена
+    # порожня змінна теж отримала б виведене ім'я, і вимкнути прев'ю в проді
+    # стало б нічим. Один дефіс лишає рівно три стани: змінної немає — беремо
+    # виведене ім'я; змінна заведена порожньою — прев'ю вимкнене; змінна зі
+    # значенням — беремо його. Той самий прийом, що з MONGO_URI у
+    # docker-compose.dev.yml.
+    - >
+      d="";
+      case "${DOMAIN_NAME:-}" in
+        *.*) d="${DOMAIN_NAME%%.*}-preview.${DOMAIN_NAME#*.}";;
+      esac;
+      export PREVIEW_HOST="${PREVIEW_HOST-$d}"
+
+    # Спецсимволи sed у значеннях секретів. Нижче все підставляється через
+    # `sed "s|{{NAME}}|значення|g"`, і три символи там означають не себе:
+    #   |   розділювач — значення обрізається по ньому;
+    #   &   «весь збіг» — на його місце підставляється сам плейсхолдер;
+    #   \   екранування — символ і наступний за ним зникають.
+    # Жоден з трьох не дає помилки: для sed команда лишається коректною.
+    # Заміряно 19.08 на реальному рендері:
+    #   'p@ss|word'  ->  'p@ss'
+    #   'ab&cd'      ->  'ab{{ADMIN_PASSWORD}}cd'
+    #   'ab\cd'      ->  'ab'
+    # Далі це виглядає як «адмін не може зайти правильним паролем», і зв'язати
+    # одне з одним нема з чого — саме так і згорів перший деплой. Тому
+    # зупиняємось тут, голосно. Токени GitLab/ClickUp/Slack під це не
+    # підпадають (алфавіт фіксований), тому перевіряємо тільки значення,
+    # текст яких вибирає людина.
+    - >
+      for n in ADMIN_PASSWORD ADMIN_LOGIN ADMIN_NAME MONGO_URI QA_LAB_SECRET_KEY QA_LAB_BRIDGE_TOKEN; do
+        eval "v=\${$n:-}";
+        case "$v" in
+          *"|"*|*"&"*|*"\\"*) echo "$n contains one of | & \\ — sed treats them as syntax and would silently corrupt the value. Change the secret."; exit 1;;
+        esac;
+      done
+
+    # --- координати образу ---
+    - 'sed -i.bak "s|{{CI_REGISTRY_IMAGE}}|${CI_REGISTRY_IMAGE:-}|g" .env'
+    - 'sed -i.bak "s|{{IMAGE_TAG}}|${IMAGE_TAG:-latest}|g" .env'
+
+    # --- адреса ---
+    - 'sed -i.bak "s|{{DOMAIN_NAME}}|${DOMAIN_NAME:-}|g" .env'
+
+    # --- користувачі і вхід у застосунок ---
+    # Порожній MONGO_URI = сховищем працює users.json у корені стану.
+    - 'sed -i.bak "s|{{MONGO_URI}}|${MONGO_URI:-}|g" .env'
+    - 'sed -i.bak "s|{{MONGO_DB}}|${MONGO_DB:-qa_lab}|g" .env'
+    - 'sed -i.bak "s|{{MONGO_USERS_COLL}}|${MONGO_USERS_COLL:-users}|g" .env'
+    - 'sed -i.bak "s|{{MONGO_SKILLS_COLL}}|${MONGO_SKILLS_COLL:-ai_skills}|g" .env'
+    - 'sed -i.bak "s|{{QA_LAB_SECRET_KEY}}|${QA_LAB_SECRET_KEY:-}|g" .env'
+
+    # --- ШІ-міст ---
+    # Порожній QA_LAB_BRIDGE_TOKEN = міст закритий (401 усім); це безпечний
+    # дефолт, а не поломка. Порожній ANTHROPIC_API_KEY = роутер на словах.
+    - 'sed -i.bak "s|{{QA_LAB_BRIDGE_TOKEN}}|${QA_LAB_BRIDGE_TOKEN:-}|g" .env'
+    - 'sed -i.bak "s|{{ANTHROPIC_API_KEY}}|${ANTHROPIC_API_KEY:-}|g" .env'
+    - 'sed -i.bak "s|{{AI_MODEL}}|${AI_MODEL:-claude-opus-5}|g" .env'
+    - 'sed -i.bak "s|{{AI_BRIDGE_APPLY}}|${AI_BRIDGE_APPLY:-0}|g" .env'
+    - 'sed -i.bak "s|{{AI_AUTOFIX_GROUPS}}|${AI_AUTOFIX_GROUPS:-auto}|g" .env'
+    - 'sed -i.bak "s|{{AI_BUDGET_USD}}|${AI_BUDGET_USD:-0}|g" .env'
+    - 'sed -i.bak "s|{{AI_CLICKUP}}|${AI_CLICKUP:-1}|g" .env'
+    - 'sed -i.bak "s|{{AI_MAX_ROUNDS}}|${AI_MAX_ROUNDS:-2}|g" .env'
+    - 'sed -i.bak "s|{{AI_COOLDOWN_S}}|${AI_COOLDOWN_S:-900}|g" .env'
+    - 'sed -i.bak "s|{{ADMIN_LOGIN}}|${ADMIN_LOGIN:-admin}|g" .env'
+    - 'sed -i.bak "s|{{ADMIN_PASSWORD}}|${ADMIN_PASSWORD:-}|g" .env'
+    - 'sed -i.bak "s|{{ADMIN_NAME}}|${ADMIN_NAME:-Administrator}|g" .env'
+    - 'sed -i.bak "s|{{SLACK_CLIENT_ID}}|${SLACK_CLIENT_ID:-}|g" .env'
+    - 'sed -i.bak "s|{{SLACK_CLIENT_SECRET}}|${SLACK_CLIENT_SECRET:-}|g" .env'
+    - 'sed -i.bak "s|{{SLACK_TEAM_ID}}|${SLACK_TEAM_ID:-}|g" .env'
+    - 'sed -i.bak "s|{{SLACK_REDIRECT_URI}}|${SLACK_REDIRECT_URI:-https://${DOMAIN_NAME:-}/api/auth/slack/callback}|g" .env'
+
+    # --- GitLab, звідки лаба бере вітки ---
+    - 'sed -i.bak "s|{{GITLAB_URL}}|${GITLAB_URL:-https://gitlab.example.com}|g" .env'
+    - 'sed -i.bak "s|{{GITLAB_PROJECT}}|${GITLAB_PROJECT:-development/white-pages}|g" .env'
+    - 'sed -i.bak "s|{{GITLAB_TOKEN}}|${GITLAB_TOKEN:-}|g" .env'
+    # Порожній GITLAB_TOKEN сам вмикає MOCK_MODE (projects.py:52), тож
+    # деплой без токена не падає — лаба читає вітки з fixtures/. Змінна
+    # потрібна для зворотного: ганяти мок-режим НА проді з живим токеном.
+    - 'sed -i.bak "s|{{MOCK_MODE}}|${MOCK_MODE:-0}|g" .env'
+
+    # --- прев'ю-піддомен ---
+    # Значення тут уже виведене з DOMAIN_NAME вище, тому `:-` у цьому рядку
+    # ніколи не спрацьовує — він стоїть заради lockstep-гарди, яка вимагає
+    # дефолт у КОЖНОМУ sed.
+    - 'sed -i.bak "s|{{PREVIEW_HOST}}|${PREVIEW_HOST:-}|g" .env'
+
+    # --- другий проєкт: node-вайти (порожньо = не з'являється в перемикачі) ---
+    - 'sed -i.bak "s|{{VUE_GITLAB_PROJECT}}|${VUE_GITLAB_PROJECT:-}|g" .env'
+    - 'sed -i.bak "s|{{VUE_GITLAB_TOKEN}}|${VUE_GITLAB_TOKEN:-}|g" .env'
+
+    # --- ClickUp ---
+    - 'sed -i.bak "s|{{CLICKUP_TOKEN}}|${CLICKUP_TOKEN:-}|g" .env'
+    - 'sed -i.bak "s|{{CLICKUP_VIEW_ID}}|${CLICKUP_VIEW_ID:-}|g" .env'
+    - 'sed -i.bak "s|{{CLICKUP_ME}}|${CLICKUP_ME:-}|g" .env'
+    - 'sed -i.bak "s|{{CLICKUP_WEBHOOK_SECRET}}|${CLICKUP_WEBHOOK_SECRET:-}|g" .env'
+    - 'sed -i.bak "s|{{CU_QUEUE_ENABLED}}|${CU_QUEUE_ENABLED:-1}|g" .env'
+
+    # --- Telegram (порожньо = вотчер мовчить) ---
+    - 'sed -i.bak "s|{{TELEGRAM_BOT_TOKEN}}|${TELEGRAM_BOT_TOKEN:-}|g" .env'
+    - 'sed -i.bak "s|{{TELEGRAM_CHAT_ID}}|${TELEGRAM_CHAT_ID:-}|g" .env'
+
+    # --- пошук стокових фото (будь-який один ключ або жодного) ---
+    - 'sed -i.bak "s|{{MAGNIFIC_API_KEY}}|${MAGNIFIC_API_KEY:-}|g" .env'
+    - 'sed -i.bak "s|{{PEXELS_API_KEY}}|${PEXELS_API_KEY:-}|g" .env'
+    - 'sed -i.bak "s|{{PIXABAY_API_KEY}}|${PIXABAY_API_KEY:-}|g" .env'
+
+    # --- візуальні перевірки: 1 воркер ≈ 1 фізичне ядро + 1.4 ГБ RAM ---
+    - 'sed -i.bak "s|{{VISUAL_WORKERS}}|${VISUAL_WORKERS:-2}|g" .env'
+    - 'sed -i.bak "s|{{VISUAL_TABS}}|${VISUAL_TABS:-3}|g" .env'
+
+    # --- прогони перевірок: процеси замість потоків (0 = потоки, як раніше) ---
+    - 'sed -i.bak "s|{{CHECK_WORKERS}}|${CHECK_WORKERS:-3}|g" .env'
+
+    # --- дані, якими прогін заповнює контактну форму ---
+    - 'sed -i.bak "s|{{FORM_TEST_NAME}}|${FORM_TEST_NAME:-Ana Test}|g" .env'
+    - 'sed -i.bak "s|{{FORM_TEST_EMAIL}}|${FORM_TEST_EMAIL:-qa.lead@example.com}|g" .env'
+    - 'sed -i.bak "s|{{FORM_TEST_PHONE}}|${FORM_TEST_PHONE:-+52 55 1234 5678}|g" .env'
+
+    - 'rm -f .env.bak'
+    - '! grep -q "{{" .env || (echo "Unresolved placeholders found in .env" && grep "{{" .env && exit 1)'
+
+    # Що поїде увімкненим. Порожня інтеграція — не помилка, це робочий стан:
+    # лаба піднімається і без GitLab, і без ClickUp, і без Slack. Але мовчки
+    # такий деплой виглядає як зламаний, тому стан друкуємо в лог джоби.
+    - 'echo "== інтеграції =="'
+    - 'if [ -n "${GITLAB_TOKEN:-}" ]; then echo "  GitLab   увімкнено"; else echo "  GitLab   ВИМКНЕНО — порожній токен, лаба піде в MOCK_MODE (вітки з fixtures/)"; fi'
+    - 'if [ -n "${CLICKUP_TOKEN:-}" ]; then echo "  ClickUp  увімкнено"; else echo "  ClickUp  ВИМКНЕНО — вкладка віддасть 400 з поясненням, решта працює"; fi'
+    # Redirect URL друкуємо навмисно: він мусить збігтися з тим, що вписано
+    # в застосунку Slack, СИМВОЛ У СИМВОЛ. Розбіжність Slack повертає як
+    # `bad_redirect_uri` ще на своєму боці — до нашого коду запит не доходить
+    # і в логах лаби не лишається нічого. Порівняти два рядки очима дешевше,
+    # ніж шукати це вдруге.
+    - >
+      if [ -n "${SLACK_CLIENT_ID:-}" ] && [ -n "${SLACK_CLIENT_SECRET:-}" ] && [ -n "${SLACK_TEAM_ID:-}" ]; then
+        echo "  Slack    увімкнено — воркспейс ${SLACK_TEAM_ID}";
+        echo "           redirect_uri: ${SLACK_REDIRECT_URI:-https://${DOMAIN_NAME:-}/api/auth/slack/callback}";
+        echo "           той самий рядок мусить лежати в api.slack.com -> OAuth & Permissions -> Redirect URLs";
+      else
+        echo "  Slack    ВИМКНЕНО — кнопки на екрані входу немає, вхід за логіном і паролем";
+      fi
+    - 'if [ -n "${ANTHROPIC_API_KEY:-}" ]; then echo "  Claude   увімкнено (${AI_MODEL:-claude-opus-5})"; else echo "  Claude   ВИМКНЕНО — роутер ШІ-моста працює на словах з карток скілів"; fi'
+    - 'if [ -n "${QA_LAB_BRIDGE_TOKEN:-}" ]; then echo "  ШІ-міст  увімкнено"; else echo "  ШІ-міст  ЗАКРИТО — /api/ai/* віддає 401, решта лаби працює"; fi'
+    - >
+      if [ -n "${PREVIEW_HOST:-}" ]; then
+        echo "  Прев'ю   увімкнено — https://${PREVIEW_HOST}";
+      else
+        echo "  Прев'ю   ВИМКНЕНО — кнопки 👁 на картці вітки не буде";
+      fi
+  script:
+    # Guard'и ДЕПЛОЮ. Свідомо не в before_script: `build` мусить проходити на
+    # репозиторії, де ще не заведено жодної CI-змінної — образ від них не
+    # залежить, а тестовий гейт усередині образу тим паче.
+    - 'test -n "$DOMAIN_NAME" || (echo "DOMAIN_NAME is required (e.g. lab.example.com)" && exit 1)'
+    # ADMIN_PASSWORD тепер єдиний, що стоїть між доменом і чужими руками:
+    # BasicAuth перед лабою знято, тож форма входу застосунку — весь гейт.
+    - 'test -n "$ADMIN_PASSWORD" || (echo "ADMIN_PASSWORD is required — the app login is now the only gate in front of the domain" && exit 1)'
+    # Slack: або всі три значення, або жодного.
+    #
+    # Половина трійки — найтихіша поломка входу з можливих.
+    # `slack_oauth.enabled()` вимагає ВСІ ТРИ (коміт 6d20f15), тож на двох
+    # заповнених модуль вимикається цілком: кнопки на екрані входу просто
+    # немає, застосунок при цьому здоровий і в логах порожньо. Ззовні це
+    # читається як «вхід через Slack зник сам собою», і шукати причину нема
+    # де — у самій лабі вона не проявляється НІЯК.
+    #
+    # Найчастіший шлях сюди — не забудькуватість, а галка *Protected* на
+    # змінній при non-protected гілці: значення приїжджає порожнім і мовчки
+    # (та сама пастка, що описана в шапці файлу). Тому зупиняємось тут і
+    # називаємо, чого саме бракує.
+    - >
+      slack_empty='';
+      for name in SLACK_CLIENT_ID SLACK_CLIENT_SECRET SLACK_TEAM_ID; do
+        eval "v=\${$name:-}";
+        if [ -z "$v" ]; then slack_empty="$slack_empty $name"; fi;
+      done;
+      if [ -n "${SLACK_CLIENT_ID:-}${SLACK_CLIENT_SECRET:-}${SLACK_TEAM_ID:-}" ] && [ -n "$slack_empty" ]; then
+        echo "Slack login needs all three variables or none — these are empty:$slack_empty";
+        echo "  A *Protected* variable on a non-protected branch arrives empty — that is the usual cause.";
+        echo "  Fill them in Settings -> CI/CD -> Variables, or clear all three to deploy without Slack login.";
+        exit 1;
+      fi
+    - 'docker stack deploy --with-registry-auth --prune --compose-file docker-compose.prod.yml "$CI_ENVIRONMENT_STACK"'
+    - 'docker stack services "$CI_ENVIRONMENT_STACK"'
+
+# -----------------------------------------------------------------------------
+# build: зібрати → прогнати тести В ОБРАЗІ → і лише тоді запушити.
+#
+# Порядок навмисний. Тестовий гейт раніше тримався на дисципліні людини
+# (`.omp/agents/pusher.md`); при автодеплої зламаний пуш доїжджав би до прода.
+# Тепер червоні тести означають, що образ не потрапляє в реєстр, а стек
+# лишається на попередній версії.
+# -----------------------------------------------------------------------------
+build:
+  extends: .auto-deploy
+  stage: build
+  script:
+    - 'docker compose -f docker-compose.prod.yml build'
+    - 'echo "== тестовий гейт усередині образу =="'
+    - 'docker run --rm --entrypoint sh "${CI_REGISTRY_IMAGE}:app-${IMAGE_TAG}" /app/docker/run-tests.sh'
+    - 'echo "== тести зелені, публікую образ =="'
+    - 'docker compose -f docker-compose.prod.yml push'
+    - 'printf "CI_COMMIT_SHA=%s\nCI_REGISTRY_IMAGE=%s\nIMAGE_TAG=%s\n" "$CI_COMMIT_SHA" "$CI_REGISTRY_IMAGE" "$IMAGE_TAG" > build.env'
+  artifacts:
+    reports:
+      dotenv: build.env
+  rules:
+    - if: '$BUILD_DISABLED'
+      when: never
+    - if: '$CI_COMMIT_TAG || $CI_COMMIT_BRANCH'
+
+# -----------------------------------------------------------------------------
+# .production — деплой на раннері-менеджері Swarm.
+# -----------------------------------------------------------------------------
+.production: &production_template
+  extends: .auto-deploy
+  stage: production
+  variables:
+    CI_ENVIRONMENT_STACK: "$CI_PROJECT_NAME"
+  after_script:
+    - 'echo "https://${DOMAIN_NAME}" > environment_url.txt'
+    - 'echo "Environment URL: https://${DOMAIN_NAME}"'
+  environment:
+    name: production
+    url: "https://${DOMAIN_NAME}"
+  artifacts:
+    paths:
+      - environment_url.txt
+    when: always
+  tags:
+    - manager
+
+# Автоматично на дефолтній гілці: «залив — і поїхало», без ручних кроків.
+# ⚠️ Кожен деплой перезапускає сервіс: прогін візуальних перевірок, що йшов
+#    у цю мить, обірветься. `start-first` тут не можна — дві репліки писали б
+#    в один volume зі станом.
+production:
+  <<: *production_template
+  allow_failure: false
+  rules:
+    - if: '$CI_DEPLOY_FREEZE'
+      when: never
+    - if: '$CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH'
+      when: on_success
+
+# Та сама джоба руками — перевикотити поточний коміт без нового пуша
+# (напр. після зміни CI-змінної).
+production_manual:
+  <<: *production_template
+  allow_failure: false
+  rules:
+    - if: '$CI_DEPLOY_FREEZE'
+      when: never
+    - when: manual
+
+# -----------------------------------------------------------------------------
+# Діагностика кластера. Ручна, не блокує пайплайн. Перевіряє те, чого немає
+# в CI-змінних і через що таски мовчки висять у pending.
+# -----------------------------------------------------------------------------
+verify_cluster:
+  stage: build
+  dependencies: []
+  tags:
+    - manager
+  rules:
+    - when: manual
+  allow_failure: true
+  script:
+    - 'echo "== overlay-мережі (потрібні: traefik-public, backend) =="'
+    - 'docker network ls --filter driver=overlay --format "  {{.Name}}"'
+    - 'echo "== мітки нод (потрібна: backend-worker) =="'
+    - 'for n in $(docker node ls -q); do docker node inspect "$n" -f "  {{.Description.Hostname}}  {{json .Spec.Labels}}"; done'
+    # Лейбли роутера на живому сервісі. BasicAuth серед них бути НЕ повинно:
+    # гейт один — власний вхід застосунку (чому саме, з вимірами — у
+    # docker-compose.prod.yml над лейблами). Якщо middleware колись повернуть,
+    # ззовні це виглядатиме не як «зайвий пароль», а як «лаба просить пароль
+    # BasicAuth посеред роботи», і причину знову шукатимуть годинами.
+    - 'echo "== лейбли Traefik на живому сервісі =="'
+    - >
+      svc="$(docker service ls --filter "name=${CI_PROJECT_NAME}_wp-lab" --format '{{.Name}}' | head -1)";
+      if [ -z "$svc" ]; then
+        echo "  сервіс не знайдено — деплою ще не було";
+      else
+        docker service inspect "$svc" -f '{{json .Spec.Labels}}' | tr ',' '\n' | sed 's/[:{].*//; s/^/    /' | grep traefik;
+        if docker service inspect "$svc" -f '{{json .Spec.Labels}}' | grep -q basicauth; then
+          echo "  [ПРОБЛЕМА] на сервісі є basicauth-middleware — разом із власним входом лаби він вибиває пароль з кеша браузера на кожному 401";
+        else
+          echo "  [OK] basicauth-middleware немає — гейт один";
+        fi;
+      fi
+    - 'echo "== вердикт =="'
+    - 'ok=1'
+    - 'for net in traefik-public backend; do docker network ls --format "{{.Name}}" | grep -qx "$net" && echo "  [OK] мережа $net" || { echo "  [НЕМАЄ] $net -> docker network create --driver overlay --attachable $net"; ok=0; }; done'
+    - 'L="$(for n in $(docker node ls -q); do docker node inspect "$n" -f "{{json .Spec.Labels}}"; done)"'
+    - 'echo "$L" | grep -q backend-worker && echo "  [OK] мітка backend-worker" || { echo "  [НЕМАЄ] backend-worker -> docker node update --label-add backend-worker=true <нода>"; ok=0; }'
+    - 'test "$ok" = 1 && echo "  => кластер готовий" || { echo "  => спершу закрий пункти [НЕМАЄ] вище"; exit 1; }'

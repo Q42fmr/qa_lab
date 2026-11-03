@@ -1,0 +1,4565 @@
+[
+ {
+  "cnpj": "83.856.089/0001-10",
+  "company": "Empresa Exemplo 001 LTDA",
+  "city": "Caxias do Sul/RS",
+  "sphere": "Харчування",
+  "addr": "",
+  "note": "cnpj.biz, Ativa",
+  "ts": "2026-10-01 00:00:00"
+ },
+ {
+  "cnpj": "44.154.622/0001-40",
+  "company": "Empresa Exemplo 002 LTDA",
+  "city": "",
+  "sphere": "Медицина",
+  "addr": "",
+  "note": "cnpj.biz, Ativa",
+  "ts": "2026-10-01 00:00:00"
+ },
+ {
+  "cnpj": "21.042.578/0001-80",
+  "company": "Empresa Exemplo 003 LTDA",
+  "city": "São Paulo/SP",
+  "sphere": "Медицина",
+  "addr": "",
+  "note": "cnpj.biz, Ativa",
+  "ts": "2026-10-01 00:00:00"
+ },
+ {
+  "cnpj": "65.107.567/0001-07",
+  "company": "Empresa Exemplo 004",
+  "city": "Eusébio/CE",
+  "sphere": "Медицина",
+  "addr": "",
+  "note": "cnpj.biz, Ativa",
+  "ts": "2026-10-01 00:00:00"
+ },
+ {
+  "cnpj": "29.346.892/0001-69",
+  "company": "Empresa Exemplo 005 LTDA",
+  "city": "São Paulo/SP",
+  "sphere": "Медицина",
+  "addr": "",
+  "note": "cnpj.biz, Ativa",
+  "ts": "2026-10-01 00:00:00"
+ },
+ {
+  "cnpj": "20.712.479/0001-04",
+  "company": "Empresa Exemplo 006 LTDA",
+  "city": "Aracruz/ES",
+  "sphere": "Ритейл",
+  "addr": "",
+  "note": "cnpj.biz, Ativa",
+  "ts": "2026-10-01 00:00:00"
+ },
+ {
+  "cnpj": "32.911.731/0001-85",
+  "company": "Empresa Exemplo 007 Ltda.",
+  "city": "Bastos/SP",
+  "sphere": "Ритейл",
+  "addr": "",
+  "note": "cnpj.biz, Ativa",
+  "ts": "2026-10-01 00:00:00"
+ },
+ {
+  "cnpj": "76.790.231/0001-08",
+  "company": "Empresa Exemplo 008 LTDA",
+  "city": "Belo Horizonte/MG",
+  "sphere": "Ритейл",
+  "addr": "",
+  "note": "cnpj.biz, Ativa",
+  "ts": "2026-10-01 00:00:00"
+ },
+ {
+  "cnpj": "16.511.369/0001-07",
+  "company": "Empresa Exemplo 009 S/A",
+  "city": "Ribeirão das Neves/MG",
+  "sphere": "Ритейл",
+  "addr": "",
+  "note": "cnpj.biz, Ativa",
+  "ts": "2026-10-01 00:00:00"
+ },
+ {
+  "cnpj": "43.514.948/0001-78",
+  "company": "Empresa Exemplo 010 LTDA",
+  "city": "Ibiporã/PR",
+  "sphere": "Ритейл",
+  "addr": "",
+  "note": "cnpj.biz, Ativa",
+  "ts": "2026-10-01 00:00:00"
+ },
+ {
+  "cnpj": "43.880.452/0001-18",
+  "company": "Empresa Exemplo 011 LTDA",
+  "city": "Canaã dos Carajás/PA",
+  "sphere": "Будівництво",
+  "addr": "",
+  "note": "cnpj.biz, Ativa",
+  "ts": "2026-10-01 00:00:00"
+ },
+ {
+  "cnpj": "10.957.725/0001-26",
+  "company": "Empresa Exemplo 012 Ltda.",
+  "city": "São Paulo/SP",
+  "sphere": "Будівництво",
+  "addr": "",
+  "note": "cnpj.biz, Ativa",
+  "ts": "2026-10-01 00:00:00"
+ },
+ {
+  "cnpj": "00.645.615/0001-75",
+  "company": "Empresa Exemplo 013 LTDA",
+  "city": "Sete Lagoas/MG",
+  "sphere": "Будівництво",
+  "addr": "",
+  "note": "cnpj.biz, Ativa",
+  "ts": "2026-10-01 00:00:00"
+ },
+ {
+  "cnpj": "52.369.213/0001-99",
+  "company": "Empresa Exemplo 014 LTDA",
+  "city": "Salvador/BA",
+  "sphere": "Будівництво",
+  "addr": "",
+  "note": "cnpj.biz, Ativa",
+  "ts": "2026-10-01 00:00:00"
+ },
+ {
+  "cnpj": "14.469.245/0001-77",
+  "company": "Empresa Exemplo 015 LTDA",
+  "city": "São José do Rio Preto/SP",
+  "sphere": "IT",
+  "addr": "",
+  "note": "cnpj.biz, Ativa",
+  "ts": "2026-10-01 00:00:00"
+ },
+ {
+  "cnpj": "37.444.123/0001-21",
+  "company": "Empresa Exemplo 016 LTDA",
+  "city": "São Paulo/SP",
+  "sphere": "IT",
+  "addr": "",
+  "note": "cnpj.biz, Ativa",
+  "ts": "2026-10-01 00:00:00"
+ },
+ {
+  "cnpj": "50.854.272/0001-27",
+  "company": "Empresa Exemplo 017 Ltda.",
+  "city": "Belo Horizonte/MG",
+  "sphere": "IT",
+  "addr": "",
+  "note": "cnpj.biz, Ativa",
+  "ts": "2026-10-01 00:00:00"
+ },
+ {
+  "cnpj": "52.421.060/0001-81",
+  "company": "Empresa Exemplo 018 LTDA",
+  "city": "",
+  "sphere": "IT",
+  "addr": "",
+  "note": "cnpj.biz, Ativa",
+  "ts": "2026-10-01 00:00:00"
+ },
+ {
+  "cnpj": "08.543.132/0001-71",
+  "company": "Empresa Exemplo 019 LTDA",
+  "city": "Porto Alegre/RS",
+  "sphere": "IT",
+  "addr": "",
+  "note": "cnpj.biz, Ativa",
+  "ts": "2026-10-01 00:00:00"
+ },
+ {
+  "cnpj": "11.122.783/0001-00",
+  "company": "Empresa Exemplo 020 LTDA",
+  "city": "São Paulo/SP",
+  "sphere": "IT",
+  "addr": "",
+  "note": "cnpj.biz, Ativa",
+  "ts": "2026-10-01 00:00:00"
+ },
+ {
+  "cnpj": "67.439.993/0001-73",
+  "company": "Empresa Exemplo 021 LTDA",
+  "city": "",
+  "sphere": "Логістика",
+  "addr": "",
+  "note": "cnpj.biz, Ativa",
+  "ts": "2026-10-01 00:00:00"
+ },
+ {
+  "cnpj": "84.000.232/0001-30",
+  "company": "Empresa Exemplo 022 LTDA",
+  "city": "Castro/PR",
+  "sphere": "Логістика",
+  "addr": "",
+  "note": "cnpj.biz, Ativa",
+  "ts": "2026-10-01 00:00:00"
+ },
+ {
+  "cnpj": "19.144.834/0001-07",
+  "company": "Empresa Exemplo 023 LTDA",
+  "city": "São Paulo/SP",
+  "sphere": "Логістика",
+  "addr": "",
+  "note": "cnpj.biz, Ativa",
+  "ts": "2026-10-01 00:00:00"
+ },
+ {
+  "cnpj": "30.797.785/0001-36",
+  "company": "Empresa Exemplo 024 LTDA",
+  "city": "",
+  "sphere": "Логістика",
+  "addr": "",
+  "note": "cnpj.biz, Ativa",
+  "ts": "2026-10-01 00:00:00"
+ },
+ {
+  "cnpj": "59.326.995/0004-70",
+  "company": "Empresa Exemplo 025",
+  "city": "Curitiba/PR",
+  "sphere": "Логістика",
+  "addr": "",
+  "note": "cnpj.biz, Ativa",
+  "ts": "2026-10-01 00:00:00"
+ },
+ {
+  "cnpj": "26.750.120/0001-08",
+  "company": "Empresa Exemplo 026 LTDA",
+  "city": "",
+  "sphere": "Логістика",
+  "addr": "",
+  "note": "cnpj.biz, Ativa",
+  "ts": "2026-10-01 00:00:00"
+ },
+ {
+  "cnpj": "30.400.041/0001-36",
+  "company": "Empresa Exemplo 027 Ltda.",
+  "city": "Jundiaí/SP",
+  "sphere": "Логістика",
+  "addr": "",
+  "note": "cnpj.biz, Ativa",
+  "ts": "2026-10-01 00:00:00"
+ },
+ {
+  "cnpj": "84.650.245/0001-54",
+  "company": "Empresa Exemplo 028 LTDA",
+  "city": "Mogi das Cruzes/SP",
+  "sphere": "Освіта",
+  "addr": "",
+  "note": "cnpj.biz, Ativa",
+  "ts": "2026-10-01 00:00:00"
+ },
+ {
+  "cnpj": "99.772.674/0001-71",
+  "company": "Empresa Exemplo 029 LTDA",
+  "city": "Guarulhos/SP",
+  "sphere": "Освіта",
+  "addr": "",
+  "note": "cnpj.biz, Ativa",
+  "ts": "2026-10-01 00:00:00"
+ },
+ {
+  "cnpj": "14.913.913/0001-03",
+  "company": "Empresa Exemplo 030 LTDA",
+  "city": "Viamão/RS",
+  "sphere": "Освіта",
+  "addr": "",
+  "note": "cnpj.biz, Ativa",
+  "ts": "2026-10-01 00:00:00"
+ },
+ {
+  "cnpj": "02.490.078/0001-67",
+  "company": "Empresa Exemplo 031 LTDA",
+  "city": "Osasco/SP",
+  "sphere": "Освіта",
+  "addr": "",
+  "note": "cnpj.biz, Ativa",
+  "ts": "2026-10-01 00:00:00"
+ },
+ {
+  "cnpj": "28.767.591/0001-46",
+  "company": "Empresa Exemplo 032 LTDA",
+  "city": "Novo Repartimento/PA",
+  "sphere": "Освіта",
+  "addr": "",
+  "note": "cnpj.biz, Ativa",
+  "ts": "2026-10-01 00:00:00"
+ },
+ {
+  "cnpj": "18.632.045/0001-44",
+  "company": "Empresa Exemplo 033 LTDA",
+  "city": "Macaé/RJ",
+  "sphere": "Освіта",
+  "addr": "",
+  "note": "cnpj.biz, Ativa",
+  "ts": "2026-10-01 00:00:00"
+ },
+ {
+  "cnpj": "60.006.171/0001-50",
+  "company": "Empresa Exemplo 034 LTDA",
+  "city": "",
+  "sphere": "Освіта",
+  "addr": "",
+  "note": "cnpj.biz, Ativa",
+  "ts": "2026-10-01 00:00:00"
+ },
+ {
+  "cnpj": "46.303.338/0001-13",
+  "company": "Empresa Exemplo 035 LTDA",
+  "city": "Cáceres/MT",
+  "sphere": "Агро",
+  "addr": "",
+  "note": "cnpj.biz, Ativa",
+  "ts": "2026-10-01 00:00:00"
+ },
+ {
+  "cnpj": "54.399.238/0004-03",
+  "company": "Empresa Exemplo 036",
+  "city": "Sonora/MS",
+  "sphere": "Агро",
+  "addr": "",
+  "note": "cnpj.biz, Ativa",
+  "ts": "2026-10-01 00:00:00"
+ },
+ {
+  "cnpj": "77.057.761/0003-76",
+  "company": "Empresa Exemplo 037",
+  "city": "Porto Murtinho/MS",
+  "sphere": "Агро",
+  "addr": "",
+  "note": "cnpj.biz, Ativa",
+  "ts": "2026-10-01 00:00:00"
+ },
+ {
+  "cnpj": "23.326.125/0001-01",
+  "company": "Empresa Exemplo 038 LTDA",
+  "city": "São Paulo/SP",
+  "sphere": "Агро",
+  "addr": "",
+  "note": "cnpj.biz, Ativa",
+  "ts": "2026-10-01 00:00:00"
+ },
+ {
+  "cnpj": "50.457.384/0001-44",
+  "company": "Empresa Exemplo 039 S.A.",
+  "city": "São Paulo/SP",
+  "sphere": "Фінанси/холдинги",
+  "addr": "",
+  "note": "cnpj.biz, Ativa",
+  "ts": "2026-10-01 00:00:00"
+ },
+ {
+  "cnpj": "70.916.909/0001-70",
+  "company": "Empresa Exemplo 040 LTDA",
+  "city": "São Paulo/SP",
+  "sphere": "Фінанси/холдинги",
+  "addr": "",
+  "note": "cnpj.biz, Ativa",
+  "ts": "2026-10-01 00:00:00"
+ },
+ {
+  "cnpj": "37.228.831/0001-25",
+  "company": "Empresa Exemplo 041 SA",
+  "city": "São Paulo/SP",
+  "sphere": "Фінанси/холдинги",
+  "addr": "",
+  "note": "cnpj.biz, Ativa",
+  "ts": "2026-10-01 00:00:00"
+ },
+ {
+  "cnpj": "14.582.975/0001-80",
+  "company": "Empresa Exemplo 042 LTDA",
+  "city": "São Paulo/SP",
+  "sphere": "Нерухомість/SPE",
+  "addr": "",
+  "note": "cnpj.biz, Ativa",
+  "ts": "2026-10-01 00:00:00"
+ },
+ {
+  "cnpj": "07.053.820/0001-90",
+  "company": "Empresa Exemplo 043",
+  "city": "São Paulo/SP",
+  "sphere": "Промисловість",
+  "addr": "",
+  "note": "cnpj.biz, Ativa",
+  "ts": "2026-10-01 00:00:00"
+ },
+ {
+  "cnpj": "00.915.262/0001-86",
+  "company": "Empresa Exemplo 044",
+  "city": "Delaware/US",
+  "sphere": "Закордон",
+  "addr": "",
+  "note": "cnpj.biz, Ativa",
+  "ts": "2026-10-01 00:00:00"
+ },
+ {
+  "cnpj": "88.207.018/0001-00",
+  "company": "Empresa Exemplo 045",
+  "city": "Delaware/US",
+  "sphere": "Закордон",
+  "addr": "",
+  "note": "cnpj.biz, Ativa",
+  "ts": "2026-10-01 00:00:00"
+ },
+ {
+  "cnpj": "51.838.886/0001-88",
+  "company": "Empresa Exemplo 046",
+  "city": "Delaware/US",
+  "sphere": "Закордон",
+  "addr": "",
+  "note": "cnpj.biz, Ativa",
+  "ts": "2026-10-01 00:00:00"
+ },
+ {
+  "cnpj": "81.427.252/0001-01",
+  "company": "Empresa Exemplo 047",
+  "city": "Delaware/US",
+  "sphere": "Закордон",
+  "addr": "",
+  "note": "cnpj.biz, Ativa",
+  "ts": "2026-10-01 00:00:00"
+ },
+ {
+  "cnpj": "92.585.315/0001-66",
+  "company": "Empresa Exemplo 048 LTDA",
+  "city": "São Paulo/SP",
+  "sphere": "Фармація",
+  "addr": "",
+  "note": "cnpj.biz, Ativa",
+  "ts": "2026-10-01 00:00:00"
+ },
+ {
+  "cnpj": "35.016.436/0001-53",
+  "company": "Empresa Exemplo 049 LTDA",
+  "city": "Aracaju/SE",
+  "sphere": "Фармація",
+  "addr": "",
+  "note": "cnpj.biz, Ativa",
+  "ts": "2026-10-01 00:00:00"
+ },
+ {
+  "cnpj": "09.897.252/0001-30",
+  "company": "Empresa Exemplo 050 LTDA",
+  "city": "São Paulo/SP",
+  "sphere": "Фармація",
+  "addr": "",
+  "note": "cnpj.biz, Ativa",
+  "ts": "2026-10-01 00:00:00"
+ },
+ {
+  "cnpj": "68.516.847/0001-67",
+  "company": "Empresa Exemplo 051 LTDA",
+  "city": "Brasília/DF",
+  "sphere": "Фармація",
+  "addr": "",
+  "note": "cnpj.biz, Ativa",
+  "ts": "2026-10-01 00:00:00"
+ },
+ {
+  "cnpj": "07.054.213/0001-45",
+  "company": "Empresa Exemplo 052",
+  "city": "Brasília/DF",
+  "sphere": "Фармація",
+  "addr": "",
+  "note": "cnpj.biz, Ativa",
+  "ts": "2026-10-01 00:00:00"
+ },
+ {
+  "cnpj": "43.764.701/0001-00",
+  "company": "Empresa Exemplo 053 LTDA",
+  "city": "Alfenas/MG",
+  "sphere": "Фармація",
+  "addr": "",
+  "note": "cnpj.biz, Ativa",
+  "ts": "2026-10-01 00:00:00"
+ },
+ {
+  "cnpj": "21.027.863/0001-22",
+  "company": "Empresa Exemplo 054 LTDA",
+  "city": "Rio de Janeiro/RJ",
+  "sphere": "Харчування",
+  "addr": "",
+  "note": "cnpj.biz, Ativa",
+  "ts": "2026-10-01 00:00:00"
+ },
+ {
+  "cnpj": "42.270.118/0001-80",
+  "company": "Empresa Exemplo 055 LTDA",
+  "city": "Hortolândia/SP",
+  "sphere": "Харчування",
+  "addr": "",
+  "note": "cnpj.biz, Ativa",
+  "ts": "2026-10-01 00:00:00"
+ },
+ {
+  "cnpj": "72.475.225/0001-05",
+  "company": "Empresa Exemplo 056 LTDA",
+  "city": "São Paulo/SP",
+  "sphere": "Харчування",
+  "addr": "",
+  "note": "cnpj.biz, Ativa",
+  "ts": "2026-10-01 00:00:00"
+ },
+ {
+  "cnpj": "59.250.244/0001-75",
+  "company": "Empresa Exemplo 057 LTDA",
+  "city": "São Paulo/SP",
+  "sphere": "Промисловість",
+  "addr": "",
+  "note": "cnpj.biz, Ativa",
+  "ts": "2026-10-01 00:00:00"
+ },
+ {
+  "cnpj": "61.124.295/0001-00",
+  "company": "Empresa Exemplo 058 LTDA",
+  "city": "Caxias do Sul/RS",
+  "sphere": "Промисловість",
+  "addr": "",
+  "note": "cnpj.biz, Ativa",
+  "ts": "2026-10-01 00:00:00"
+ },
+ {
+  "cnpj": "48.086.766/0001-67",
+  "company": "EMPRESA EXEMPLO 059 S.A",
+  "city": "Rio de Janeiro/RJ",
+  "sphere": "Енергетика",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "85.508.240/0001-54",
+  "company": "EMPRESA EXEMPLO 060",
+  "city": "São João do Piauí/PI",
+  "sphere": "Енергетика",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpj.ws",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "42.473.252/0001-88",
+  "company": "Empresa Exemplo 061",
+  "city": "Pinhão/SE",
+  "sphere": "Ритейл",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "92.140.451/0001-42",
+  "company": "EMPRESA EXEMPLO 062 LTDA",
+  "city": "Lorena/SP",
+  "sphere": "Нерухомість",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "18.939.662/0001-97",
+  "company": "Empresa Exemplo 063",
+  "city": "São Paulo/SP",
+  "sphere": "Харчування",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "23.296.001/0001-20",
+  "company": "EMPRESA EXEMPLO 064",
+  "city": "Barreiras/BA",
+  "sphere": "Фармація",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpj.ws",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "08.136.653/0001-04",
+  "company": "EMPRESA EXEMPLO 065",
+  "city": "PORTO SEGURO/BA",
+  "sphere": "Готелі/туризм",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "92.984.832/0001-08",
+  "company": "EMPRESA EXEMPLO 066",
+  "city": "PATOS DE MINAS/MG",
+  "sphere": "Краса/фітнес",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "28.699.493/0001-19",
+  "company": "EMPRESA EXEMPLO 067",
+  "city": "Rio de Janeiro/RJ",
+  "sphere": "Ритейл",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpj.ws",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "11.981.628/0001-31",
+  "company": "EMPRESA EXEMPLO 068 LTDA",
+  "city": "Divinópolis/MG",
+  "sphere": "Авто",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "57.126.839/0001-98",
+  "company": "Empresa Exemplo 069",
+  "city": "Esplanada/BA",
+  "sphere": "Краса/фітнес",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "49.650.930/0001-80",
+  "company": "EMPRESA EXEMPLO 070",
+  "city": "Curitiba/PR",
+  "sphere": "Юристи/бухгалтерія",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpj.ws",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "78.598.189/0001-53",
+  "company": "Empresa Exemplo 071",
+  "city": "Abre Campo/MG",
+  "sphere": "Харчування",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "54.370.778/0001-11",
+  "company": "EMPRESA EXEMPLO 072 LTDA",
+  "city": "Guarulhos/SP",
+  "sphere": "Фінанси",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpj.ws",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "14.235.327/0001-57",
+  "company": "EMPRESA EXEMPLO 073 S/A",
+  "city": "Maracanaú/CE",
+  "sphere": "Енергетика",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "61.983.253/0001-17",
+  "company": "EMPRESA EXEMPLO 074",
+  "city": "Marechal Floriano/ES",
+  "sphere": "Юристи/бухгалтерія",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "88.026.563/0001-08",
+  "company": "Empresa Exemplo 075",
+  "city": "Porto Alegre/RS",
+  "sphere": "Освіта",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "32.403.031/0001-80",
+  "company": "Empresa Exemplo 076",
+  "city": "Charqueada/SP",
+  "sphere": "Ритейл",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "66.098.969/0001-55",
+  "company": "Empresa Exemplo 077",
+  "city": "Barbacena/MG",
+  "sphere": "Фінанси",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "53.685.396/0001-14",
+  "company": "Empresa Exemplo 078",
+  "city": "Passo Fundo/RS",
+  "sphere": "IT",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "37.546.294/0001-61",
+  "company": "EMPRESA EXEMPLO 079",
+  "city": "São Paulo/SP",
+  "sphere": "Будівництво",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpj.ws",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "50.792.289/0001-05",
+  "company": "Empresa Exemplo 080",
+  "city": "Anápolis/GO",
+  "sphere": "Ритейл",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "99.068.566/0001-12",
+  "company": "Empresa Exemplo 081",
+  "city": "Várzea Grande/MT",
+  "sphere": "Логістика",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "46.572.620/0001-04",
+  "company": "EMPRESA EXEMPLO 082",
+  "city": "Santos/SP",
+  "sphere": "Медицина",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpj.ws",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "44.042.873/0001-32",
+  "company": "Empresa Exemplo 083",
+  "city": "Silvânia/GO",
+  "sphere": "Фармація",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "30.388.770/0001-14",
+  "company": "EMPRESA EXEMPLO 084",
+  "city": "Pato Branco/PR",
+  "sphere": "Логістика",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpj.ws",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "69.925.881/0001-58",
+  "company": "Empresa Exemplo 085",
+  "city": "Brasília/DF",
+  "sphere": "Нерухомість",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "52.726.266/0001-10",
+  "company": "EMPRESA EXEMPLO 086",
+  "city": "Abadiânia/GO",
+  "sphere": "Фармація",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpj.ws",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "71.832.518/0001-30",
+  "company": "EMPRESA EXEMPLO 087",
+  "city": "Eliseu Martins/PI",
+  "sphere": "Енергетика",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpj.ws",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "43.224.442/0001-24",
+  "company": "Empresa Exemplo 088",
+  "city": "São Paulo/SP",
+  "sphere": "Фінанси",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "70.841.515/0001-08",
+  "company": "EMPRESA EXEMPLO 089",
+  "city": "Ibaté/SP",
+  "sphere": "Ритейл",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpj.ws",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "77.482.024/0001-59",
+  "company": "EMPRESA EXEMPLO 090 LTDA",
+  "city": "Belo Horizonte/MG",
+  "sphere": "IT",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "71.682.864/0001-89",
+  "company": "EMPRESA EXEMPLO 091 LTDA.",
+  "city": "Florianópolis/SC",
+  "sphere": "Фінанси",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "38.436.587/0001-59",
+  "company": "EMPRESA EXEMPLO 092",
+  "city": "Florianópolis/SC",
+  "sphere": "Фінанси",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpj.ws",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "94.332.733/0001-77",
+  "company": "EMPRESA EXEMPLO 093",
+  "city": "Jaciara/MT",
+  "sphere": "Готелі/туризм",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpj.ws",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "23.960.986/0001-47",
+  "company": "Empresa Exemplo 094",
+  "city": "Sorriso/MT",
+  "sphere": "Агро",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "29.336.649/0001-60",
+  "company": "Empresa Exemplo 095",
+  "city": "Brasília/DF",
+  "sphere": "Ритейл",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "37.955.105/0001-04",
+  "company": "EMPRESA EXEMPLO 096",
+  "city": "Nova Palma/RS",
+  "sphere": "Промисловість",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpj.ws",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "19.888.302/0001-76",
+  "company": "EMPRESA EXEMPLO 097 LTDA",
+  "city": "Pires do Rio/GO",
+  "sphere": "Авто",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "51.039.722/0001-90",
+  "company": "Empresa Exemplo 098",
+  "city": "Campos dos Goytacazes/RJ",
+  "sphere": "Освіта",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "55.342.211/0001-02",
+  "company": "Empresa Exemplo 099",
+  "city": "Colíder/MT",
+  "sphere": "Логістика",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "89.734.138/0001-28",
+  "company": "EMPRESA EXEMPLO 100",
+  "city": "São José do Rio Preto/SP",
+  "sphere": "Медицина",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpj.ws",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "22.147.964/0001-08",
+  "company": "EMPRESA EXEMPLO 101 LTDA",
+  "city": "Gravatá/PE",
+  "sphere": "Фінанси",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "57.019.109/0001-98",
+  "company": "Empresa Exemplo 102",
+  "city": "Parnarama/MA",
+  "sphere": "Агро",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "98.112.020/0001-59",
+  "company": "Empresa Exemplo 103",
+  "city": "Fortaleza/CE",
+  "sphere": "Фінанси",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "32.254.021/0001-20",
+  "company": "Empresa Exemplo 104",
+  "city": "Rio de Janeiro/RJ",
+  "sphere": "Логістика",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "82.885.412/0001-10",
+  "company": "Empresa Exemplo 105",
+  "city": "Itabira/MG",
+  "sphere": "Енергетика",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "76.255.195/0001-82",
+  "company": "EMPRESA EXEMPLO 106",
+  "city": "Goiânia/GO",
+  "sphere": "Освіта",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "07.459.355/0001-92",
+  "company": "Empresa Exemplo 107",
+  "city": "Patos de Minas/MG",
+  "sphere": "IT",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "29.051.682/0001-43",
+  "company": "EMPRESA EXEMPLO 108",
+  "city": "São Paulo/SP",
+  "sphere": "Будівництво",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpj.ws",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "87.125.928/0001-80",
+  "company": "Empresa Exemplo 109",
+  "city": "Aparecida/SP",
+  "sphere": "Готелі/туризм",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "76.178.332/0001-22",
+  "company": "EMPRESA EXEMPLO 110 LTDA",
+  "city": "João Pessoa/PB",
+  "sphere": "Юристи/бухгалтерія",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpj.ws",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "19.657.603/0001-99",
+  "company": "Empresa Exemplo 111",
+  "city": "Macapá/AP",
+  "sphere": "Будівництво",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "57.657.968/0001-02",
+  "company": "EMPRESA EXEMPLO 112",
+  "city": "Porto Alegre/RS",
+  "sphere": "IT",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpj.ws",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "41.378.511/0001-29",
+  "company": "Empresa Exemplo 113",
+  "city": "Xanxerê/SC",
+  "sphere": "Будівництво",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "46.508.801/0001-63",
+  "company": "Empresa Exemplo 114",
+  "city": "Santa Maria/RS",
+  "sphere": "Медицина",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "24.807.037/0001-94",
+  "company": "EMPRESA EXEMPLO 115 LTDA",
+  "city": "Serra/ES",
+  "sphere": "Готелі/туризм",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpj.ws",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "40.947.490/0001-52",
+  "company": "EMPRESA EXEMPLO 116",
+  "city": "Santana do Piauí/PI",
+  "sphere": "Юристи/бухгалтерія",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "08.473.650/0001-66",
+  "company": "Empresa Exemplo 117",
+  "city": "Cuiabá/MT",
+  "sphere": "Будівництво",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "96.332.693/0001-99",
+  "company": "EMPRESA EXEMPLO 118",
+  "city": "Arujá/SP",
+  "sphere": "Медицина",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpj.ws",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "58.510.470/0001-85",
+  "company": "Empresa Exemplo 119",
+  "city": "Conceição do Coité/BA",
+  "sphere": "Промисловість",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "63.338.325/0001-07",
+  "company": "EMPRESA EXEMPLO 120 LTDA",
+  "city": "Presidente Prudente/SP",
+  "sphere": "Авто",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "18.988.829/0001-00",
+  "company": "EMPRESA EXEMPLO 121",
+  "city": "Vila Velha/ES",
+  "sphere": "Фармація",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpj.ws",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "71.288.747/0001-35",
+  "company": "Empresa Exemplo 122",
+  "city": "Fortaleza/CE",
+  "sphere": "Логістика",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "91.804.088/0001-50",
+  "company": "EMPRESA EXEMPLO 123",
+  "city": "Campo Bom/RS",
+  "sphere": "Промисловість",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpj.ws",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "76.354.242/0001-45",
+  "company": "EMPRESA EXEMPLO 124 LTDA",
+  "city": "Senhora dos Remédios/MG",
+  "sphere": "Фармація",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "60.938.167/0001-20",
+  "company": "EMPRESA EXEMPLO 125 LTDA",
+  "city": "Vacaria/RS",
+  "sphere": "Агро",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpj.ws",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "71.913.023/0001-35",
+  "company": "Empresa Exemplo 126",
+  "city": "Cariacica/ES",
+  "sphere": "Краса/фітнес",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "76.373.278/0001-76",
+  "company": "Empresa Exemplo 127",
+  "city": "Apicum-Açu/MA",
+  "sphere": "Готелі/туризм",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "18.287.115/0001-74",
+  "company": "EMPRESA EXEMPLO 128 LTDA",
+  "city": "São Gonçalo/RJ",
+  "sphere": "Фармація",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpj.ws",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "33.442.359/0001-78",
+  "company": "EMPRESA EXEMPLO 129 LTDA",
+  "city": "Vargem Alta/ES",
+  "sphere": "Готелі/туризм",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "22.666.516/0001-02",
+  "company": "EMPRESA EXEMPLO 130 LTDA",
+  "city": "Vacaria/RS",
+  "sphere": "Промисловість",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "79.071.257/0001-94",
+  "company": "EMPRESA EXEMPLO 131 LTDA",
+  "city": "São Paulo/SP",
+  "sphere": "Ритейл",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpj.ws",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "58.144.311/0001-04",
+  "company": "Empresa Exemplo 132",
+  "city": "Caçapava/SP",
+  "sphere": "Логістика",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "81.278.505/0001-14",
+  "company": "EMPRESA EXEMPLO 133",
+  "city": "Porto Alegre/RS",
+  "sphere": "Будівництво",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpj.ws",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "39.692.984/0001-54",
+  "company": "EMPRESA EXEMPLO 134",
+  "city": "São Paulo/SP",
+  "sphere": "Юристи/бухгалтерія",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "42.336.696/0001-71",
+  "company": "EMPRESA EXEMPLO 135",
+  "city": "São Paulo/SP",
+  "sphere": "Юристи/бухгалтерія",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpj.ws",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "54.942.198/0001-51",
+  "company": "EMPRESA EXEMPLO 136 LTDA",
+  "city": "Fortaleza/CE",
+  "sphere": "Енергетика",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "47.991.062/0001-76",
+  "company": "EMPRESA EXEMPLO 137 S.A.",
+  "city": "Uberlândia/MG",
+  "sphere": "Енергетика",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "25.873.722/0001-81",
+  "company": "EMPRESA EXEMPLO 138",
+  "city": "Manaus/AM",
+  "sphere": "Готелі/туризм",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpj.ws",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "61.212.429/0001-37",
+  "company": "Empresa Exemplo 139",
+  "city": "Cariacica/ES",
+  "sphere": "Фармація",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "71.367.509/0001-15",
+  "company": "Empresa Exemplo 140",
+  "city": "Passo de Camaragibe/AL",
+  "sphere": "Готелі/туризм",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "31.324.091/0001-44",
+  "company": "EMPRESA EXEMPLO 141 LTDA",
+  "city": "Duque de Caxias/RJ",
+  "sphere": "Нерухомість",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpj.ws",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "13.733.502/0001-73",
+  "company": "EMPRESA EXEMPLO 142 LTDA",
+  "city": "Apucarana/PR",
+  "sphere": "Нерухомість",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "43.197.136/0001-46",
+  "company": "EMPRESA EXEMPLO 143",
+  "city": "Curitiba/PR",
+  "sphere": "IT",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpj.ws",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "93.609.608/0001-07",
+  "company": "EMPRESA EXEMPLO 144 LTDA",
+  "city": "Rio de Janeiro/RJ",
+  "sphere": "Готелі/туризм",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "31.845.696/0001-80",
+  "company": "Empresa Exemplo 145",
+  "city": "Patos de Minas/MG",
+  "sphere": "Промисловість",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "48.415.489/0001-99",
+  "company": "EMPRESA EXEMPLO 146",
+  "city": "Vacaria/RS",
+  "sphere": "Освіта",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpj.ws",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "01.686.537/0001-10",
+  "company": "Empresa Exemplo 147",
+  "city": "São Paulo/SP",
+  "sphere": "Юристи/бухгалтерія",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "78.836.761/0001-75",
+  "company": "EMPRESA EXEMPLO 148",
+  "city": "Arapiraca/AL",
+  "sphere": "Будівництво",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpj.ws",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "59.626.059/0001-32",
+  "company": "Empresa Exemplo 149",
+  "city": "Belo Horizonte/MG",
+  "sphere": "Харчування",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "04.123.399/0001-59",
+  "company": "EMPRESA EXEMPLO 150",
+  "city": "Teresina/PI",
+  "sphere": "Авто",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpj.ws",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "32.158.589/0001-47",
+  "company": "Empresa Exemplo 151 Ltda",
+  "city": "Cuiabá/MT",
+  "sphere": "Фінанси",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "36.466.512/0001-95",
+  "company": "Empresa Exemplo 152",
+  "city": "Tianguá/CE",
+  "sphere": "Агро",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "86.425.911/0001-86",
+  "company": "EMPRESA EXEMPLO 153 LTDA",
+  "city": "Curitiba/PR",
+  "sphere": "Фінанси",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "67.813.133/0001-58",
+  "company": "EMPRESA EXEMPLO 154 EIRELI",
+  "city": "RIO DE JANEIRO/RJ",
+  "sphere": "Юристи/бухгалтерія",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "18.718.885/0001-24",
+  "company": "Empresa Exemplo 155",
+  "city": "Londrina/PR",
+  "sphere": "Освіта",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "14.184.400/0001-09",
+  "company": "Empresa Exemplo 156",
+  "city": "Palhoça/SC",
+  "sphere": "IT",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "82.611.615/0001-19",
+  "company": "EMPRESA EXEMPLO 157 LTDA",
+  "city": "Uberlândia/MG",
+  "sphere": "Будівництво",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "94.824.858/0001-14",
+  "company": "EMPRESA EXEMPLO 158",
+  "city": "Brasília/DF",
+  "sphere": "Будівництво",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpj.ws",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "58.501.824/0001-25",
+  "company": "Empresa Exemplo 159",
+  "city": "Passo Fundo/RS",
+  "sphere": "Краса/фітнес",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "04.859.531/0001-95",
+  "company": "Empresa Exemplo 160 Ltda",
+  "city": "São Paulo/SP",
+  "sphere": "Будівництво",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "34.225.257/0001-63",
+  "company": "EMPRESA EXEMPLO 161",
+  "city": "Marabá/PA",
+  "sphere": "Авто",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpj.ws",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "10.203.090/0001-71",
+  "company": "Empresa Exemplo 162",
+  "city": "Brasília/DF",
+  "sphere": "Авто",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "48.075.594/0001-26",
+  "company": "Empresa Exemplo 163",
+  "city": "São Raimundo Nonato/PI",
+  "sphere": "Ритейл",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "68.834.546/0001-81",
+  "company": "EMPRESA EXEMPLO 164",
+  "city": "Contagem/MG",
+  "sphere": "Юристи/бухгалтерія",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpj.ws",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "53.599.390/0001-24",
+  "company": "Empresa Exemplo 165",
+  "city": "Brasília/DF",
+  "sphere": "Готелі/туризм",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "60.198.826/0001-39",
+  "company": "Empresa Exemplo 166",
+  "city": "Divinópolis/MG",
+  "sphere": "Промисловість",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "80.367.430/0001-85",
+  "company": "EMPRESA EXEMPLO 167 LTDA",
+  "city": "Bauru/SP",
+  "sphere": "Агро",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "81.714.412/0001-95",
+  "company": "EMPRESA EXEMPLO 168 LTDA",
+  "city": "Jataí/GO",
+  "sphere": "Енергетика",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "27.639.442/0001-39",
+  "company": "EMPRESA EXEMPLO 169",
+  "city": "Vitória/ES",
+  "sphere": "Фінанси",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpj.ws",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "32.408.133/0001-98",
+  "company": "Empresa Exemplo 170",
+  "city": "Tapejara/RS",
+  "sphere": "Авто",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "11.494.772/0001-43",
+  "company": "EMPRESA EXEMPLO 171",
+  "city": "São Paulo/SP",
+  "sphere": "Юристи/бухгалтерія",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpj.ws",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "42.524.529/0001-54",
+  "company": "Empresa Exemplo 172",
+  "city": "Jacobina/BA",
+  "sphere": "Авто",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "17.766.144/0001-56",
+  "company": "Empresa Exemplo 173",
+  "city": "Itaboraí/RJ",
+  "sphere": "Фармація",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "55.570.727/0001-04",
+  "company": "EMPRESA EXEMPLO 174",
+  "city": "Vitória/ES",
+  "sphere": "Фінанси",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpj.ws",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "32.176.932/0001-86",
+  "company": "EMPRESA EXEMPLO 175 LTDA",
+  "city": "Juiz de Fora/MG",
+  "sphere": "Будівництво",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "53.598.561/0001-09",
+  "company": "Empresa Exemplo 176 Ltda",
+  "city": "Porto Alegre/RS",
+  "sphere": "IT",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "90.062.841/0001-16",
+  "company": "Empresa Exemplo 177",
+  "city": "Itaquaquecetuba/SP",
+  "sphere": "Краса/фітнес",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "73.034.955/0001-33",
+  "company": "EMPRESA EXEMPLO 178 LTDA",
+  "city": "Protásio Alves/RS",
+  "sphere": "Промисловість",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpj.ws",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "90.741.871/0001-59",
+  "company": "EMPRESA EXEMPLO 179",
+  "city": "Curitiba/PR",
+  "sphere": "Юристи/бухгалтерія",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "87.188.882/0001-49",
+  "company": "EMPRESA EXEMPLO 180",
+  "city": "Nova Canaã do Norte/MT",
+  "sphere": "Фармація",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpj.ws",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "39.372.076/0001-83",
+  "company": "EMPRESA EXEMPLO 181",
+  "city": "Curitiba/PR",
+  "sphere": "IT",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpj.ws",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "17.368.454/0001-12",
+  "company": "Empresa Exemplo 182",
+  "city": "Aracati/CE",
+  "sphere": "Медицина",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "08.771.415/0001-70",
+  "company": "EMPRESA EXEMPLO 183",
+  "city": "Guaratuba/PR",
+  "sphere": "Юристи/бухгалтерія",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "20.215.216/0001-81",
+  "company": "EMPRESA EXEMPLO 184",
+  "city": "Manaus/AM",
+  "sphere": "Нерухомість",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpj.ws",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "59.755.742/0001-70",
+  "company": "Empresa Exemplo 185",
+  "city": "Andradina/SP",
+  "sphere": "Готелі/туризм",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "04.499.940/0001-28",
+  "company": "Empresa Exemplo 186",
+  "city": "São Gonçalo/RJ",
+  "sphere": "Освіта",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "52.199.570/0001-56",
+  "company": "Empresa Exemplo 187",
+  "city": "São Paulo/SP",
+  "sphere": "Харчування",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "31.448.323/0001-76",
+  "company": "EMPRESA EXEMPLO 188 LTDA",
+  "city": "Osasco/SP",
+  "sphere": "IT",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "26.113.486/0001-68",
+  "company": "Empresa Exemplo 189",
+  "city": "Bela Cruz/CE",
+  "sphere": "Агро",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "66.435.252/0001-51",
+  "company": "EMPRESA EXEMPLO 190 LTDA",
+  "city": "Belo Horizonte/MG",
+  "sphere": "Нерухомість",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "44.728.020/0001-59",
+  "company": "EMPRESA EXEMPLO 191",
+  "city": "Cascavel/PR",
+  "sphere": "Промисловість",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpj.ws",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "52.292.351/0001-17",
+  "company": "Empresa Exemplo 192",
+  "city": "Marilândia/ES",
+  "sphere": "Агро",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "00.654.862/0001-38",
+  "company": "Empresa Exemplo 193",
+  "city": "Colniza/MT",
+  "sphere": "Агро",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpj.ws",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "44.273.775/0001-06",
+  "company": "Empresa Exemplo 194",
+  "city": "Barueri/SP",
+  "sphere": "IT",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "29.802.432/0001-06",
+  "company": "Empresa Exemplo 195",
+  "city": "Piratininga/SP",
+  "sphere": "Промисловість",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "99.029.343/0001-46",
+  "company": "EMPRESA EXEMPLO 196 LTDA",
+  "city": "São José do Rio Pardo/SP",
+  "sphere": "Промисловість",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpj.ws",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "16.036.388/0001-10",
+  "company": "EMPRESA EXEMPLO 197",
+  "city": "Rio Branco/AC",
+  "sphere": "Ритейл",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "34.837.327/0001-34",
+  "company": "Empresa Exemplo 198",
+  "city": "Três Pontas/MG",
+  "sphere": "Харчування",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "86.058.823/0001-93",
+  "company": "EMPRESA EXEMPLO 199",
+  "city": "Guapó/GO",
+  "sphere": "Будівництво",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpj.ws",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "22.211.467/0001-13",
+  "company": "EMPRESA EXEMPLO 200 LTDA",
+  "city": "Salvador/BA",
+  "sphere": "Нерухомість",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "16.539.097/0001-45",
+  "company": "EMPRESA EXEMPLO 201",
+  "city": "Rio de Janeiro/RJ",
+  "sphere": "Будівництво",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpj.ws",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "24.135.916/0001-17",
+  "company": "Empresa Exemplo 202 S/A",
+  "city": "São Luís/MA",
+  "sphere": "Агро",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "84.955.076/0001-60",
+  "company": "EMPRESA EXEMPLO 203 LTDA",
+  "city": "Cachoeiro de Itapemirim/ES",
+  "sphere": "Ритейл",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "21.937.157/0001-18",
+  "company": "EMPRESA EXEMPLO 204 LTDA",
+  "city": "Fortaleza/CE",
+  "sphere": "Фінанси",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "69.059.493/0001-31",
+  "company": "EMPRESA EXEMPLO 205",
+  "city": "Santo Ângelo/RS",
+  "sphere": "Освіта",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpj.ws",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "66.089.126/0001-92",
+  "company": "EMPRESA EXEMPLO 206",
+  "city": "Uberlândia/MG",
+  "sphere": "Авто",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpj.ws",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "96.603.581/0001-25",
+  "company": "EMPRESA EXEMPLO 207 LTDA",
+  "city": "Vila Velha/ES",
+  "sphere": "Медицина",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "97.021.894/0001-38",
+  "company": "EMPRESA EXEMPLO 208 LTDA",
+  "city": "Goiânia/GO",
+  "sphere": "Нерухомість",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpj.ws",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "08.125.440/0001-87",
+  "company": "EMPRESA EXEMPLO 209 LTDA",
+  "city": "Mendonça/SP",
+  "sphere": "Логістика",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "31.838.080/0001-82",
+  "company": "Empresa Exemplo 210",
+  "city": "Macapá/AP",
+  "sphere": "Енергетика",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "17.234.718/0001-45",
+  "company": "EMPRESA EXEMPLO 211",
+  "city": "Cachoeira Paulista/SP",
+  "sphere": "Готелі/туризм",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpj.ws",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "69.901.975/0001-97",
+  "company": "Empresa Exemplo 212",
+  "city": "São Luís/MA",
+  "sphere": "Нерухомість",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "04.677.065/0001-27",
+  "company": "EMPRESA EXEMPLO 213 LTDA",
+  "city": "Nuporanga/SP",
+  "sphere": "Агро",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "23.111.213/0001-96",
+  "company": "EMPRESA EXEMPLO 214 LTDA",
+  "city": "Rio de Janeiro/RJ",
+  "sphere": "Готелі/туризм",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpj.ws",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "11.497.670/0001-81",
+  "company": "Empresa Exemplo 215",
+  "city": "Caxias do Sul/RS",
+  "sphere": "IT",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "81.017.251/0001-80",
+  "company": "EMPRESA EXEMPLO 216",
+  "city": "Rio das Ostras/RJ",
+  "sphere": "Освіта",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpj.ws",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "26.795.932/0001-61",
+  "company": "Empresa Exemplo 217",
+  "city": "Itaguaçu/ES",
+  "sphere": "Авто",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "23.772.981/0001-90",
+  "company": "EMPRESA EXEMPLO 218 LTDA",
+  "city": "Curitiba/PR",
+  "sphere": "Агро",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "82.959.125/0001-08",
+  "company": "EMPRESA EXEMPLO 219",
+  "city": "Cametá/PA",
+  "sphere": "Фармація",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpj.ws",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "39.241.659/0001-75",
+  "company": "EMPRESA EXEMPLO 220 LTDA",
+  "city": "Curitiba/PR",
+  "sphere": "Краса/фітнес",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "71.563.594/0001-97",
+  "company": "Empresa Exemplo 221",
+  "city": "Caieiras/SP",
+  "sphere": "Логістика",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "91.924.999/0001-10",
+  "company": "EMPRESA EXEMPLO 222 LTDA",
+  "city": "São José do Rio Preto/SP",
+  "sphere": "Медицина",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpj.ws",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "46.355.571/0001-40",
+  "company": "EMPRESA EXEMPLO 223 LTDA",
+  "city": "Campo Grande/MS",
+  "sphere": "Авто",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "08.155.439/0001-03",
+  "company": "Empresa Exemplo 224",
+  "city": "Goiânia/GO",
+  "sphere": "Промисловість",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "66.362.195/0001-28",
+  "company": "Empresa Exemplo 225",
+  "city": "Brasília/DF",
+  "sphere": "Готелі/туризм",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "00.993.683/0001-25",
+  "company": "Empresa Exemplo 226 Ltda",
+  "city": "Belo Horizonte/MG",
+  "sphere": "Харчування",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "80.633.876/0001-04",
+  "company": "EMPRESA EXEMPLO 227",
+  "city": "Rubiataba/GO",
+  "sphere": "Фармація",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpj.ws",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "59.520.675/0001-04",
+  "company": "Empresa Exemplo 228",
+  "city": "Chapada do Norte/MG",
+  "sphere": "Медицина",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "77.726.567/0001-74",
+  "company": "Empresa Exemplo 229",
+  "city": "Juruena/MT",
+  "sphere": "Ритейл",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "67.065.128/0001-04",
+  "company": "EMPRESA EXEMPLO 230",
+  "city": "Sarandi/PR",
+  "sphere": "Логістика",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpj.ws",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "09.526.660/0001-85",
+  "company": "Empresa Exemplo 231",
+  "city": "Arapiraca/AL",
+  "sphere": "Харчування",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "78.027.941/0001-06",
+  "company": "EMPRESA EXEMPLO 232",
+  "city": "Goiatuba/GO",
+  "sphere": "Агро",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpj.ws",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "60.926.308/0001-94",
+  "company": "Empresa Exemplo 233",
+  "city": "Palmital/SP",
+  "sphere": "Юристи/бухгалтерія",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "48.958.942/0001-03",
+  "company": "EMPRESA EXEMPLO 234 LTDA",
+  "city": "Curitiba/PR",
+  "sphere": "Нерухомість",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpj.ws",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "65.593.275/0001-21",
+  "company": "Empresa Exemplo 235",
+  "city": "Itapaci/GO",
+  "sphere": "Промисловість",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "75.682.052/0001-94",
+  "company": "Empresa Exemplo 236",
+  "city": "Resende/RJ",
+  "sphere": "Будівництво",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "74.793.844/0001-73",
+  "company": "EMPRESA EXEMPLO 237",
+  "city": "Campestre do Maranhão/MA",
+  "sphere": "Освіта",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpj.ws",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "86.145.601/0001-08",
+  "company": "Empresa Exemplo 238",
+  "city": "Goiânia/GO",
+  "sphere": "Нерухомість",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "35.674.423/0001-71",
+  "company": "Empresa Exemplo 239",
+  "city": "Rio de Janeiro/RJ",
+  "sphere": "Логістика",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "59.054.308/0001-62",
+  "company": "EMPRESA EXEMPLO 240 LTDA",
+  "city": "São Paulo/SP",
+  "sphere": "Фінанси",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpj.ws",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "91.261.889/0001-16",
+  "company": "EMPRESA EXEMPLO 241",
+  "city": "São Paulo/SP",
+  "sphere": "Фінанси",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "62.013.777/0001-48",
+  "company": "EMPRESA EXEMPLO 242 LTDA",
+  "city": "Aliança/PE",
+  "sphere": "Агро",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpj.ws",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "57.417.644/0001-05",
+  "company": "Empresa Exemplo 243",
+  "city": "Itabirito/MG",
+  "sphere": "Краса/фітнес",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "47.621.560/0001-27",
+  "company": "EMPRESA EXEMPLO 244",
+  "city": "São Paulo/SP",
+  "sphere": "IT",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "95.716.342/0001-19",
+  "company": "EMPRESA EXEMPLO 245 LTDA",
+  "city": "Mar de Espanha/MG",
+  "sphere": "Агро",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "83.086.978/0001-45",
+  "company": "Empresa Exemplo 246",
+  "city": "Betim/MG",
+  "sphere": "Промисловість",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "67.183.333/0001-74",
+  "company": "Empresa Exemplo 247",
+  "city": "São José dos Pinhais/PR",
+  "sphere": "Логістика",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "75.605.753/0001-20",
+  "company": "EMPRESA EXEMPLO 248 LTDA",
+  "city": "Rio de Janeiro/RJ",
+  "sphere": "Нерухомість",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpj.ws",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "55.269.724/0001-27",
+  "company": "Empresa Exemplo 249",
+  "city": "Blumenau/SC",
+  "sphere": "Логістика",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "53.545.408/0001-05",
+  "company": "Empresa Exemplo 250",
+  "city": "Feira de Santana/BA",
+  "sphere": "Харчування",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "79.008.229/0001-22",
+  "company": "EMPRESA EXEMPLO 251",
+  "city": "São Paulo/SP",
+  "sphere": "Логістика",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpj.ws",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "01.275.400/0001-72",
+  "company": "EMPRESA EXEMPLO 252 LTDA",
+  "city": "Santa Terezinha de Itaipu/PR",
+  "sphere": "Логістика",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpj.ws",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "22.178.852/0001-06",
+  "company": "Empresa Exemplo 253",
+  "city": "Guarulhos/SP",
+  "sphere": "Фармація",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "58.647.445/0001-48",
+  "company": "EMPRESA EXEMPLO 254 LTDA",
+  "city": "Campo Grande/MS",
+  "sphere": "Агро",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "23.649.205/0001-06",
+  "company": "EMPRESA EXEMPLO 255",
+  "city": "Criciúma/SC",
+  "sphere": "Фінанси",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpj.ws",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "05.848.928/0001-44",
+  "company": "Empresa Exemplo 256",
+  "city": "São Luís/MA",
+  "sphere": "Освіта",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "19.365.372/0001-40",
+  "company": "Empresa Exemplo 257",
+  "city": "Conselheiro Pena/MG",
+  "sphere": "Фармація",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "79.173.011/0001-23",
+  "company": "EMPRESA EXEMPLO 258 LTDA",
+  "city": "Natal/RN",
+  "sphere": "Енергетика",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "29.934.898/0001-57",
+  "company": "EMPRESA EXEMPLO 259",
+  "city": "Rio de Janeiro/RJ",
+  "sphere": "Нерухомість",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpj.ws",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "49.872.553/0001-23",
+  "company": "Empresa Exemplo 260",
+  "city": "Embu das Artes/SP",
+  "sphere": "Ритейл",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "11.354.652/0001-40",
+  "company": "EMPRESA EXEMPLO 261 LTDA",
+  "city": "Ribeirão Preto/SP",
+  "sphere": "Медицина",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "70.141.730/0001-98",
+  "company": "Empresa Exemplo 262",
+  "city": "Pombos/PE",
+  "sphere": "Агро",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "71.639.429/0001-71",
+  "company": "Empresa Exemplo 263",
+  "city": "Recife/PE",
+  "sphere": "Енергетика",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "77.902.060/0001-24",
+  "company": "EMPRESA EXEMPLO 264",
+  "city": "Correntina/BA",
+  "sphere": "Агро",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpj.ws",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "94.251.080/0001-00",
+  "company": "Empresa Exemplo 265",
+  "city": "Colatina/ES",
+  "sphere": "Авто",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "18.312.741/0001-73",
+  "company": "EMPRESA EXEMPLO 266 LTDA",
+  "city": "São Bernardo do Campo/SP",
+  "sphere": "Будівництво",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "22.537.997/0001-56",
+  "company": "Empresa Exemplo 267",
+  "city": "Itapetininga/SP",
+  "sphere": "Краса/фітнес",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "88.559.226/0001-78",
+  "company": "EMPRESA EXEMPLO 268 LTDA",
+  "city": "Araraquara/SP",
+  "sphere": "Краса/фітнес",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "78.799.764/0001-86",
+  "company": "EMPRESA EXEMPLO 269 LTDA",
+  "city": "São Vicente do Seridó/PB",
+  "sphere": "IT",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "59.666.028/0001-05",
+  "company": "EMPRESA EXEMPLO 270",
+  "city": "Guarulhos/SP",
+  "sphere": "Освіта",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpj.ws",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "21.951.580/0001-72",
+  "company": "Empresa Exemplo 271",
+  "city": "Fortaleza/CE",
+  "sphere": "Харчування",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "37.830.603/0001-20",
+  "company": "EMPRESA EXEMPLO 272 LTDA",
+  "city": "Itaboraí/RJ",
+  "sphere": "Авто",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "27.799.019/0001-04",
+  "company": "EMPRESA EXEMPLO 273",
+  "city": "Rio de Janeiro/RJ",
+  "sphere": "Фінанси",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpj.ws",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "64.641.169/0001-03",
+  "company": "EMPRESA EXEMPLO 274 LTDA",
+  "city": "Boa Vista/RR",
+  "sphere": "Нерухомість",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpj.ws",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "98.727.974/0001-76",
+  "company": "Empresa Exemplo 275",
+  "city": "Sorocaba/SP",
+  "sphere": "Краса/фітнес",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "59.140.955/0001-97",
+  "company": "EMPRESA EXEMPLO 276",
+  "city": "Goiânia/GO",
+  "sphere": "Юристи/бухгалтерія",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpj.ws",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "70.600.721/0001-18",
+  "company": "Empresa Exemplo 277",
+  "city": "Rio de Janeiro/RJ",
+  "sphere": "IT",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "62.892.661/0001-26",
+  "company": "Empresa Exemplo 278",
+  "city": "Garanhuns/PE",
+  "sphere": "Агро",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "11.540.615/0001-27",
+  "company": "EMPRESA EXEMPLO 279 LTDA",
+  "city": "Jundiaí/SP",
+  "sphere": "Логістика",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "49.653.153/0001-27",
+  "company": "EMPRESA EXEMPLO 280 LTDA",
+  "city": "Duque de Caxias/RJ",
+  "sphere": "Фармація",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "00.967.967/0001-47",
+  "company": "Empresa Exemplo 281",
+  "city": "São Paulo/SP",
+  "sphere": "Освіта",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "10.676.412/0001-08",
+  "company": "Empresa Exemplo 282",
+  "city": "Florianópolis/SC",
+  "sphere": "Готелі/туризм",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "22.565.929/0001-09",
+  "company": "Empresa Exemplo 283",
+  "city": "Cunha/SP",
+  "sphere": "Готелі/туризм",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "19.440.322/0001-80",
+  "company": "Empresa Exemplo 284",
+  "city": "Goiânia/GO",
+  "sphere": "Медицина",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "56.650.243/0001-20",
+  "company": "EMPRESA EXEMPLO 285 LTDA",
+  "city": "Juiz de Fora/MG",
+  "sphere": "Авто",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "33.905.137/0001-44",
+  "company": "EMPRESA EXEMPLO 286",
+  "city": "Pereiras/SP",
+  "sphere": "IT",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpj.ws",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "99.793.730/0001-54",
+  "company": "Empresa Exemplo 287",
+  "city": "Rolim de Moura/RO",
+  "sphere": "Ритейл",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "99.701.157/0001-01",
+  "company": "EMPRESA EXEMPLO 288 LTDA",
+  "city": "Igaraçu do Tietê/SP",
+  "sphere": "Фінанси",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpj.ws",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "55.980.878/0001-22",
+  "company": "EMPRESA EXEMPLO 289 S.A.",
+  "city": "Jaíba/MG",
+  "sphere": "Енергетика",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpj.ws",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "93.142.105/0001-66",
+  "company": "EMPRESA EXEMPLO 290",
+  "city": "Mangueirinha/PR",
+  "sphere": "Енергетика",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpj.ws",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "91.376.464/0001-52",
+  "company": "Empresa Exemplo 291",
+  "city": "Santana de Parnaíba/SP",
+  "sphere": "Промисловість",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "81.157.150/0001-05",
+  "company": "EMPRESA EXEMPLO 292 EIRELI",
+  "city": "Manaus/AM",
+  "sphere": "Освіта",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpj.ws",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "29.177.818/0001-66",
+  "company": "EMPRESA EXEMPLO 293 LTDA",
+  "city": "Itaguaí/RJ",
+  "sphere": "Краса/фітнес",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "32.230.380/0001-47",
+  "company": "EMPRESA EXEMPLO 294",
+  "city": "São Paulo/SP",
+  "sphere": "Юристи/бухгалтерія",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "39.660.167/0001-14",
+  "company": "EMPRESA EXEMPLO 295 LTDA",
+  "city": "Curitiba/PR",
+  "sphere": "Освіта",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "61.397.029/0001-43",
+  "company": "Empresa Exemplo 296",
+  "city": "São Mateus/ES",
+  "sphere": "IT",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "38.854.042/0001-62",
+  "company": "EMPRESA EXEMPLO 297",
+  "city": "Goiânia/GO",
+  "sphere": "Юристи/бухгалтерія",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "66.213.199/0001-44",
+  "company": "Empresa Exemplo 298",
+  "city": "Niterói/RJ",
+  "sphere": "Готелі/туризм",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "73.979.223/0001-16",
+  "company": "Empresa Exemplo 299",
+  "city": "Manga/MG",
+  "sphere": "Авто",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "71.051.523/0001-05",
+  "company": "Empresa Exemplo 300",
+  "city": "Coroaci/MG",
+  "sphere": "Фармація",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "00.429.285/0001-80",
+  "company": "EMPRESA EXEMPLO 301 LTDA",
+  "city": "Marituba/PA",
+  "sphere": "Промисловість",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "32.726.088/0001-10",
+  "company": "EMPRESA EXEMPLO 302",
+  "city": "Caucaia/CE",
+  "sphere": "Логістика",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpj.ws",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "00.195.586/0001-97",
+  "company": "EMPRESA EXEMPLO 303 LTDA",
+  "city": "Salvador/BA",
+  "sphere": "Авто",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpj.ws",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "80.381.767/0001-47",
+  "company": "Empresa Exemplo 304",
+  "city": "Florianópolis/SC",
+  "sphere": "Освіта",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "69.428.248/0001-54",
+  "company": "EMPRESA EXEMPLO 305 LTDA",
+  "city": "Curitiba/PR",
+  "sphere": "Краса/фітнес",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpj.ws",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "59.110.276/0001-75",
+  "company": "EMPRESA EXEMPLO 306 LTDA.",
+  "city": "Rio de Janeiro/RJ",
+  "sphere": "Нерухомість",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "12.255.137/0001-76",
+  "company": "Empresa Exemplo 307",
+  "city": "São Luís/MA",
+  "sphere": "Освіта",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "88.349.430/0001-64",
+  "company": "EMPRESA EXEMPLO 308 LTDA",
+  "city": "Cascavel/PR",
+  "sphere": "Нерухомість",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "70.889.605/0001-60",
+  "company": "EMPRESA EXEMPLO 309 S.A.",
+  "city": "Braço do Norte/SC",
+  "sphere": "Фінанси",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "51.453.484/0001-65",
+  "company": "EMPRESA EXEMPLO 310 LTDA",
+  "city": "Londrina/PR",
+  "sphere": "Нерухомість",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "65.531.593/0001-68",
+  "company": "EMPRESA EXEMPLO 311",
+  "city": "Betim/MG",
+  "sphere": "Логістика",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpj.ws",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "29.736.014/0001-50",
+  "company": "Empresa Exemplo 312",
+  "city": "São Pedro da Cipa/MT",
+  "sphere": "Логістика",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "29.194.366/0001-20",
+  "company": "EMPRESA EXEMPLO 313",
+  "city": "Niterói/RJ",
+  "sphere": "Нерухомість",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpj.ws",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "58.056.808/0001-70",
+  "company": "EMPRESA EXEMPLO 314 LTDA",
+  "city": "Belo Horizonte/MG",
+  "sphere": "Нерухомість",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "36.577.360/0001-06",
+  "company": "Empresa Exemplo 315",
+  "city": "Tangará/SC",
+  "sphere": "Енергетика",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "59.691.317/0001-64",
+  "company": "EMPRESA EXEMPLO 316",
+  "city": "Montanha/ES",
+  "sphere": "Юристи/бухгалтерія",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpj.ws",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "71.734.115/0001-58",
+  "company": "Empresa Exemplo 317",
+  "city": "São Vicente/SP",
+  "sphere": "Авто",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "35.006.647/0001-05",
+  "company": "EMPRESA EXEMPLO 318 LTDA",
+  "city": "Americana/SP",
+  "sphere": "Ритейл",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "33.619.662/0001-01",
+  "company": "EMPRESA EXEMPLO 319",
+  "city": "Indaiatuba/SP",
+  "sphere": "Нерухомість",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpj.ws",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "70.928.799/0001-66",
+  "company": "EMPRESA EXEMPLO 320",
+  "city": "São José do Rio Preto/SP",
+  "sphere": "Краса/фітнес",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpj.ws",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "87.647.863/0001-33",
+  "company": "Empresa Exemplo 321",
+  "city": "União da Vitória/PR",
+  "sphere": "Краса/фітнес",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "98.116.834/0001-61",
+  "company": "EMPRESA EXEMPLO 322 LTDA",
+  "city": "Recife/PE",
+  "sphere": "Нерухомість",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpj.ws",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "39.748.488/0001-75",
+  "company": "EMPRESA EXEMPLO 323 LTDA",
+  "city": "Santa Cruz do Rio Pardo/SP",
+  "sphere": "Нерухомість",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "98.535.803/0001-45",
+  "company": "EMPRESA EXEMPLO 324 LTDA",
+  "city": "Catanduva/SP",
+  "sphere": "Медицина",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "81.972.789/0001-44",
+  "company": "EMPRESA EXEMPLO 325",
+  "city": "Vilhena/RO",
+  "sphere": "Промисловість",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpj.ws",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "04.998.571/0001-18",
+  "company": "EMPRESA EXEMPLO 326 S.A",
+  "city": "Teresina/PI",
+  "sphere": "Енергетика",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09 + cnpja",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "35.968.040/0001-06",
+  "company": "EMPRESA EXEMPLO 327 LTDA",
+  "city": "RIO DE JANEIRO/RJ",
+  "sphere": "Юристи/бухгалтерія",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "99.346.886/0001-97",
+  "company": "EMPRESA EXEMPLO 328",
+  "city": "NOVO PROGRESSO/PA",
+  "sphere": "Будівництво",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "59.603.652/0001-63",
+  "company": "EMPRESA EXEMPLO 329",
+  "city": "TRES BARRAS DO PARANA/PR",
+  "sphere": "Логістика",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "82.250.631/0001-23",
+  "company": "EMPRESA EXEMPLO 330",
+  "city": "BELO HORIZONTE/MG",
+  "sphere": "Медицина",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "33.282.058/0001-24",
+  "company": "EMPRESA EXEMPLO 331",
+  "city": "ARACAJU/SE",
+  "sphere": "Медицина",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "81.628.706/0001-02",
+  "company": "EMPRESA EXEMPLO 332 EIRELI",
+  "city": "SANTO ANDRE/SP",
+  "sphere": "Авто",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "03.355.655/0001-70",
+  "company": "EMPRESA EXEMPLO 333",
+  "city": "JOVIANIA/GO",
+  "sphere": "Юристи/бухгалтерія",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "53.959.817/0001-58",
+  "company": "EMPRESA EXEMPLO 334",
+  "city": "DOURADOS/MS",
+  "sphere": "Авто",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "40.865.760/0001-86",
+  "company": "EMPRESA EXEMPLO 335",
+  "city": "BALNEARIO CAMBORIU/SC",
+  "sphere": "Краса/фітнес",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "12.766.055/0001-96",
+  "company": "EMPRESA EXEMPLO 336",
+  "city": "FORMOSA/GO",
+  "sphere": "Агро",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "50.287.349/0001-24",
+  "company": "EMPRESA EXEMPLO 337",
+  "city": "CAREIRO/AM",
+  "sphere": "Готелі/туризм",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "81.803.527/0001-56",
+  "company": "EMPRESA EXEMPLO 338 LTDA",
+  "city": "SARANDI/PR",
+  "sphere": "Промисловість",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "46.229.027/0001-51",
+  "company": "EMPRESA EXEMPLO 339",
+  "city": "RIO BRANCO/AC",
+  "sphere": "Юристи/бухгалтерія",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "69.681.474/0001-42",
+  "company": "EMPRESA EXEMPLO 340",
+  "city": "SAO BERNARDO DO CAMPO/SP",
+  "sphere": "Освіта",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "05.051.038/0001-07",
+  "company": "EMPRESA EXEMPLO 341",
+  "city": "VARZEA GRANDE/MT",
+  "sphere": "Харчування",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "89.067.171/0001-41",
+  "company": "EMPRESA EXEMPLO 342",
+  "city": "SANTO ANTONIO DE POSSE/SP",
+  "sphere": "Фінанси",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "74.836.587/0001-00",
+  "company": "EMPRESA EXEMPLO 343",
+  "city": "LUIZIANA/PR",
+  "sphere": "Будівництво",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "09.164.044/0001-21",
+  "company": "EMPRESA EXEMPLO 344",
+  "city": "PARANAIBA/MS",
+  "sphere": "Агро",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "00.440.335/0001-20",
+  "company": "EMPRESA EXEMPLO 345",
+  "city": "GUARULHOS/SP",
+  "sphere": "Медицина",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "98.356.715/0001-86",
+  "company": "EMPRESA EXEMPLO 346 LTDA",
+  "city": "CASCAVEL/PR",
+  "sphere": "Промисловість",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "11.956.040/0001-28",
+  "company": "EMPRESA EXEMPLO 347",
+  "city": "SAO PAULO/SP",
+  "sphere": "Медицина",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "22.592.915/0001-76",
+  "company": "EMPRESA EXEMPLO 348",
+  "city": "SAO PAULO/SP",
+  "sphere": "Фінанси",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "61.197.035/0001-57",
+  "company": "EMPRESA EXEMPLO 349",
+  "city": "ARARIPINA/PE",
+  "sphere": "Фармація",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "44.762.504/0001-14",
+  "company": "EMPRESA EXEMPLO 350",
+  "city": "SAO PAULO/SP",
+  "sphere": "IT",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "25.655.610/0001-54",
+  "company": "EMPRESA EXEMPLO 351",
+  "city": "RIO VERDE/GO",
+  "sphere": "Агро",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "55.676.557/0001-39",
+  "company": "EMPRESA EXEMPLO 352 LTDA.",
+  "city": "SAO PAULO/SP",
+  "sphere": "IT",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "77.794.858/0001-08",
+  "company": "EMPRESA EXEMPLO 353 LTDA",
+  "city": "BRASILANDIA DE MINAS/MG",
+  "sphere": "Логістика",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "61.431.576/0001-06",
+  "company": "EMPRESA EXEMPLO 354",
+  "city": "CAMPO GRANDE/MS",
+  "sphere": "Освіта",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "10.463.761/0001-33",
+  "company": "EMPRESA EXEMPLO 355",
+  "city": "PARAOPEBA/MG",
+  "sphere": "Логістика",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "17.652.551/0001-32",
+  "company": "EMPRESA EXEMPLO 356",
+  "city": "CONTAGEM/MG",
+  "sphere": "Юристи/бухгалтерія",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "42.555.688/0001-16",
+  "company": "EMPRESA EXEMPLO 357",
+  "city": "BARUERI/SP",
+  "sphere": "Нерухомість",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "96.525.754/0001-34",
+  "company": "EMPRESA EXEMPLO 358",
+  "city": "MONDAI/SC",
+  "sphere": "Логістика",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "76.794.597/0001-55",
+  "company": "EMPRESA EXEMPLO 359",
+  "city": "CONTAGEM/MG",
+  "sphere": "Ритейл",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "30.477.405/0001-86",
+  "company": "EMPRESA EXEMPLO 360",
+  "city": "IGREJINHA/RS",
+  "sphere": "Нерухомість",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "96.642.204/0001-03",
+  "company": "EMPRESA EXEMPLO 361",
+  "city": "AUGUSTINOPOLIS/TO",
+  "sphere": "Фармація",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "36.453.026/0001-32",
+  "company": "EMPRESA EXEMPLO 362 LTDA",
+  "city": "JANAUBA/MG",
+  "sphere": "Енергетика",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "95.495.489/0001-26",
+  "company": "EMPRESA EXEMPLO 363",
+  "city": "GUARAPARI/ES",
+  "sphere": "Харчування",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "19.028.138/0001-27",
+  "company": "EMPRESA EXEMPLO 364",
+  "city": "SAO BENTO DO SUL/SC",
+  "sphere": "Юристи/бухгалтерія",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "76.059.363/0001-64",
+  "company": "EMPRESA EXEMPLO 365",
+  "city": "SANTO ANTONIO DE GOIAS/GO",
+  "sphere": "IT",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "72.622.590/0001-03",
+  "company": "EMPRESA EXEMPLO 366 LTDA",
+  "city": "QUILOMBO/SC",
+  "sphere": "Медицина",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "69.226.271/0001-66",
+  "company": "EMPRESA EXEMPLO 367",
+  "city": "SENA MADUREIRA/AC",
+  "sphere": "Фармація",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "70.590.273/0001-19",
+  "company": "EMPRESA EXEMPLO 368",
+  "city": "BELO HORIZONTE/MG",
+  "sphere": "Нерухомість",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "66.980.489/0001-13",
+  "company": "EMPRESA EXEMPLO 369 LTDA",
+  "city": "RIO DE JANEIRO/RJ",
+  "sphere": "Енергетика",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "75.170.178/0001-80",
+  "company": "EMPRESA EXEMPLO 370",
+  "city": "SALVADOR/BA",
+  "sphere": "Енергетика",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "36.440.897/0001-11",
+  "company": "EMPRESA EXEMPLO 371",
+  "city": "PONTES E LACERDA/MT",
+  "sphere": "Авто",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "28.046.464/0001-58",
+  "company": "EMPRESA EXEMPLO 372",
+  "city": "QUARAI/RS",
+  "sphere": "Авто",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "42.941.833/0001-05",
+  "company": "EMPRESA EXEMPLO 373",
+  "city": "OSVALDO CRUZ/SP",
+  "sphere": "Ритейл",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "53.704.672/0001-44",
+  "company": "EMPRESA EXEMPLO 374",
+  "city": "PETROLINA/PE",
+  "sphere": "Агро",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "43.438.742/0001-06",
+  "company": "EMPRESA EXEMPLO 375 LTDA",
+  "city": "ARMAZEM/SC",
+  "sphere": "Ритейл",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "78.058.741/0001-10",
+  "company": "EMPRESA EXEMPLO 376 LTDA",
+  "city": "VIDEIRA/SC",
+  "sphere": "Авто",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "82.499.800/0001-63",
+  "company": "EMPRESA EXEMPLO 377",
+  "city": "FEIRA DE SANTANA/BA",
+  "sphere": "Медицина",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "35.229.026/0001-90",
+  "company": "EMPRESA EXEMPLO 378",
+  "city": "LEBON REGIS/SC",
+  "sphere": "Агро",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "00.998.426/0001-86",
+  "company": "EMPRESA EXEMPLO 379",
+  "city": "RIO DE JANEIRO/RJ",
+  "sphere": "Юристи/бухгалтерія",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "06.284.185/0001-90",
+  "company": "EMPRESA EXEMPLO 380",
+  "city": "ITAUNA/MG",
+  "sphere": "Енергетика",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "62.931.545/0001-79",
+  "company": "EMPRESA EXEMPLO 381 LTDA",
+  "city": "LONDRINA/PR",
+  "sphere": "Агро",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "49.743.622/0001-07",
+  "company": "EMPRESA EXEMPLO 382",
+  "city": "JOAO PESSOA/PB",
+  "sphere": "Логістика",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "25.847.814/0001-97",
+  "company": "EMPRESA EXEMPLO 383 LTDA",
+  "city": "TRES RIOS/RJ",
+  "sphere": "Нерухомість",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "22.227.359/0001-39",
+  "company": "EMPRESA EXEMPLO 384",
+  "city": "CAMPINA GRANDE/PB",
+  "sphere": "Медицина",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "79.796.385/0001-03",
+  "company": "EMPRESA EXEMPLO 385 LTDA",
+  "city": "LIMEIRA/SP",
+  "sphere": "Промисловість",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "57.630.233/0001-95",
+  "company": "EMPRESA EXEMPLO 386",
+  "city": "ITABAIANINHA/SE",
+  "sphere": "Фармація",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "66.015.397/0001-01",
+  "company": "EMPRESA EXEMPLO 387",
+  "city": "SANTA MARIA DE JETIBA/ES",
+  "sphere": "Агро",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "89.559.557/0001-70",
+  "company": "EMPRESA EXEMPLO 388",
+  "city": "POUSO ALEGRE/MG",
+  "sphere": "IT",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "40.169.907/0001-01",
+  "company": "EMPRESA EXEMPLO 389",
+  "city": "VITORIA/ES",
+  "sphere": "Фінанси",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "60.546.504/0001-33",
+  "company": "EMPRESA EXEMPLO 390 LTDA",
+  "city": "VASSOURAS/RJ",
+  "sphere": "Ритейл",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "14.950.878/0001-00",
+  "company": "EMPRESA EXEMPLO 391",
+  "city": "JUNQUEIRO/AL",
+  "sphere": "Краса/фітнес",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "55.241.828/0001-23",
+  "company": "EMPRESA EXEMPLO 392",
+  "city": "PERDIZES/MG",
+  "sphere": "Промисловість",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "45.371.485/0001-68",
+  "company": "Empresa Exemplo 393",
+  "city": "SAO PAULO/SP",
+  "sphere": "Фінанси",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "40.150.176/0001-44",
+  "company": "EMPRESA EXEMPLO 394",
+  "city": "SAO PAULO/SP",
+  "sphere": "Харчування",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "84.413.997/0001-00",
+  "company": "EMPRESA EXEMPLO 395",
+  "city": "SANTA TERESA/ES",
+  "sphere": "Фармація",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "97.098.796/0001-07",
+  "company": "EMPRESA EXEMPLO 396 LTDA",
+  "city": "BELO HORIZONTE/MG",
+  "sphere": "Будівництво",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "87.360.550/0001-08",
+  "company": "EMPRESA EXEMPLO 397",
+  "city": "SAO PAULO/SP",
+  "sphere": "IT",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "14.668.078/0001-93",
+  "company": "EMPRESA EXEMPLO 398",
+  "city": "ESPINOSA/MG",
+  "sphere": "Будівництво",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "00.388.014/0001-24",
+  "company": "EMPRESA EXEMPLO 399",
+  "city": "UMUARAMA/PR",
+  "sphere": "Освіта",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "51.091.606/0001-10",
+  "company": "EMPRESA EXEMPLO 400 LTDA",
+  "city": "UBERLANDIA/MG",
+  "sphere": "Будівництво",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "31.131.891/0001-49",
+  "company": "EMPRESA EXEMPLO 401 LTDA",
+  "city": "SANTA ROSA/RS",
+  "sphere": "Медицина",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "01.644.562/0001-30",
+  "company": "EMPRESA EXEMPLO 402 LTDA",
+  "city": "SANTO ANDRE/SP",
+  "sphere": "Освіта",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "67.601.479/0001-92",
+  "company": "EMPRESA EXEMPLO 403",
+  "city": "ANCHIETA/ES",
+  "sphere": "Готелі/туризм",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "16.526.375/0001-20",
+  "company": "EMPRESA EXEMPLO 404 LTDA",
+  "city": "ITACARE/BA",
+  "sphere": "Агро",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "02.096.776/0001-82",
+  "company": "EMPRESA EXEMPLO 405",
+  "city": "CURITIBA/PR",
+  "sphere": "Готелі/туризм",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "17.395.854/0001-17",
+  "company": "EMPRESA EXEMPLO 406",
+  "city": "SAO PAULO/SP",
+  "sphere": "Будівництво",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "68.512.005/0001-37",
+  "company": "EMPRESA EXEMPLO 407 LTDA",
+  "city": "CABEDELO/PB",
+  "sphere": "Промисловість",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "85.186.379/0001-29",
+  "company": "EMPRESA EXEMPLO 408",
+  "city": "RIO DE JANEIRO/RJ",
+  "sphere": "Енергетика",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "76.260.757/0001-86",
+  "company": "EMPRESA EXEMPLO 409",
+  "city": "CLAUDIO/MG",
+  "sphere": "Логістика",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "14.044.399/0001-17",
+  "company": "EMPRESA EXEMPLO 410",
+  "city": "SAO PAULO/SP",
+  "sphere": "Харчування",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "21.514.115/0001-74",
+  "company": "EMPRESA EXEMPLO 411",
+  "city": "JUIZ DE FORA/MG",
+  "sphere": "Юристи/бухгалтерія",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "40.599.902/0001-00",
+  "company": "EMPRESA EXEMPLO 412",
+  "city": "PORTO SEGURO/BA",
+  "sphere": "Готелі/туризм",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "37.223.245/0001-98",
+  "company": "EMPRESA EXEMPLO 413",
+  "city": "RIO DE JANEIRO/RJ",
+  "sphere": "IT",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "85.138.774/0001-36",
+  "company": "EMPRESA EXEMPLO 414",
+  "city": "RIO DE JANEIRO/RJ",
+  "sphere": "Логістика",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "15.307.710/0001-36",
+  "company": "EMPRESA EXEMPLO 415",
+  "city": "SENADOR CANEDO/GO",
+  "sphere": "Харчування",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "60.149.814/0001-14",
+  "company": "EMPRESA EXEMPLO 416",
+  "city": "SEBASTIAO LARANJEIRAS/BA",
+  "sphere": "Агро",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "30.730.605/0001-07",
+  "company": "EMPRESA EXEMPLO 417",
+  "city": "CRICIUMA/SC",
+  "sphere": "Промисловість",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "33.237.829/0001-61",
+  "company": "EMPRESA EXEMPLO 418",
+  "city": "FLORIANOPOLIS/SC",
+  "sphere": "Медицина",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "71.989.175/0001-11",
+  "company": "EMPRESA EXEMPLO 419",
+  "city": "CAMPO ALEGRE/SC",
+  "sphere": "Харчування",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "51.897.969/0001-48",
+  "company": "EMPRESA EXEMPLO 420",
+  "city": "TERESOPOLIS/RJ",
+  "sphere": "Авто",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "83.665.416/0001-56",
+  "company": "EMPRESA EXEMPLO 421",
+  "city": "BELO HORIZONTE/MG",
+  "sphere": "Ритейл",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "86.463.907/0001-02",
+  "company": "EMPRESA EXEMPLO 422 LTDA",
+  "city": "ERECHIM/RS",
+  "sphere": "Фінанси",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "45.098.981/0001-90",
+  "company": "EMPRESA EXEMPLO 423 LTDA",
+  "city": "PEDRINHAS PAULISTA/SP",
+  "sphere": "Краса/фітнес",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "99.313.991/0001-20",
+  "company": "EMPRESA EXEMPLO 424 LTDA",
+  "city": "GARANHUNS/PE",
+  "sphere": "Медицина",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "29.843.498/0001-36",
+  "company": "EMPRESA EXEMPLO 425",
+  "city": "CHAPADA DOS GUIMARAES/MT",
+  "sphere": "Ритейл",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "98.657.100/0001-90",
+  "company": "EMPRESA EXEMPLO 426",
+  "city": "MUCURI/BA",
+  "sphere": "Фармація",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "86.814.318/0001-21",
+  "company": "EMPRESA EXEMPLO 427",
+  "city": "FEIRA DE SANTANA/BA",
+  "sphere": "Будівництво",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "58.162.875/0001-70",
+  "company": "EMPRESA EXEMPLO 428 LTDA",
+  "city": "UBERLANDIA/MG",
+  "sphere": "Фінанси",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "40.713.553/0001-06",
+  "company": "EMPRESA EXEMPLO 429 LTDA",
+  "city": "CAMPOS DOS GOYTACAZES/RJ",
+  "sphere": "Промисловість",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "51.867.093/0001-97",
+  "company": "EMPRESA EXEMPLO 430 S.A.",
+  "city": "TERRA NOVA/PE",
+  "sphere": "Енергетика",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "23.507.288/0001-90",
+  "company": "EMPRESA EXEMPLO 431",
+  "city": "HORIZONTE/CE",
+  "sphere": "Медицина",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "06.968.780/0001-44",
+  "company": "EMPRESA EXEMPLO 432",
+  "city": "GOIANIA/GO",
+  "sphere": "Освіта",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "82.342.753/0001-40",
+  "company": "EMPRESA EXEMPLO 433",
+  "city": "NOVO ALEGRE/TO",
+  "sphere": "Юристи/бухгалтерія",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "21.841.189/0001-15",
+  "company": "EMPRESA EXEMPLO 434 LTDA",
+  "city": "NOVA ROMA/GO",
+  "sphere": "Нерухомість",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "46.916.091/0001-00",
+  "company": "EMPRESA EXEMPLO 435",
+  "city": "CURITIBA/PR",
+  "sphere": "IT",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "20.588.435/0001-06",
+  "company": "EMPRESA EXEMPLO 436",
+  "city": "PRIMAVERA DO LESTE/MT",
+  "sphere": "Агро",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "55.659.121/0001-31",
+  "company": "EMPRESA EXEMPLO 437",
+  "city": "SAO PAULO/SP",
+  "sphere": "Будівництво",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "83.984.345/0001-54",
+  "company": "EMPRESA EXEMPLO 438 LTDA",
+  "city": "DOIS VIZINHOS/PR",
+  "sphere": "Освіта",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "03.619.491/0001-41",
+  "company": "EMPRESA EXEMPLO 439",
+  "city": "SAO PAULO/SP",
+  "sphere": "Ритейл",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "81.493.653/0001-51",
+  "company": "EMPRESA EXEMPLO 440",
+  "city": "BRASILIA/DF",
+  "sphere": "Харчування",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "28.751.613/0001-80",
+  "company": "EMPRESA EXEMPLO 441 LTDA.",
+  "city": "MOGI MIRIM/SP",
+  "sphere": "Логістика",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "52.066.983/0001-62",
+  "company": "EMPRESA EXEMPLO 442",
+  "city": "SAO PAULO/SP",
+  "sphere": "Краса/фітнес",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "06.292.409/0001-05",
+  "company": "EMPRESA EXEMPLO 443",
+  "city": "SAO PAULO/SP",
+  "sphere": "Юристи/бухгалтерія",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "58.493.016/0001-63",
+  "company": "EMPRESA EXEMPLO 444",
+  "city": "SAO JOSE/SC",
+  "sphere": "Промисловість",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "01.095.565/0001-62",
+  "company": "EMPRESA EXEMPLO 445",
+  "city": "CHAPECO/SC",
+  "sphere": "Енергетика",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "47.507.919/0001-30",
+  "company": "EMPRESA EXEMPLO 446",
+  "city": "SAO PAULO/SP",
+  "sphere": "Фінанси",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "53.476.977/0001-46",
+  "company": "EMPRESA EXEMPLO 447",
+  "city": "RESENDE/RJ",
+  "sphere": "Харчування",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "80.460.023/0001-18",
+  "company": "EMPRESA EXEMPLO 448",
+  "city": "JUNDIAI/SP",
+  "sphere": "IT",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "94.077.589/0001-70",
+  "company": "EMPRESA EXEMPLO 449",
+  "city": "DIONISIO CERQUEIRA/SC",
+  "sphere": "Юристи/бухгалтерія",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "93.767.392/0001-08",
+  "company": "EMPRESA EXEMPLO 450",
+  "city": "BELO HORIZONTE/MG",
+  "sphere": "IT",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "56.804.953/0001-67",
+  "company": "EMPRESA EXEMPLO 451 LTDA",
+  "city": "SALVADOR/BA",
+  "sphere": "Харчування",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "66.050.160/0001-53",
+  "company": "EMPRESA EXEMPLO 452",
+  "city": "SALVADOR/BA",
+  "sphere": "Фармація",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "17.845.004/0001-73",
+  "company": "EMPRESA EXEMPLO 453 LTDA",
+  "city": "PORTO ALEGRE/RS",
+  "sphere": "Авто",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "74.341.473/0001-99",
+  "company": "EMPRESA EXEMPLO 454 LTDA",
+  "city": "JUIZ DE FORA/MG",
+  "sphere": "Харчування",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "66.028.467/0001-58",
+  "company": "EMPRESA EXEMPLO 455",
+  "city": "MESQUITA/RJ",
+  "sphere": "Фармація",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "49.157.150/0001-00",
+  "company": "EMPRESA EXEMPLO 456",
+  "city": "BRASILIA/DF",
+  "sphere": "Освіта",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "28.160.424/0001-32",
+  "company": "EMPRESA EXEMPLO 457",
+  "city": "SAO PAULO/SP",
+  "sphere": "Юристи/бухгалтерія",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "76.514.778/0001-80",
+  "company": "EMPRESA EXEMPLO 458 LTDA",
+  "city": "SINOP/MT",
+  "sphere": "Логістика",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "73.910.467/0001-42",
+  "company": "EMPRESA EXEMPLO 459",
+  "city": "ARAPIRACA/AL",
+  "sphere": "Харчування",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "00.098.386/0001-16",
+  "company": "EMPRESA EXEMPLO 460",
+  "city": "RIO DE JANEIRO/RJ",
+  "sphere": "Ритейл",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "92.772.504/0001-48",
+  "company": "EMPRESA EXEMPLO 461",
+  "city": "PALMAS/TO",
+  "sphere": "Авто",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "99.424.800/0001-05",
+  "company": "EMPRESA EXEMPLO 462",
+  "city": "CORURIPE/AL",
+  "sphere": "Агро",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "20.249.450/0001-20",
+  "company": "EMPRESA EXEMPLO 463 LTDA",
+  "city": "SAO PAULO/SP",
+  "sphere": "Фінанси",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "47.964.572/0001-54",
+  "company": "EMPRESA EXEMPLO 464 LTDA",
+  "city": "SAO PAULO/SP",
+  "sphere": "Харчування",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "48.116.627/0001-39",
+  "company": "EMPRESA EXEMPLO 465 LTDA",
+  "city": "SAO PAULO/SP",
+  "sphere": "Фінанси",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "42.284.370/0001-48",
+  "company": "EMPRESA EXEMPLO 466 LTDA",
+  "city": "BLUMENAU/SC",
+  "sphere": "Краса/фітнес",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "26.554.261/0001-47",
+  "company": "EMPRESA EXEMPLO 467",
+  "city": "QUIXERE/CE",
+  "sphere": "Авто",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "90.456.474/0001-35",
+  "company": "EMPRESA EXEMPLO 468",
+  "city": "BREVES/PA",
+  "sphere": "Медицина",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "13.823.703/0001-61",
+  "company": "EMPRESA EXEMPLO 469 LTDA",
+  "city": "ESPERANCA NOVA/PR",
+  "sphere": "Агро",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "33.190.626/0001-67",
+  "company": "EMPRESA EXEMPLO 470 LTDA",
+  "city": "CARUARU/PE",
+  "sphere": "Готелі/туризм",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "17.683.862/0001-69",
+  "company": "EMPRESA EXEMPLO 471 LTDA",
+  "city": "GOVERNADOR VALADARES/MG",
+  "sphere": "Освіта",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "73.701.828/0001-40",
+  "company": "EMPRESA EXEMPLO 472",
+  "city": "MONTE SANTO/BA",
+  "sphere": "Ритейл",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "50.708.877/0001-00",
+  "company": "EMPRESA EXEMPLO 473",
+  "city": "JAGUARIBE/CE",
+  "sphere": "Фармація",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "69.410.109/0001-01",
+  "company": "EMPRESA EXEMPLO 474 LTDA",
+  "city": "UBERLANDIA/MG",
+  "sphere": "Фінанси",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "37.576.503/0001-10",
+  "company": "EMPRESA EXEMPLO 475",
+  "city": "ANAPOLIS/GO",
+  "sphere": "Фармація",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "61.655.714/0001-22",
+  "company": "EMPRESA EXEMPLO 476",
+  "city": "GRAVATAI/RS",
+  "sphere": "Харчування",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "45.468.055/0001-69",
+  "company": "EMPRESA EXEMPLO 477",
+  "city": "ABAETE/MG",
+  "sphere": "Ритейл",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "18.199.462/0001-45",
+  "company": "EMPRESA EXEMPLO 478",
+  "city": "TUCURUI/PA",
+  "sphere": "Харчування",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "17.228.497/0001-00",
+  "company": "EMPRESA EXEMPLO 479",
+  "city": "SANTO ANTONIO DE JESUS/BA",
+  "sphere": "Нерухомість",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "10.132.446/0001-23",
+  "company": "EMPRESA EXEMPLO 480",
+  "city": "TRAMANDAI/RS",
+  "sphere": "Харчування",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "58.520.512/0001-69",
+  "company": "EMPRESA EXEMPLO 481",
+  "city": "SAO PAULO/SP",
+  "sphere": "Будівництво",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "25.027.464/0001-12",
+  "company": "EMPRESA EXEMPLO 482",
+  "city": "CALDAS NOVAS/GO",
+  "sphere": "Ритейл",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "97.146.817/0001-04",
+  "company": "EMPRESA EXEMPLO 483",
+  "city": "CAMPO GRANDE/MS",
+  "sphere": "Фінанси",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "62.150.832/0001-41",
+  "company": "EMPRESA EXEMPLO 484",
+  "city": "APARECIDA DE GOIANIA/GO",
+  "sphere": "Краса/фітнес",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "23.276.229/0001-59",
+  "company": "EMPRESA EXEMPLO 485",
+  "city": "FLORIANOPOLIS/SC",
+  "sphere": "Нерухомість",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "92.243.981/0001-16",
+  "company": "EMPRESA EXEMPLO 486",
+  "city": "SAO RAIMUNDO NONATO/PI",
+  "sphere": "Енергетика",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "23.909.060/0001-27",
+  "company": "EMPRESA EXEMPLO 487 LTDA.",
+  "city": "DRACENA/SP",
+  "sphere": "Енергетика",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "21.713.952/0001-22",
+  "company": "EMPRESA EXEMPLO 488",
+  "city": "SAO PAULO/SP",
+  "sphere": "Енергетика",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "01.097.939/0001-89",
+  "company": "EMPRESA EXEMPLO 489 LTDA",
+  "city": "SAO BERNARDO DO CAMPO/SP",
+  "sphere": "Медицина",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "68.629.397/0001-19",
+  "company": "EMPRESA EXEMPLO 490",
+  "city": "AGUA AZUL DO NORTE/PA",
+  "sphere": "Готелі/туризм",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "04.358.147/0001-09",
+  "company": "EMPRESA EXEMPLO 491",
+  "city": "SAO TOME DAS LETRAS/MG",
+  "sphere": "Готелі/туризм",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "67.850.586/0001-54",
+  "company": "EMPRESA EXEMPLO 492 LTDA",
+  "city": "SINOP/MT",
+  "sphere": "Нерухомість",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "33.035.143/0001-98",
+  "company": "EMPRESA EXEMPLO 493",
+  "city": "GOIANIA/GO",
+  "sphere": "Медицина",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "84.210.676/0001-08",
+  "company": "EMPRESA EXEMPLO 494",
+  "city": "MOGI DAS CRUZES/SP",
+  "sphere": "Юристи/бухгалтерія",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "55.939.902/0001-80",
+  "company": "EMPRESA EXEMPLO 495",
+  "city": "JATAI/GO",
+  "sphere": "Готелі/туризм",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "75.342.523/0001-15",
+  "company": "EMPRESA EXEMPLO 496 S.A",
+  "city": "RIO DE JANEIRO/RJ",
+  "sphere": "Енергетика",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "44.687.283/0001-67",
+  "company": "EMPRESA EXEMPLO 497",
+  "city": "ITAGUACU DA BAHIA/BA",
+  "sphere": "Освіта",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "43.120.469/0001-77",
+  "company": "EMPRESA EXEMPLO 498 LTDA",
+  "city": "ENTRE RIOS DO SUL/RS",
+  "sphere": "Промисловість",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "04.172.032/0001-25",
+  "company": "EMPRESA EXEMPLO 499 LTDA",
+  "city": "SAO PAULO/SP",
+  "sphere": "Освіта",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "99.186.212/0001-72",
+  "company": "EMPRESA EXEMPLO 500",
+  "city": "VALENCA/BA",
+  "sphere": "Промисловість",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "36.757.482/0001-76",
+  "company": "EMPRESA EXEMPLO 501",
+  "city": "BRASILIA/DF",
+  "sphere": "Будівництво",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "38.379.412/0001-57",
+  "company": "EMPRESA EXEMPLO 502",
+  "city": "NATAL/RN",
+  "sphere": "Промисловість",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "96.255.998/0001-44",
+  "company": "EMPRESA EXEMPLO 503",
+  "city": "COQUEIRAL/MG",
+  "sphere": "Промисловість",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "42.424.461/0001-31",
+  "company": "EMPRESA EXEMPLO 504",
+  "city": "PALHOCA/SC",
+  "sphere": "Будівництво",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "60.568.888/0001-95",
+  "company": "EMPRESA EXEMPLO 505",
+  "city": "SERTAOZINHO/SP",
+  "sphere": "Будівництво",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "34.420.934/0001-02",
+  "company": "EMPRESA EXEMPLO 506 LTDA",
+  "city": "VITORIA/ES",
+  "sphere": "Харчування",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ },
+ {
+  "cnpj": "76.738.319/0001-80",
+  "company": "EMPRESA EXEMPLO 507",
+  "city": "MOGI DAS CRUZES/SP",
+  "sphere": "Краса/фітнес",
+  "addr": "",
+  "note": "GitHub-дзеркало 2024.09",
+  "ts": "2026-10-01 12:00:00"
+ }
+]

@@ -1,0 +1,102 @@
+# =============================================================================
+# qa_lab — ЛОКАЛЬНИЙ запуск у docker
+# =============================================================================
+# Це другий, рівноправний спосіб запуску — нативний (server.bat / server.sh)
+# лишається основним і не змінюється. Docker-режим потрібен, щоб:
+#   * перевірити зміну «як у проді» на тому самому шарі base;
+#   * відтворити прод-баг;
+#   * працювати на машині без Python 3.10+.
+#
+#   docker compose -f docker-compose.dev.yml up --build     # підняти
+#   docker compose -f docker-compose.dev.yml down           # зупинити
+#   UI: http://localhost:8030/
+#
+# Конфіг — той самий `.env`, що й нативно (`cp .env.example .env`).
+# Без GITLAB_TOKEN вмикається MOCK_MODE і вітки читаються з fixtures/,
+# які entrypoint засіває сам.
+#
+# БАЗА. Поруч піднімається `mongo` — та сама роль, що й на кластері, тільки
+# локальна. За замовчуванням лаба ПІДКЛЮЧАЄТЬСЯ до неї: інакше mongo-гілка
+# коду не ганялась би ніколи (`tests/test_users_store.py` так і написано —
+# «Mongo-бекенд вимагає живої бази, тож у тестах пропущений»).
+# Вимкнути — рядком `MONGO_URI=` (порожнім) у `.env`: тоді лаба працює на
+# json-файлах, як нативно. Саме тому нижче `${MONGO_URI-...}` з ОДНИМ
+# дефісом, а не з `:-`: порожнє значення має лишатись порожнім, а не
+# підмінятись дефолтом.
+#
+#   docker compose -f docker-compose.dev.yml run --rm qa_lab sh /app/docker/run-tests.sh
+#   — гейт з живою базою (у `docker run` мережі compose немає, і тести БД
+#     там пропускаються).
+name: qa_lab-dev
+
+services:
+  qa_lab:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+      target: dev
+    image: qa_lab:dev
+    ports:
+      - "${QA_LAB_PORT:-8030}:8030"
+    # Код монтується з робочої теки — правка діє одразу, перезбирати образ не
+    # треба. Саме через цей монт lighthouse живе в /opt (інакше монт накрив би
+    # node_modules, вбудований в образ) — див. LIGHTHOUSE_CLI у Dockerfile.
+    volumes:
+      - .:/app
+    env_file:
+      - .env
+    environment:
+      # Chrome у контейнері без цих двох прапорців не стартує взагалі.
+      BROWSER_EXTRA_ARGS: "--no-sandbox --disable-dev-shm-usage"
+      # Візуальні прогони: 1 воркер = 1 фізичне ядро + ~1.4 ГБ RAM.
+      # Дефолт 3×3 з'їв би ~4.5 ГБ — для локальної машини забагато.
+      VISUAL_WORKERS: "${VISUAL_WORKERS:-2}"
+      VISUAL_TABS: "${VISUAL_TABS:-2}"
+      # Координати бази. `mongo` тут — ім'я сервісу нижче, всередині мережі
+      # compose воно резолвиться саме так (на кластері з тієї ж причини
+      # рядок виглядає як `mongo:27017` в оверлеї backend).
+      MONGO_URI: "${MONGO_URI-mongodb://${MONGO_USER:-qa_lab}:${MONGO_PASSWORD:-qa_lab}@mongo:27017/?authSource=admin}"
+      MONGO_DB: "${MONGO_DB:-qa_lab}"
+    depends_on:
+      mongo:
+        # Саме `service_healthy`, а не просто `depends_on`: контейнер бази
+        # піднімається за секунди, а приймати з'єднання починає пізніше, і
+        # лаба стартувала б рівно у цю щілину. Далі `users.py` кидає голосний
+        # RuntimeError — виглядало б як «зламалась авторизація».
+        condition: service_healthy
+    # init від docker — підстраховка до tini в образі.
+    init: true
+    # Chrome і php-деплої треба встигнути погасити.
+    stop_grace_period: 30s
+    restart: unless-stopped
+
+  # ---------------------------------------------------------------- база
+  # Локальний двійник кластерної Mongo. На проді бази в стеку НЕМА — там
+  # лаба ходить у спільну `mongo:27017` в оверлеї backend, а координати
+  # приїжджають CI-змінною MONGO_URI. Тут же її треба підняти самим.
+  mongo:
+    # 7 — та сама мажорна лінія, що й на кластері. Якщо контейнер падає з
+    # "Illegal instruction" — у процесора немає AVX (Mongo вимагає його з 5.0);
+    # тоді `mongo:4.4`, для локальних тестів різниці немає.
+    image: mongo:7
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: "${MONGO_USER:-qa_lab}"
+      MONGO_INITDB_ROOT_PASSWORD: "${MONGO_PASSWORD:-qa_lab}"
+    volumes:
+      - mongo-data:/data/db
+    ports:
+      # Тільки на петлю: порт відкривається, щоб до бази дотягнувся НАТИВНИЙ
+      # запуск (`./server.sh`) і тести з хоста, а не пів-інтернету.
+      - "127.0.0.1:${MONGO_PORT:-27017}:27017"
+    healthcheck:
+      test: ["CMD", "mongosh", "--quiet", "--eval", "db.adminCommand('ping').ok"]
+      interval: 5s
+      timeout: 5s
+      retries: 12
+      start_period: 20s
+    restart: unless-stopped
+
+volumes:
+  # Дані бази переживають `down`. Знести навмисно:
+  #   docker compose -f docker-compose.dev.yml down -v
+  mongo-data:

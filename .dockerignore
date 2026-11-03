@@ -1,0 +1,96 @@
+# Контекст білду: усе, що НЕ є вихідним кодом.
+#
+# Правило: сюди йде те саме, що в .gitignore (робочий стан лаби), плюс те, що
+# git трекає, але образу не потрібне. Без цього контекст роздувається кешем
+# віток (cache/ — це гігабайти) і в образ протікають чужі токени з .env.
+
+# --- секрети ---
+# Сам .env — ніколи: у ньому живі токени GitLab і ClickUp, і в шарі образу
+# вони лишились би назавжди. Шаблони — навпаки, ПОТРІБНІ: `.env.prod.example`
+# читає гейт `tests/test_ci_lockstep.py`, який ганяється всередині образу.
+.env
+.env.*
+!.env.example
+!.env.prod.example
+# push-url із живим GitLab-токеном (правило автора з .gitignore): файл лежить
+# поруч з кодом, тож без цього рядка він поїхав би в шар образу
+_u.txt
+
+# --- стан лаби (дзеркалить .gitignore) ---
+cache/
+deploy/
+screens/
+lighthouse/
+visual/
+buttons/
+stats/
+checkruns/
+logs/
+projects/
+builder-*/
+# (зразки для засіву лежать у docker/seed-fixtures/ — інша назва, тож під цей
+#  патерн не підпадають; так само вони не підпадають під `fixtures/` у
+#  .gitignore, який матчить теку на будь-якій глибині)
+fixtures/
+branches.json
+pinned.json
+clickup_map.json
+clickup_tasks.json
+clickup_fixed.json
+commits_log.json
+checks_state.json
+active_project.json
+.deploy_pids.json
+photo_db.json
+domains.json
+tg_state.json
+cnpj_pool.json
+cnpj_removed.json
+cnpj_assign.json
+uid_pool.json
+uid_removed.json
+uid_assign.json
+form_stub_ids.json
+problems.json
+visual_probe_out.json
+visual_profiles.json
+stats_clickup_cache.json
+comment_themes.json
+users.json
+.session_secret
+*.bak
+
+# --- залежності, що ставляться під час білду ---
+node_modules/
+.venv/
+venv/
+
+# --- сміття інструментів ---
+.git/
+.gitignore
+.gitattributes
+.idea/
+.vscode/
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+
+# --- артефакти, які не потрібні образу ---
+# docs/ у контейнері не читається нічим — тільки місце в шарі.
+# tests/ навпаки ЛИШАЄТЬСЯ: гейт `docker/run-tests.sh` ганяється всередині
+# зібраного образу, до пушу.
+docs/
+*.pdf
+Dockerfile
+.dockerignore
+.github/
+
+# А ось це в образі ПОТРІБНЕ, хоч і не виконується в рантаймі.
+# `tests/test_ci_lockstep.py` звіряє три файли між собою: шаблон `.env`,
+# пайплайн і прод-compose. Гейт ганяється ВСЕРЕДИНІ образу (`docker run ...
+# run-tests.sh`), нічого не підмонтовуючи, — тож без цих файлів тест падає з
+# FileNotFoundError, а не «проходить». Заміряно 19.08: перший же пайплайн
+# на чистому проєкті впав би саме тут, бо `.env.prod.example` підпадав під
+# `.env.*`, а compose — під `docker-compose*.yml`.
+docker-compose.dev.yml

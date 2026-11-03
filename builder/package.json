@@ -1,0 +1,31 @@
+{
+  "name": "ch-news-magazine",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Factory master template — free Swiss-German online entertainment/boulevard magazine, newsletter-only (Next.js 15 App Router).",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "obfuscate": "node scripts/obfuscate.mjs",
+    "build:prod": "next build && node scripts/obfuscate.mjs",
+    "generate": "npm run build:prod && node scripts/rename-out-to-dist.mjs"
+  },
+  "dependencies": {
+    "next": "^15.0.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "autoprefixer": "^10.4.20",
+    "eslint": "^9.0.0",
+    "eslint-config-next": "^15.0.0",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.0",
+    "typescript": "^5.6.0"
+  }
+}
